@@ -38,9 +38,9 @@ const Home: NextPage = () => {
             spacing="0"
             _before={{
               animation: `${keyframes`
-                from {transform: rotate(-20deg);}
-                to {transform: rotate(10deg)}
-              `} infinite 5s ease-in-out alternate`,
+                from {transform: rotate(-25deg);}
+                to {transform: rotate(25deg)}
+              `} infinite 5s linear alternate`,
               content: '""',
               position: "absolute",
               bgRepeat: "no-repeat",
