@@ -12,7 +12,7 @@ import {
 const Hero: NextPage = () => {
   return (
     <>
-      <Box overflow="hidden" w="100%" h="668px" position="relative">
+      <Box overflow="hidden" w="100%" position="relative">
         <VStack
           w="100%"
           h="100%"
@@ -32,6 +32,8 @@ const Hero: NextPage = () => {
             left: "-50%",
             zIndex: "-1",
             bg: "#F2F2F2 url('bg-home-main.svg') center center",
+            maskImage:
+              "-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))",
           }}
         >
           <Flex
@@ -76,7 +78,6 @@ const Hero: NextPage = () => {
           <Center>
             <Box
               as="button"
-              p={4}
               color="white"
               fontWeight="semibold"
               bg="#0F172A"
@@ -85,10 +86,40 @@ const Hero: NextPage = () => {
               borderColor="#0F172A"
               py="14px"
               px="44px"
+              mb="66px"
             >
               <Text fontWeight="normal">Start staking</Text>
             </Box>
           </Center>
+          <Flex
+            w="100%"
+            h="182px"
+            justifyContent="space-between"
+            alignItems="center"
+            direction="row"
+            px="4rem"
+            borderBottomRadius="104"
+            bgColor="white"
+          >
+            <Box textAlign="left">
+              <Text fontSize="4xl" fontWeight="bold">
+                $83,333,333
+              </Text>
+              <Text fontSize="xl">Total value locked (TVL)</Text>
+            </Box>
+            <Box>
+              <Text fontSize="4xl" fontWeight="bold">
+                10.08%
+              </Text>
+              <Text fontSize="xl">Annual percentage yield (APY)</Text>
+            </Box>
+            <Box>
+              <Text fontSize="4xl" fontWeight="bold">
+                92
+              </Text>
+              <Text fontSize="xl">validators</Text>
+            </Box>
+          </Flex>
         </VStack>
       </Box>
     </>
