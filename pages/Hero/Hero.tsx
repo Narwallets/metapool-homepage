@@ -1,13 +1,6 @@
 import type { NextPage } from "next";
-import {
-  VStack,
-  Center,
-  Text,
-  Box,
-  Image,
-  Flex,
-  keyframes,
-} from "@chakra-ui/react";
+import { VStack, Center, Box, Image, Flex, keyframes } from "@chakra-ui/react";
+import MetapoolData from "./MetapoolData";
 
 const Hero: NextPage = () => {
   return (
@@ -19,9 +12,9 @@ const Hero: NextPage = () => {
           spacing="0"
           _before={{
             animation: `${keyframes`
-                from {transform: rotate(-25deg);}
-                to {transform: rotate(25deg)}
-              `} infinite 5s linear alternate`,
+                from {transform: rotate(-20deg);}
+                to {transform: rotate(10deg)}
+              `} infinite 3s ease-in-out alternate`,
             content: '""',
             position: "absolute",
             bgRepeat: "no-repeat",
@@ -31,7 +24,9 @@ const Hero: NextPage = () => {
             top: "-50%",
             left: "-50%",
             zIndex: "-1",
-            bg: "#F2F2F2 url('bg-home-main.svg') center center",
+            bg: "#F2F2F2 url('bg-home-main.svg')",
+            backgroundPositionX: "center",
+            backgroundPositionY: "top",
             maskImage:
               "-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))",
           }}
@@ -49,36 +44,44 @@ const Hero: NextPage = () => {
               as="button"
               p={4}
               fontWeight="semibold"
+              fontFamily={["Inter", "sans-serif"]}
               borderRadius="30px"
-              bg="transparent"
               border="2px"
               py="14px"
               px="44px"
             >
-              <Text fontWeight="semibold">Start staking</Text>
+              Start staking
             </Box>
           </Flex>
-          <Center
-            color="#0F172A"
-            fontSize="8xl"
-            fontWeight="bold"
-            textAlign="center"
-            lineHeight="90%"
-            pt="5rem"
-          >
-            Stake NEAR,
-            <br /> maximise returns
+          <Center>
+            <Box
+              textStyle="h1"
+              color="#0F172A"
+              textAlign="center"
+              lineHeight="90%"
+              pt="5rem"
+            >
+              Stake NEAR,
+              <br /> maximise returns
+            </Box>
           </Center>
-          <Center fontSize="2xl" fontWeight="bold" textAlign="center" py="4rem">
-            <p>
+          <Center py="4rem">
+            <Box
+              textStyle="h4"
+              color="#0F172A"
+              textAlign="center"
+              lineHeight="90%"
+              fontFamily={["Inter", "sans-serif"]}
+            >
               Receive stNEAR to access liquidity without having to sell your
               assets.
-            </p>
+            </Box>
           </Center>
           <Center>
             <Box
               as="button"
               color="white"
+              fontFamily={["Inter", "sans-serif"]}
               fontWeight="semibold"
               bg="#0F172A"
               borderRadius="30px"
@@ -88,7 +91,7 @@ const Hero: NextPage = () => {
               px="44px"
               mb="66px"
             >
-              <Text fontWeight="normal">Start staking</Text>
+              Start staking
             </Box>
           </Center>
           <Flex
@@ -101,25 +104,28 @@ const Hero: NextPage = () => {
             borderBottomRadius="104"
             bgColor="white"
           >
-            <Box textAlign="left">
-              <Text fontSize="4xl" fontWeight="bold">
-                $83,333,333
-              </Text>
-              <Text fontSize="xl">Total value locked (TVL)</Text>
-            </Box>
-            <Box>
-              <Text fontSize="4xl" fontWeight="bold">
-                10.08%
-              </Text>
-              <Text fontSize="xl">Annual percentage yield (APY)</Text>
-            </Box>
-            <Box>
-              <Text fontSize="4xl" fontWeight="bold">
-                92
-              </Text>
-              <Text fontSize="xl">validators</Text>
-            </Box>
+            <MetapoolData
+              title="Total value locked (TVL)"
+              value="$83,333,333"
+            />
+            <MetapoolData
+              title="Annual percentage yield (APY)"
+              value="10.08%"
+            />
+            <MetapoolData title="Validators" value="92" />
           </Flex>
+          <Box>
+            asdasdas
+            <br />
+            asdasdas
+            <br />
+            asdasdas
+            <br />
+            asdasdas
+            <br />
+            asdasdas
+            <br />
+          </Box>
         </VStack>
       </Box>
     </>
