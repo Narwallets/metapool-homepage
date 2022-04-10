@@ -114,18 +114,6 @@ const Hero: NextPage = () => {
             />
             <MetapoolData title="Validators" value="92" />
           </Flex>
-          <Box>
-            asdasdas
-            <br />
-            asdasdas
-            <br />
-            asdasdas
-            <br />
-            asdasdas
-            <br />
-            asdasdas
-            <br />
-          </Box>
         </VStack>
       </Box>
     </>
