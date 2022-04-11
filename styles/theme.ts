@@ -1,9 +1,12 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react";
+import { ButtonStyles as Button } from "./buttonStyles";
 
 const theme = extendTheme({
   textStyles: {
+    button: {
+      fontFamily: "Inter, sans-serif",
+    },
     h1: {
-      // you can also use responsive styles
       fontSize: "104px",
       fontWeight: "bold",
       lineHeight: "90%",
@@ -28,10 +31,10 @@ const theme = extendTheme({
     body: "Space Grotesk",
   },
   colors: {
-    brand: {
-      100: "#f7fafc",
-      900: "#1a202c",
-    },
+    primary: "#0F172A",
+  },
+  components: {
+    Button,
   },
 });
 

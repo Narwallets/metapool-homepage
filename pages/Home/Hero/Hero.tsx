@@ -1,5 +1,13 @@
 import type { NextPage } from "next";
-import { VStack, Center, Box, Image, Flex, keyframes } from "@chakra-ui/react";
+import {
+  Button,
+  VStack,
+  Center,
+  Box,
+  Image,
+  Flex,
+  keyframes,
+} from "@chakra-ui/react";
 import MetapoolData from "./MetapoolData";
 
 const Hero: NextPage = () => {
@@ -40,18 +48,9 @@ const Hero: NextPage = () => {
             px="4rem"
           >
             <Image alt="logo" src={"logo.svg"} w="202" h="34" />
-            <Box
-              as="button"
-              p={4}
-              fontWeight="semibold"
-              fontFamily={["Inter", "sans-serif"]}
-              borderRadius="30px"
-              border="2px"
-              py="14px"
-              px="44px"
-            >
+            <Button colorScheme="primary" variant="outline" borderWidth="2px">
               Start staking
-            </Box>
+            </Button>
           </Flex>
           <Center>
             <Box
@@ -72,27 +71,16 @@ const Hero: NextPage = () => {
               textAlign="center"
               lineHeight="90%"
               fontFamily={["Inter", "sans-serif"]}
+              fontWeight="normal"
             >
               Receive stNEAR to access liquidity without having to sell your
               assets.
             </Box>
           </Center>
           <Center>
-            <Box
-              as="button"
-              color="white"
-              fontFamily={["Inter", "sans-serif"]}
-              fontWeight="semibold"
-              bg="#0F172A"
-              borderRadius="30px"
-              border="2px"
-              borderColor="#0F172A"
-              py="14px"
-              px="44px"
-              mb="66px"
-            >
+            <Button variant="solid" mb="52px">
               Start staking
-            </Box>
+            </Button>
           </Center>
           <Flex
             w="100%"
