@@ -6,7 +6,6 @@ import {
   Box,
   Image,
   Flex,
-  keyframes,
 } from "@chakra-ui/react";
 import MetapoolData from "./MetapoolData";
 
@@ -18,26 +17,6 @@ const Hero: NextPage = () => {
           w="100%"
           h="100%"
           spacing="0"
-          _before={{
-            animation: `${keyframes`
-                from {transform: rotate(-20deg);}
-                to {transform: rotate(10deg)}
-              `} infinite 3s ease-in-out alternate`,
-            content: '""',
-            position: "absolute",
-            bgRepeat: "no-repeat",
-            bgSize: "cover",
-            w: "200%",
-            h: "200%",
-            top: "-50%",
-            left: "-50%",
-            zIndex: "-1",
-            bg: "#F2F2F2 url('bg-home-main.svg')",
-            backgroundPositionX: "center",
-            backgroundPositionY: "top",
-            maskImage:
-              "-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))",
-          }}
         >
           <Flex
             w="100%"
