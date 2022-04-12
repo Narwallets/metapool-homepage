@@ -24,7 +24,7 @@ const Hero: NextPage = () => {
             alignItems="center"
             direction="row"
             py="2rem"
-            px="4rem"
+            px={["2rem","2rem", "4rem"]}
           >
             <Image alt="logo" src={"logo.svg"} w="202" h="34" />
             <Button colorScheme="primary" variant="outline" borderWidth="2px">
@@ -37,20 +37,22 @@ const Hero: NextPage = () => {
               color="#0F172A"
               textAlign="center"
               lineHeight="90%"
-              pt="5rem"
+              fontSize={["4xl", "6xl", "8xl"]}
+              pt={["2rem", "2rem", "5rem"]}
             >
               Stake NEAR,
               <br /> maximise returns
             </Box>
           </Center>
-          <Center py="4rem">
+          <Center p="4rem">
             <Box
               textStyle="h4"
               color="#0F172A"
               textAlign="center"
-              lineHeight="90%"
+              lineHeight="110%"
               fontFamily={["Inter", "sans-serif"]}
               fontWeight="normal"
+              noOfLines={3}
             >
               Receive stNEAR to access liquidity without having to sell your
               assets.
@@ -63,11 +65,11 @@ const Hero: NextPage = () => {
           </Center>
           <Flex
             w="100%"
-            h="182px"
+            h={["152px","152px", "182px"]}
             justifyContent="space-between"
             alignItems="center"
             direction="row"
-            px="4rem"
+            px={["2rem","2rem", "4rem"]}
             borderBottomRadius="104"
             bgColor="white"
           >

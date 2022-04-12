@@ -8,10 +8,10 @@ interface Props {
 
 const DataItem: NextPage<Props> = ({ title, value }) => (
   <Box textAlign="left">
-    <Text fontSize="5xl" fontWeight="bold" fontFamily={["Space Grotesk"]}>
+    <Text fontSize={["xl","2xl","5xl"]} fontWeight="bold" fontFamily={["Space Grotesk"]}>
       {value}
     </Text>
-    <Text fontSize="lg" fontFamily={["Inter"]} textTransform="uppercase">
+    <Text fontSize={["sm","sm","lg"]}  fontFamily={["Inter"]} textTransform="uppercase">
       {title}
     </Text>
   </Box>
