@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import { Box, Image, keyframes } from "@chakra-ui/react";
+import { Image, keyframes } from "@chakra-ui/react";
 import Hero from "./Hero";
 import Notification from "./Notification";
-import SupportedNetworks from "./SupportedNetworks";
+import StakingFarms from "./StakingFarms";
 import Ecosystem from "./Ecosystem";
 import Technology from "./Technology";
 import Benefits from "./Benefits";
@@ -17,14 +17,14 @@ const Home: NextPage = () => {
     <>
       <Image
         alt="background"
-        src="bg-home-main.svg"
-        position="fixed"
+        src="icons/bg-home-main.svg"
+        position="absolute"
         w="2106px"
         h="1788px"
         left="50%"
         top="50%"
         marginLeft="-1053"
-        marginTop="-894"
+        marginTop="-1400"
         maxWidth="inherit"
         animation={`${keyframes`
      from {transform: rotate(-20deg);}
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
 
       <Notification />
       <Hero />
-      <SupportedNetworks />
+      <StakingFarms />
       <Ecosystem />
       <Technology />
       <Benefits />

@@ -2,6 +2,13 @@ import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react";
 import { ButtonStyles as Button } from "./buttonStyles";
 
 const theme = extendTheme({
+  styles: {
+    global: {
+      body: {
+        bg: "#F8FAFC",
+      },
+    },
+  },
   textStyles: {
     button: {
       fontFamily: "Inter, sans-serif",
@@ -32,6 +39,7 @@ const theme = extendTheme({
   },
   colors: {
     primary: "#0F172A",
+    secondary: "#94A3B8",
   },
   components: {
     Button,

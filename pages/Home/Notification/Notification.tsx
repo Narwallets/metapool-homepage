@@ -5,13 +5,13 @@ import Image from "next/image";
 const Notification: NextPage = () => (
   <Flex
     w="100%"
-    bg="white"
     p="17px"
     px="40px"
     fontWeight="semibold"
     fontSize="md"
     position="relative"
     justifyContent="center"
+    bgColor="white"
   >
     <Text noOfLines={[2, 1]}>
       This is a news update that worth to pay attention and maybe click on it
