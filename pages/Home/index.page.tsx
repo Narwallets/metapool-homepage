@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Image, keyframes } from "@chakra-ui/react";
+import { Container, Image, keyframes } from "@chakra-ui/react";
 import Hero from "./Hero";
 import Notification from "./Notification";
 import StakingFarms from "./StakingFarms";
@@ -14,7 +14,7 @@ import Footer from "./Footer";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <Container position="relative" maxW='container.100' p={0} overflow="clip">
       <Image
         alt="background"
         src="icons/bg-home-main.svg"
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
       <LatestNews />
       <Comunity />
       <Footer />
-    </>
+    </Container>
   );
 };
 
