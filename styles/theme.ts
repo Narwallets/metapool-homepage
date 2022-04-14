@@ -32,6 +32,10 @@ const theme = extendTheme({
       fontSize: "24",
       fontWeight: "semibold",
     },
+    h5: {
+      fontSize: "18",
+      fontWeight: "semibold",
+    },
   },
   fonts: {
     heading: "Inter, sans-serif",

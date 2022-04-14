@@ -42,8 +42,8 @@ const StakingFarms: NextPage = () => (
         Choose a network below to get started.
       </Box>
       <HStack spacing="32px">
-        <Square size="369px" bg="white" rounded="2xl" boxShadow="xl" p="6">
-          <VStack>
+        <Square size="369px" bg="white" rounded="2xl" boxShadow="xl" p="10">
+          <VStack h="full">
             <HStack w="100%" justifyContent={"space-between"} px="20px">
               <Image alt="Near" src="icons/staking-farms-near.svg" />
               <Box>
@@ -51,17 +51,26 @@ const StakingFarms: NextPage = () => (
                 <Text>APY</Text>
               </Box>
             </HStack>
-            <Box textStyle="h4">Stake Near</Box>
-            <Text noOfLines={[2, 2, 2]}>
-              Stake any amount of ETH and earn daily staking rewards.
-            </Text>
+            <Flex
+              h="full"
+              direction={"column"}
+              justifyContent="flex-start"
+              alignItems={"flex-start"}
+              textAlign={"left"}
+              pt="30px"
+            >
+              <Box textStyle="h5">Stake Near</Box>
+              <Text noOfLines={[2, 2, 2]}>
+                Stake any amount of ETH and earn daily staking rewards.
+              </Text>
+            </Flex>
             <Button variant="solid" mb="52px">
               Stake now
             </Button>
           </VStack>
         </Square>
-        <Square size="369px" bg="white" rounded="2xl" boxShadow="xl" p="6">
-          <VStack>
+        <Square size="369px" bg="white" rounded="2xl" boxShadow="xl" p="10">
+          <VStack h="full">
             <HStack w="100%" justifyContent={"space-between"} px="20px">
               <Image alt="Aurora" src="icons/staking-farms-aurora.svg" />
               <Box>
@@ -69,17 +78,26 @@ const StakingFarms: NextPage = () => (
                 <Text>APY</Text>
               </Box>
             </HStack>
-            <Box textStyle="h4">Stake wNear in Aurora</Box>
-            <Text noOfLines={[2, 2, 2]}>
-              Stake any amount of ETH and earn daily staking rewards.
-            </Text>
+            <Flex
+              h="full"
+              direction={"column"}
+              justifyContent="flex-start"
+              alignItems={"flex-start"}
+              textAlign={"left"}
+              pt="30px"
+            >
+              <Text textStyle="h5">Stake wNear in Aurora</Text>
+              <Text noOfLines={[2, 2, 2]}>
+                Stake any amount of ETH and earn daily staking rewards.
+              </Text>
+            </Flex>
             <Button variant="solid" mb="52px">
               Stake now
             </Button>
           </VStack>
         </Square>
-        <Square size="369px" bg="white" rounded="2xl" boxShadow="2xl">
-          <VStack>
+        <Square size="369px" bg="white" rounded="2xl" boxShadow="2xl" p="10">
+          <VStack h="full">
             <HStack w="100%" justifyContent={"space-between"} px="20px">
               <Image alt="Oct" src="icons/staking-farms-oct.svg" />
               <Box>
@@ -87,8 +105,17 @@ const StakingFarms: NextPage = () => (
                 <Text>APY</Text>
               </Box>
             </HStack>
-            <Box textStyle="h4">New OCT — stNEAR Farm</Box>
-            <Text noOfLines={[2, 2, 2]}>New OCT — stNEAR Farm</Text>
+            <Flex
+              h="full"
+              direction={"column"}
+              justifyContent="flex-start"
+              alignItems={"flex-start"}
+              textAlign={"left"}
+              pt="30px"
+            >
+              <Box textStyle="h5">New OCT — stNEAR Farm</Box>
+              <Text noOfLines={[2, 2, 2]}>New OCT — stNEAR Farm</Text>
+            </Flex>
             <Button variant="solid" mb="52px">
               Stake now
             </Button>

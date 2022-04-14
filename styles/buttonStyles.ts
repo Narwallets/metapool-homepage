@@ -10,16 +10,19 @@ export const ButtonStyles = {
       fontSize: "14px",
       h: "52px",
       px: "45px",
+      py: "16px",
     },
     md: {
       fontSize: "16px",
       h: "52px",
       px: "45px",
+      py: "16px",
     },
     lg: {
       fontSize: "18px",
       h: "52px",
       px: "45px",
+      py: "16px",
     },
   },
   variants: {
