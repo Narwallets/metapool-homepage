@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Button, VStack, Center, Box, Image, Flex } from "@chakra-ui/react";
+import { Button, VStack, Center, Box, Image, Flex, Container } from "@chakra-ui/react";
 import MetapoolData from "./MetapoolData";
 
 const Hero: NextPage = () => {

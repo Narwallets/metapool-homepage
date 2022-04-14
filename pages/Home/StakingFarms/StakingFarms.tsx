@@ -8,7 +8,9 @@ import {
   HStack,
   Button,
   Image,
+  SimpleGrid,
 } from "@chakra-ui/react";
+import Item from "./Item";
 
 const StakingFarms: NextPage = () => (
   <Flex
@@ -42,85 +44,26 @@ const StakingFarms: NextPage = () => (
         Choose a network below to get started.
       </Box>
       <HStack spacing="32px">
-        <Square size="369px" bg="white" rounded="2xl" boxShadow="xl" p="10">
-          <VStack h="full">
-            <HStack w="100%" justifyContent={"space-between"} px="20px">
-              <Image alt="Near" src="icons/staking-farms-near.svg" />
-              <Box>
-                <Text textStyle="h3">11%</Text>
-                <Text>APY</Text>
-              </Box>
-            </HStack>
-            <Flex
-              h="full"
-              direction={"column"}
-              justifyContent="flex-start"
-              alignItems={"flex-start"}
-              textAlign={"left"}
-              pt="30px"
-            >
-              <Box textStyle="h5">Stake Near</Box>
-              <Text noOfLines={[2, 2, 2]}>
-                Stake any amount of ETH and earn daily staking rewards.
-              </Text>
-            </Flex>
-            <Button variant="solid" mb="52px">
-              Stake now
-            </Button>
-          </VStack>
-        </Square>
-        <Square size="369px" bg="white" rounded="2xl" boxShadow="xl" p="10">
-          <VStack h="full">
-            <HStack w="100%" justifyContent={"space-between"} px="20px">
-              <Image alt="Aurora" src="icons/staking-farms-aurora.svg" />
-              <Box>
-                <Text textStyle="h3">11%</Text>
-                <Text>APY</Text>
-              </Box>
-            </HStack>
-            <Flex
-              h="full"
-              direction={"column"}
-              justifyContent="flex-start"
-              alignItems={"flex-start"}
-              textAlign={"left"}
-              pt="30px"
-            >
-              <Text textStyle="h5">Stake wNear in Aurora</Text>
-              <Text noOfLines={[2, 2, 2]}>
-                Stake any amount of ETH and earn daily staking rewards.
-              </Text>
-            </Flex>
-            <Button variant="solid" mb="52px">
-              Stake now
-            </Button>
-          </VStack>
-        </Square>
-        <Square size="369px" bg="white" rounded="2xl" boxShadow="2xl" p="10">
-          <VStack h="full">
-            <HStack w="100%" justifyContent={"space-between"} px="20px">
-              <Image alt="Oct" src="icons/staking-farms-oct.svg" />
-              <Box>
-                <Text textStyle="h3">30%</Text>
-                <Text>APY</Text>
-              </Box>
-            </HStack>
-            <Flex
-              h="full"
-              direction={"column"}
-              justifyContent="flex-start"
-              alignItems={"flex-start"}
-              textAlign={"left"}
-              pt="30px"
-            >
-              <Box textStyle="h5">New OCT — stNEAR Farm</Box>
-              <Text noOfLines={[2, 2, 2]}>New OCT — stNEAR Farm</Text>
-            </Flex>
-            <Button variant="solid" mb="52px">
-              Stake now
-            </Button>
-          </VStack>
-        </Square>
+        <SimpleGrid columns={[1, 1, 2, 3]} spacing={10}>
+          <Item
+            apy="11%"
+            title="Stake Near"
+            description="Stake any amount of ETH and earn daily staking rewards."
+            icon="icons/staking-farms-near.svg"
+          />
+          <Item
+            apy="11%"
+            title="Stake wNear in Aurora"
+            description="Stake any amount of ETH and earn daily staking rewards."
+            icon="icons/staking-farms-aurora.svg"
+          />
+          <Item
+            apy="30%"
+            title="New OCT — stNEAR Farm"
+            description="New OCT — stNEAR Farm"
+            icon="icons/staking-farms-oct.svg"
+          />
+        </SimpleGrid>
       </HStack>
     </Box>
   </Flex>
