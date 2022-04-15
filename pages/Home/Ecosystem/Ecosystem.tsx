@@ -1,5 +1,12 @@
 import type { NextPage } from "next";
-import { Box, Text, Flex, Container, SimpleGrid } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Flex,
+  Container,
+  SimpleGrid,
+  Circle,
+} from "@chakra-ui/react";
 import Item from "./Item";
 
 const Ecosystem: NextPage = () => (
@@ -20,11 +27,7 @@ const Ecosystem: NextPage = () => (
         >
           STNEAR ECOSYSTEM
         </Text>
-        <Box
-          textStyle="h2"
-          pt={["15px", "15px"]}
-          pb={["43px", "43px"]}
-        >
+        <Box textStyle="h2" pt={["15px", "15px"]} pb={["43px", "43px"]}>
           Use stNEAR across growing <br />
           DeFi Ecosystem
         </Box>
@@ -35,42 +38,82 @@ const Ecosystem: NextPage = () => (
         </Box>
       </Box>
     </Flex>
+    <Flex direction="row" justifyContent="flex-end">
+      <Flex
+        mx="8px"
+        my="16px"
+        direction="row"
+        alignItems="center"
+        justifyContent={"center"}
+      >
+        <Circle size="8px" bgColor="#F97316" mr="8px" />
+        Testnet
+      </Flex>
+      <Flex
+        mx="8px"
+        my="16px"
+        direction="row"
+        alignItems="center"
+        justifyContent={"center"}
+      >
+        <Circle size="8px" bgColor="#10B981" mr="8px" />
+        Mainnet
+      </Flex>
+    </Flex>
     <SimpleGrid columns={[1, 3]} spacing={10}>
       <Item
         title="Trisolaris"
         description="Trisolaris is the first AMM exchange on Aurora."
         icon="icons/ecosystem-trisolaris.svg"
+        type="EXCHANGE"
+        env="mainnet"
       />
       <Item
         title="Ref.Finance"
         description="Trisolaris is the first AMM exchange on Aurora."
-        icon="icons/ecosystem-trisolaris.svg"
+        icon="icons/ecosystem-refinance.svg"
+        type="DEFI"
+        env="mainnet"
       />
       <Item
         title="Burrow"
         description="Trisolaris is the first AMM exchange on Aurora."
-        icon="icons/ecosystem-trisolaris.svg"
+        icon="icons/ecosystem-burrow.svg"
+        type="LENDING"
+        env="testnet"
       />
       <Item
         title="Jumbo"
         description="Trisolaris is the first AMM exchange on Aurora."
-        icon="icons/ecosystem-trisolaris.svg"
+        icon="icons/ecosystem-jumbo.svg"
+        type="EXCHANGE"
+        env="mainnet"
+        soon={true}
       />
       <Item
         title="Aurigami"
         description="Trisolaris is the first AMM exchange on Aurora."
-        icon="icons/ecosystem-trisolaris.svg"
+        icon="icons/ecosystem-aurigami.svg"
+        type="INFRASTRUCTURE"
+        env="mainnet"
+        soon={true}
       />
       <Item
         title="Bastion"
         description="Trisolaris is the first AMM exchange on Aurora."
-        icon="icons/ecosystem-trisolaris.svg"
+        icon="icons/ecosystem-bastion.svg"
+        type="LENDING"
+        env="testnet"
+        soon={true}
       />
       <Item
         title="Wannaswap"
         description="Trisolaris is the first AMM exchange on Aurora."
-        icon="icons/ecosystem-trisolaris.svg"
+        icon="icons/ecosystem-wannaswap.svg"
+        type="EXCHANGE"
+        soon={true}
       />
+      <Item title="More comming soon" />
     </SimpleGrid>
   </Container>
 );
