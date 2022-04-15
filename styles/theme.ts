@@ -2,6 +2,9 @@ import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react";
 import { ButtonStyles as Button } from "./buttonStyles";
 
 const theme = extendTheme({
+  breakpoints: {
+    sm: "1000px",
+  },
   styles: {
     global: {
       body: {

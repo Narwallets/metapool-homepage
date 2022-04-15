@@ -16,7 +16,7 @@ const StakingFarms: NextPage = () => (
   <Flex
     w="100%"
     minHeight={"1000px"}
-    pt={["138px", "138px", "138px", "138px"]}
+    pt={["138px", "138px"]}
     fontSize="md"
     position="relative"
     justifyContent="center"
@@ -33,18 +33,18 @@ const StakingFarms: NextPage = () => (
       </Text>
       <Box
         textStyle="h2"
-        pt={["15px", "15px", "15px", "15px"]}
-        pb={["43px", "43px", "43px", "43px"]}
+        pt={["15px", "15px"]}
+        pb={["43px", "43px"]}
       >
         Supported networks
       </Box>
-      <Box pb={["76px", "76px", "76px", "76px"]}>
+      <Box pb={["76px", "76px"]}>
         Meta Pool lets you stake tokens from many networks.
         <br />
         Choose a network below to get started.
       </Box>
       <HStack spacing="32px">
-        <SimpleGrid columns={[1, 1, 2, 3]} spacing={10}>
+        <SimpleGrid columns={[1, 3]} spacing={10} mx={10}>
           <Item
             apy="11%"
             title="Stake Near"

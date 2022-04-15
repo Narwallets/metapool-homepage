@@ -18,9 +18,9 @@ interface Props {
 }
 
 const Item: NextPage<Props> = ({ apy, title, description, icon }) => (
-  <Square size="369px" bg="white" rounded="2xl" boxShadow="2xl" p="10">
+  <Square size="full" bg="white" rounded="2xl" boxShadow="2xl" p="10">
     <VStack h="full" mx="auto">
-      <HStack w="100%" justifyContent={"space-between"} px="20px">
+      <HStack w="100%" justifyContent={"space-between"} px={["0px", "0px"]}>
         <Image alt="Oct" src={icon} />
         <Box>
           <Text textStyle="h3">{apy}</Text>

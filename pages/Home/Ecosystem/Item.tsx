@@ -14,7 +14,7 @@ interface Props {
 
 const Item: NextPage<Props> = ({ title, description, icon }) => (
   <Box
-    w="369px"
+    maxW={[null, "500px"]}
     bg="white"
     rounded="lg"
     p="10"

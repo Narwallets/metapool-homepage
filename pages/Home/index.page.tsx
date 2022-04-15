@@ -19,12 +19,12 @@ const Home: NextPage = () => {
         alt="background"
         src="icons/bg-home-main.svg"
         position="absolute"
-        w="2106px"
-        h="1788px"
-        left="50%"
-        top="50%"
-        marginLeft="-1053"
-        marginTop="-1400"
+        w={["1082px", "2106px"]}
+        h={["841px", "1788px"]}
+        left={["-50%", "50%"]}
+        top={[null, "50%"]}
+        marginLeft={[null, "-1053px"]}
+        marginTop={[null,"-2081px"]}
         maxWidth="inherit"
         animation={`${keyframes`
      from {transform: rotate(-20deg);}

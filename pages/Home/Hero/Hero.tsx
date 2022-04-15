@@ -11,7 +11,7 @@ const Hero: NextPage = () => {
         alignItems="center"
         direction="row"
         py="2rem"
-        px={["2rem", "2rem", "4rem"]}
+        px={["2rem", "4rem"]}
       >
         <Image alt="logo" src={"logo.svg"} w="202" h="34" />
         <Button colorScheme="primary" variant="outline" borderWidth="2px">
@@ -24,8 +24,8 @@ const Hero: NextPage = () => {
           color="#0F172A"
           textAlign="center"
           lineHeight="90%"
-          fontSize={["4xl", "6xl", "8xl"]}
-          pt={["2rem", "2rem", "5rem"]}
+          fontSize={["4xl", "8xl"]}
+          pt={["2rem", "5rem"]}
         >
           Stake NEAR,
           <br /> maximise returns
@@ -51,11 +51,11 @@ const Hero: NextPage = () => {
       </Center>
       <Flex
         w="100%"
-        h={["152px", "152px", "182px"]}
+        h={["152px", "182px"]}
         justifyContent="space-between"
         alignItems="center"
         direction="row"
-        px={["2rem", "2rem", "4rem"]}
+        px={["2rem", "4rem"]}
         borderBottomRadius="104"
         bgColor="white"
       >
