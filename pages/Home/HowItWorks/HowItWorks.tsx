@@ -9,7 +9,7 @@ import {
   Circle,
   Container,
   Button,
-  Center,
+  Link,
 } from "@chakra-ui/react";
 
 const HowItWorks: NextPage = () => (
@@ -99,8 +99,8 @@ const HowItWorks: NextPage = () => (
         </HStack>
       </Box>
       <HStack mt={["50px", "50px"]} spacing="20px" justifyContent="center">
-        <Button variant="solid">Start staking</Button>
-        <Button variant="link" textColor={"primary"}>Find out more <ChevronRightIcon w={6} h={6} color="primary" /></Button>
+        <Link variant="solid" href='https://metapool.app/dapp/mainnet/meta/'>Start staking</Link>
+        <Link variant="link" textColor={"primary"}>Find out more <ChevronRightIcon w={6} h={6} color="primary" /></Link>
       </HStack>
     </Container>
   </Flex>

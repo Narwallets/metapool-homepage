@@ -6,7 +6,7 @@ import {
   Square,
   VStack,
   HStack,
-  Button,
+  Link,
   Image,
 } from "@chakra-ui/react";
 
@@ -38,9 +38,13 @@ const Item: NextPage<Props> = ({ apy, title, description, icon }) => (
         <Box textStyle="h5">{title}</Box>
         <Text noOfLines={[2, 2, 2]}>{description}</Text>
       </Flex>
-      <Button variant="solid" mb="52px">
+      <Link
+        variant="solid"
+        href="https://metapool.app/dapp/mainnet/meta/"
+        mb="52px"
+      >
         Stake now
-      </Button>
+      </Link>
     </VStack>
   </Square>
 );

@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Button, VStack, Center, Box, Image, Flex, Container } from "@chakra-ui/react";
+import { Center, Box, Image, Flex, Link } from "@chakra-ui/react";
 import MetapoolData from "./MetapoolData";
 
 const Hero: NextPage = () => {
@@ -14,9 +14,14 @@ const Hero: NextPage = () => {
         px={["2rem", "4rem"]}
       >
         <Image alt="logo" src={"logo.svg"} w="202" h="34" />
-        <Button colorScheme="primary" variant="outline" borderWidth="2px">
+        <Link
+          colorScheme="primary"
+          variant="outline"
+          borderWidth="2px"
+          href="https://metapool.app/dapp/mainnet/meta/"
+        >
           Start staking
-        </Button>
+        </Link>
       </Flex>
       <Center>
         <Box
@@ -45,9 +50,13 @@ const Hero: NextPage = () => {
         </Box>
       </Center>
       <Center>
-        <Button variant="solid" mb="52px">
+        <Link
+          variant="solid"
+          href="https://metapool.app/dapp/mainnet/meta/"
+          mb="52px"
+        >
           Start staking
-        </Button>
+        </Link>
       </Center>
       <Flex
         w="100%"

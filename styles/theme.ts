@@ -1,5 +1,6 @@
 import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react";
 import { ButtonStyles as Button } from "./buttonStyles";
+import { LinkStyles as Link } from "./linkStyles";
 
 const theme = extendTheme({
   breakpoints: {
@@ -50,6 +51,7 @@ const theme = extendTheme({
   },
   components: {
     Button,
+    Link,
   },
 });
 

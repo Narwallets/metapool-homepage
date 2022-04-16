@@ -1,15 +1,5 @@
 import type { NextPage } from "next";
-import {
-  Box,
-  Text,
-  Flex,
-  Square,
-  VStack,
-  HStack,
-  Button,
-  Image,
-  SimpleGrid,
-} from "@chakra-ui/react";
+import { Box, Text, Flex, HStack, SimpleGrid } from "@chakra-ui/react";
 import Item from "./Item";
 
 const StakingFarms: NextPage = () => (
@@ -31,11 +21,7 @@ const StakingFarms: NextPage = () => (
       >
         STAKING FARMS
       </Text>
-      <Box
-        textStyle="h2"
-        pt={["15px", "15px"]}
-        pb={["43px", "43px"]}
-      >
+      <Box textStyle="h2" pt={["15px", "15px"]} pb={["43px", "43px"]}>
         Supported networks
       </Box>
       <Box pb={["76px", "76px"]}>
