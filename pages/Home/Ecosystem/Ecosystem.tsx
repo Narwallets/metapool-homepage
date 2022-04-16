@@ -10,7 +10,7 @@ import {
 import Item from "./Item";
 
 const Ecosystem: NextPage = () => (
-  <Container maxW="container.2xl" px={["3rem", "10rem"]}>
+  <Container maxW="container.2xl" pb="10rem" px={["3rem", "10rem"]}>
     <Flex
       pt={["50px"]}
       fontSize="md"

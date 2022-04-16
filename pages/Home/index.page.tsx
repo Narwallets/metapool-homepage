@@ -11,13 +11,14 @@ import Investors from "./Investors";
 import LatestNews from "./LatestNews";
 import Comunity from "./Comunity";
 import Footer from "./Footer";
+import HowItWorks from "./HowItWorks";
 
 const Home: NextPage = () => {
   return (
     <Container position="relative" maxW='container.100' p={0} overflow="clip">
       <Image
         alt="background"
-        src="icons/bg-home-main.svg"
+        src="bg-home-main.svg"
         position="absolute"
         w={["1082px", "2106px"]}
         h={["841px", "1788px"]}
@@ -37,6 +38,7 @@ const Home: NextPage = () => {
       <Hero />
       <StakingFarms />
       <Ecosystem />
+      <HowItWorks />
       <Technology />
       <Benefits />
       <Security />
