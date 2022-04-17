@@ -36,12 +36,12 @@ const Investors: NextPage = () => (
       Backed by great people
     </Box>
     <SimpleGrid columns={[3, 6]} spacing={10} my="100px" alignItems={"center"}>
-      <Image alt="ATT" src="/icons/investors-dragonfly.svg" />
-      <Image alt="Farming" src="/icons/investors-att.svg" />
-      <Image alt="Farming" src="/icons/investors-move.svg" />
-      <Image alt="Farming" src="/icons/investors-svc.svg" />
-      <Image alt="Farming" src="/icons/investors-di.svg" />
-      <Image alt="Farming" src="/icons/investors-blockwall.svg" />
+      <Image alt="DragonFly" src="/icons/investors-dragonfly.svg" />
+      <Image alt="ATT" src="/icons/investors-att.svg" />
+      <Image alt="Move" src="/icons/investors-move.svg" />
+      <Image alt="SVC" src="/icons/investors-svc.svg" />
+      <Image alt="DI" src="/icons/investors-di.svg" />
+      <Image alt="Blockwall" src="/icons/investors-blockwall.svg" />
     </SimpleGrid>
   </Container>
 );
