@@ -16,7 +16,7 @@ const Hero: NextPage = () => {
         <Image alt="logo" src={"logo.svg"} w="202" h="34" />
         <Link
           colorScheme="primary"
-          variant="outline"
+          variant="outlined"
           borderWidth="2px"
           href="https://metapool.app/dapp/mainnet/meta/"
         >
