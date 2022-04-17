@@ -12,10 +12,10 @@ interface Props {
 
 const Item: NextPage<Props> = ({ title, description, icon, type, env, soon }) => (
   <Box
-    maxW={[null, "500px"]}
+    maxW={["full", "500px"]}
     bg="white"
     rounded="lg"
-    p="10"
+    p="2rem"
     border={"2px"}
     borderColor="#E2E8F0"
   >

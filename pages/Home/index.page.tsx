@@ -23,9 +23,8 @@ const Home: NextPage = () => {
         w={["1082px", "2106px"]}
         h={["841px", "1788px"]}
         left={["-50%", "50%"]}
-        top={[null, "50%"]}
         marginLeft={[null, "-1053px"]}
-        marginTop={[null,"-2081px"]}
+        marginTop={[null,"-300px"]}
         maxWidth="inherit"
         animation={`${keyframes`
      from {transform: rotate(-20deg);}
@@ -34,7 +33,7 @@ const Home: NextPage = () => {
         zIndex="-100"
       />
 
-      <Notification />
+      {/* <Notification /> */}
       <Hero />
       <StakingFarms />
       <Ecosystem />

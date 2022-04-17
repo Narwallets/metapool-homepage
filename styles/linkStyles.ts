@@ -1,11 +1,12 @@
-import { whiten } from "@chakra-ui/theme-tools";
+import { darken } from "@chakra-ui/theme-tools";
 
 export const LinkStyles = {
   baseStyle: {
     borderRadius: "30px",
     fontFamily: "Inter, sans-serif",
     px: "45px",
-    py: "16px",
+      borderColor: "primary",
+      py: "16px",
   },
   variants: {
     solid: (props: any) => ({
@@ -13,11 +14,11 @@ export const LinkStyles = {
       color: "white",
 
       _hover: {
-        bg: whiten("primary", 20)(props),
+        bg: darken("primary", 20)(props),
       },
     }),
     outlined: (props: any) => ({
-      borderColor: "primary.200",
+      borderColor: "primary",
       color: "primary",
 
       _hover: {
