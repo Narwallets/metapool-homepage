@@ -5,12 +5,10 @@ const Security: NextPage = () => (
   <Container
     maxW="container.xl"
     px={["3rem", "10rem"]}
-    bgColor="red"
-    // bgColor="#F1F5F9"
+    py={["3rem", "3rem"]}
     rounded={"32px"}
-    bg={["url('bg-security.svg') no-repeat"]}
+    bg={["url('bg-security.svg') no-repeat #F1F5F9"]}
     bgPosition={["center center", "center right"]}
-    h="560px"
     my={["50px", "150px"]}
     display="flex"
     flexDirection="column"

@@ -22,7 +22,8 @@ export const LinkStyles = {
       color: "primary",
 
       _hover: {
-        bg: "primary",
+      color: "white",
+      bg: "primary",
       },
     }),
     link: (props: any) => ({
