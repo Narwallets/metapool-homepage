@@ -76,11 +76,11 @@ const Benefits: NextPage = () => (
       </SimpleGrid>
     </HStack>
 
-    <HStack mt={["50px", "50px"]} spacing="20px" justifyContent="center">
-      <Link variant="solid" href="https://metapool.app/dapp/mainnet/meta/">
+    <HStack mt={["50px", "50px"]} spacing={["0px", "20px"]} justifyContent="center">
+      <Link variant="solid" href="https://metapool.app/dapp/mainnet/meta/" whiteSpace="nowrap">
         Start staking
       </Link>
-      <Link variant="link" textColor={"primary"}>
+      <Link variant="link" textColor={"primary"} whiteSpace="nowrap">
         Find out more <ChevronRightIcon w={6} h={6} color="primary" />
       </Link>
     </HStack>

@@ -32,17 +32,18 @@ const HowItWorks: NextPage = () => (
           HOW IT WORKS
         </Text>
         <Box
-          textStyle="h2"
+          textStyle={["h3", "h2"]}
           pt={["15px", "15px"]}
           pb={["43px", "43px"]}
-          noOfLines={[2, 2]}
           lineHeight="56px"
+          maxW={"650px"}
+          mx="auto"
         >
-          Stake NEAR with Meta Pool <br />
+          Stake NEAR with Meta Pool
           in three simple steps
         </Box>
         <HStack spacing="32px">
-          <SimpleGrid columns={[1, 3]} spacing={10} mx={10}>
+          <SimpleGrid columns={[1, 3]} spacing={10} mx={10} my={10}>
             <Box textAlign={"left"}>
               <Circle
                 size="64px"
@@ -98,9 +99,21 @@ const HowItWorks: NextPage = () => (
           </SimpleGrid>
         </HStack>
       </Box>
-      <HStack mt={["50px", "50px"]} spacing="20px" justifyContent="center">
-        <Link variant="solid" href='https://metapool.app/dapp/mainnet/meta/'>Start staking</Link>
-        <Link variant="link" textColor={"primary"}>Find out more <ChevronRightIcon w={6} h={6} color="primary" /></Link>
+      <HStack
+        mt={["50px", "50px"]}
+        spacing={["0px", "20px"]}
+        justifyContent="center"
+      >
+        <Link
+          variant="solid"
+          href="https://metapool.app/dapp/mainnet/meta/"
+          whiteSpace={"nowrap"}
+        >
+          Start staking
+        </Link>
+        <Link variant="link" textColor={"primary"} whiteSpace={"nowrap"}>
+          Find out more <ChevronRightIcon w={6} h={6} color="primary" />
+        </Link>
       </HStack>
     </Container>
   </Flex>
