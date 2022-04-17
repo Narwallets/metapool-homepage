@@ -39,7 +39,11 @@ const Security: NextPage = () => (
 
         <Image alt="Farming" src="/icons/blocksec.svg" />
         <Box mt="40px">
-          <Link variant="solid" href="https://medium.com/meta-pool/meta-pools-smart-contract-audit-by-blocksec-5c4f0c8039a2" isExternal="true">
+          <Link
+            variant="solid"
+            href="https://medium.com/meta-pool/meta-pools-smart-contract-audit-by-blocksec-5c4f0c8039a2"
+            isExternal={true}
+          >
             See live audit
           </Link>
         </Box>
