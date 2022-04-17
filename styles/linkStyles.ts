@@ -2,11 +2,11 @@ import { darken } from "@chakra-ui/theme-tools";
 
 export const LinkStyles = {
   baseStyle: {
-    borderRadius: "30px",
+    rounded: "30px",
     fontFamily: "Inter, sans-serif",
     px: "45px",
-      borderColor: "primary",
-      py: "16px",
+    borderColor: "primary",
+    py: "16px",
   },
   variants: {
     solid: (props: any) => ({
