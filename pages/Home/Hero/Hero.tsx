@@ -19,6 +19,7 @@ const Hero: NextPage = () => {
           variant="outlined"
           borderWidth="2px"
           href="https://metapool.app/dapp/mainnet/meta/"
+          display={["none", "initial"]}
         >
           Start staking
         </Link>
