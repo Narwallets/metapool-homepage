@@ -55,7 +55,7 @@ const Technology: NextPage = () => (
               Meta Pool, you are able to access your funds immediately through
               Liquid Unstaking for a small fee of just ~0.3%.
             </Text>
-            <Link variant="link" textColor={"#818CF8"} pl="0">
+            <Link variant="link" textColor={"#818CF8"} pl="0" whiteSpace={"nowrap"}>
               Liquid Staking How-To{" "}
               <ChevronRightIcon w={6} h={6} color="#818CF8" />
             </Link>
@@ -77,7 +77,7 @@ const Technology: NextPage = () => (
                 protocols on Defi and Aurora. You can get attractive yields (20%
                 — 90%) on top of your staking rewards.
               </Text>
-              <Link variant="link" textColor={"#818CF8"} pl="0">
+              <Link variant="link" textColor={"#818CF8"} pl="0" whiteSpace={"nowrap"}>
                 Security reference{" "}
                 <ChevronRightIcon w={6} h={6} color="#818CF8" />
               </Link>
@@ -100,7 +100,7 @@ const Technology: NextPage = () => (
                 worry. This helps keep the network decentralised and your funds
                 secure.
               </Text>
-              <Link variant="link" textColor={"#818CF8"} pl="0">
+              <Link variant="link" textColor={"#818CF8"} pl="0" whiteSpace={"nowrap"}>
                 DeFi with Meta Pool{" "}
                 <ChevronRightIcon w={6} h={6} color="#818CF8" />
               </Link>

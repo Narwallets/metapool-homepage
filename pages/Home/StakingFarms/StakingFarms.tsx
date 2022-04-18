@@ -7,6 +7,7 @@ const StakingFarms: NextPage = () => (
     w="100%"
     minHeight={"1000px"}
     pt={["138px", "138px"]}
+    px="20px"
     fontSize="md"
     position="relative"
     justifyContent="center"
@@ -30,7 +31,7 @@ const StakingFarms: NextPage = () => (
         Choose a network below to get started.
       </Box>
       <HStack spacing="32px">
-        <SimpleGrid columns={[1, 3]} spacing={10} mx={10}>
+        <SimpleGrid columns={[1, 3]} spacing={10} mx={[0, 10]}>
           <Item
             apy="11%"
             title="Stake Near"

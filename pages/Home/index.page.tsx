@@ -15,7 +15,7 @@ import HowItWorks from "./HowItWorks";
 
 const Home: NextPage = () => {
   return (
-    <Container position="relative" maxW='container.100' p={0} overflow="clip" >
+    <Container position="relative" maxW='container.100' p={0} overflow="clip" maxWidth="100vw">
       <Image
         alt="background"
         src="bg-home-main.svg"

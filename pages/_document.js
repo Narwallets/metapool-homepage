@@ -5,6 +5,7 @@ export default function Document() {
 
     <Html>
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           content="Meta Pool is a liquid staking solution for NEAR blockchain, earn staking rewards without locking NEAR tokens. Receive stNEAR a liquid token  in return"
           name="description"

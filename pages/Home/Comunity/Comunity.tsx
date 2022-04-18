@@ -1,13 +1,11 @@
 import type { NextPage } from "next";
 import {
   Container,
-  Avatar,
   Box,
   Flex,
   SimpleGrid,
   Stack,
   Text,
-  HStack,
   Spacer,
   Link,
 } from "@chakra-ui/react";
@@ -32,11 +30,11 @@ const Comunity: NextPage = () => (
         >
           COMMUNITY
         </Text>
-        <Box textStyle="h2" pt={["15px", "15px"]} pb={["43px", "43px"]}>
+        <Box textStyle={["h3", "h2"]} pt={["15px", "15px"]} pb={["43px", "43px"]}>
           Join the community
         </Box>
         <Box pb={["76px", "76px"]}>
-          <HStack>
+          <Stack direction={["column", "row"]}>
             <Text>
               Chat with 7000+ members and get help with your projects on
               Discord.
@@ -50,7 +48,7 @@ const Comunity: NextPage = () => (
             >
               Join Discord
             </Link>
-          </HStack>
+          </Stack>
         </Box>
       </Box>
       <SimpleGrid columns={[1, 3]} spacing={[2, 10]}>

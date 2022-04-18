@@ -64,7 +64,7 @@ const Hero: NextPage = () => {
         h={["152px", "182px"]}
         justifyContent="space-between"
         alignItems="center"
-        direction="row"
+        direction={["column", "row"]}
         px={["2rem", "4rem"]}
         borderBottomRadius="104"
         bgColor="white"

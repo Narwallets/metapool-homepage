@@ -39,7 +39,7 @@ const Security: NextPage = () => (
       </Text>
       <br />
 
-      <Image alt="Farming" src="/icons/blocksec.svg" />
+      <Image alt="Blocksec" src="/icons/blocksec.svg" />
       <Box mt="40px">
         <Link
           variant="solid"

@@ -29,7 +29,7 @@ const Investors: NextPage = () => (
       textStyle="h2"
       pt={["15px", "15px"]}
       pb={["43px", "43px"]}
-      noOfLines={[2, 2]}
+      noOfLines={[3, 2]}
       fontFamily="Space Grotesk"
       lineHeight="56px"
     >

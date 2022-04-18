@@ -10,6 +10,7 @@ import {
   Container,
   Button,
   Link,
+  Stack,
 } from "@chakra-ui/react";
 
 const HowItWorks: NextPage = () => (
@@ -21,7 +22,7 @@ const HowItWorks: NextPage = () => (
     bg={"url(/bg-home-main.svg) no-repeat white"}
     bgPosition={["center", "top"]}
   >
-    <Container maxW="container.2xl" px={["3rem", "10rem"]} py="100px">
+    <Container maxW="container.2xl" px={["1rem", "10rem"]} py="100px">
       <Box textAlign="center">
         <Text
           color="secondary"
@@ -39,8 +40,7 @@ const HowItWorks: NextPage = () => (
           maxW={"650px"}
           mx="auto"
         >
-          Stake NEAR with Meta Pool
-          in three simple steps
+          Stake NEAR with Meta Pool in three simple steps
         </Box>
         <HStack spacing="32px">
           <SimpleGrid columns={[1, 3]} spacing={10} mx={10} my={10}>
@@ -99,10 +99,11 @@ const HowItWorks: NextPage = () => (
           </SimpleGrid>
         </HStack>
       </Box>
-      <HStack
+      <Stack
+        direction={["column", "row"]}
         mt={["50px", "50px"]}
         spacing={["0px", "20px"]}
-        justifyContent="center"
+        textAlign={["center", "left"]}
       >
         <Link
           variant="solid"
@@ -114,7 +115,7 @@ const HowItWorks: NextPage = () => (
         <Link variant="link" textColor={"primary"} whiteSpace={"nowrap"}>
           Find out more <ChevronRightIcon w={6} h={6} color="primary" />
         </Link>
-      </HStack>
+      </Stack>
     </Container>
   </Flex>
 );

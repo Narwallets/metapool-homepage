@@ -9,6 +9,7 @@ import {
   Link,
   SimpleGrid,
   Text,
+  Stack,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
@@ -31,7 +32,7 @@ const Benefits: NextPage = () => (
           BENEFITS
         </Text>
         <Box
-          textStyle={["h2", "h2"]}
+          textStyle={["h3", "h2"]}
           pt={["15px", "15px"]}
           pb={["0px", "43px"]}
           lineHeight={"110%"}
@@ -43,7 +44,7 @@ const Benefits: NextPage = () => (
       </Box>
     </Flex>
     <HStack spacing="32px">
-      <SimpleGrid columns={[1, 3]} spacing={10} mx={10}>
+      <SimpleGrid columns={[1, 3]} spacing={10} mx={[2, 10]}>
         <Box textAlign={"left"}>
           <Image alt="Farming" src="/icons/benefits-farming.svg" />
           <br />
@@ -76,14 +77,24 @@ const Benefits: NextPage = () => (
       </SimpleGrid>
     </HStack>
 
-    <HStack mt={["50px", "50px"]} spacing={["0px", "20px"]} justifyContent="center">
-      <Link variant="solid" href="https://metapool.app/dapp/mainnet/meta/" whiteSpace="nowrap">
+    <Stack
+      direction={["column", "row"]}
+      textAlign={["center", "left"]}
+      mt={["50px", "50px"]}
+      spacing={["0px", "20px"]}
+      justifyContent="center"
+    >
+      <Link
+        variant="solid"
+        href="https://metapool.app/dapp/mainnet/meta/"
+        whiteSpace="nowrap"
+      >
         Start staking
       </Link>
       <Link variant="link" textColor={"primary"} whiteSpace="nowrap">
         Find out more <ChevronRightIcon w={6} h={6} color="primary" />
       </Link>
-    </HStack>
+    </Stack>
   </Container>
 );
 

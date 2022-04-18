@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Box, Text, HStack, Image, Tag, Circle, Flex } from "@chakra-ui/react";
+import { Box, Text, HStack, Image, Tag, Circle, Flex, Stack } from "@chakra-ui/react";
 
 interface Props {
   title: string;
@@ -15,12 +15,13 @@ const Item: NextPage<Props> = ({ title, description, icon, type, env, soon }) =>
     maxW={["full", "500px"]}
     bg="white"
     rounded="lg"
-    p="2rem"
+    p={["1rem", "2rem"]}
     border={"2px"}
     borderColor="#E2E8F0"
+    
   >
-    <HStack w="100%" justifyContent={"space-between"} px="20px">
-      {icon && <Image src={icon} alt="Near" mr="2rem" />}
+    <Stack direction={["column", "row"]} w="100%" justifyContent={"space-between"} px="0">
+      {icon && <Image src={icon} alt="Near" mr="2rem" maxWidth={["150px", null]} mx={["auto", "initial"]} />}
       <Box>
         <Tag
           fontFamily={["Inter"]}
@@ -56,7 +57,7 @@ const Item: NextPage<Props> = ({ title, description, icon, type, env, soon }) =>
         )}
         {description && <Text>{description}</Text>}
       </Box>
-    </HStack>
+    </Stack>
   </Box>
 );
 

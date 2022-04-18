@@ -27,7 +27,7 @@ const Ecosystem: NextPage = () => (
         >
           STNEAR ECOSYSTEM
         </Text>
-        <Box textStyle="h2" pt={["15px", "15px"]} pb={["43px", "43px"]}>
+        <Box textStyle={["h3", "h2"]} pt={["15px", "15px"]} pb={["43px", "43px"]}>
           Use stNEAR across growing <br />
           DeFi Ecosystem
         </Box>
