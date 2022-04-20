@@ -17,7 +17,7 @@ const StakingFarms: NextPage = () => (
       <Text
         color="secondary"
         fontFamily={"Inter"}
-        letterSpacing="wider"
+        letterSpacing="0.6px"
         fontWeight="semibold"
       >
         STAKING FARMS
@@ -25,7 +25,7 @@ const StakingFarms: NextPage = () => (
       <Box textStyle="h2" pt={["15px", "15px"]} pb={["43px", "43px"]}>
         Supported networks
       </Box>
-      <Box pb={["76px", "76px"]}>
+      <Box pb={["76px", "76px"]} fontFamily="Inter">
         Meta Pool lets you stake tokens from many networks.
         <br />
         Choose a network below to get started.

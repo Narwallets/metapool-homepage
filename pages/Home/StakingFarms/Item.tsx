@@ -35,8 +35,8 @@ const Item: NextPage<Props> = ({ apy, title, description, icon }) => (
         textAlign={"left"}
         pt="30px"
       >
-        <Box textStyle="h5">{title}</Box>
-        <Text noOfLines={[2, 2, 2]}>{description}</Text>
+        <Box textStyle="h5" fontFamily="Inter">{title}</Box>
+        <Text noOfLines={[2, 2, 2]} fontFamily="Inter">{description}</Text>
       </Flex>
       <Link
         variant="solid"

@@ -21,7 +21,7 @@ const Hero: NextPage = () => {
           href="https://metapool.app/dapp/mainnet/meta/"
           display={["none", "initial"]}
         >
-          Start staking
+          Connect Wallet
         </Link>
       </Flex>
       <Center>
@@ -43,7 +43,7 @@ const Hero: NextPage = () => {
           color="#0F172A"
           textAlign="center"
           lineHeight="110%"
-          fontFamily={["Inter", "sans-serif"]}
+          fontFamily={"Inter"}
           fontWeight="normal"
           noOfLines={3}
         >

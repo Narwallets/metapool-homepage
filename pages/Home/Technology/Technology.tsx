@@ -16,7 +16,7 @@ const Technology: NextPage = () => (
           <Text
             color="secondary"
             fontFamily={"Inter"}
-            letterSpacing="wider"
+            letterSpacing="0.6px"
             fontWeight="semibold"
           >
             TECHNOLOGY
@@ -42,21 +42,23 @@ const Technology: NextPage = () => (
           h={["auto", "387px"]}
           my={["0px", "32px"]}
         >
-          <Box
-            w={"full"}
-            mr={[0, "50%"]}
-            textAlign={"left"}
-          >
-            <Text color="white" textStyle={"h3"}>
-              Immediate unstaking
+          <Box mr={[0, "50%"]} w="full" textAlign={"left"}>
+            <Text color="white" textStyle={"h3"} fontFamily="Inter">
+              Secure the Network
             </Text>
-            <Text color="white" my="30px">
-              Traditional unstaking can take up to 72 hours. When you stake with
-              Meta Pool, you are able to access your funds immediately through
-              Liquid Unstaking for a small fee of just ~0.3%.
+            <Text color="white" my="30px" fontFamily="Inter">
+              Our algorithms automatically delegate NEAR across 95 validators
+              and monitor for performance and uptime so you don&apos;t have to
+              worry. This helps keep the network decentralised and your funds
+              secure.
             </Text>
-            <Link variant="link" textColor={"#818CF8"} pl="0" whiteSpace={"nowrap"}>
-              Liquid Staking How-To{" "}
+            <Link
+              variant="link"
+              textColor={"#818CF8"}
+              pl="0"
+              whiteSpace={"nowrap"}
+            >
+              Security reference{" "}
               <ChevronRightIcon w={6} h={6} color="#818CF8" />
             </Link>
           </Box>
@@ -68,20 +70,25 @@ const Technology: NextPage = () => (
           h={["auto", "387px"]}
           my="32px"
         >
-            <Box w="full" ml={[0, "50%"]} textAlign={"left"}>
-              <Text color="white" textStyle={"h3"}>
-                Maximise returns in DeFi
-              </Text>
-              <Text color="white" my="30px">
-                Stake NEAR, receive stNEAR you can use across AMMs and Lending
-                protocols on Defi and Aurora. You can get attractive yields (20%
-                — 90%) on top of your staking rewards.
-              </Text>
-              <Link variant="link" textColor={"#818CF8"} pl="0" whiteSpace={"nowrap"}>
-                Security reference{" "}
-                <ChevronRightIcon w={6} h={6} color="#818CF8" />
-              </Link>
-            </Box>
+          <Box w={"full"} ml={[0, "50%"]} textAlign={"left"}>
+            <Text color="white" textStyle={"h3"} fontFamily="Inter">
+              Immediate unstaking
+            </Text>
+            <Text color="white" my="30px" fontFamily="Inter">
+              Traditional unstaking can take up to 72 hours. When you stake with
+              Meta Pool, you are able to access your funds immediately through
+              Liquid Unstaking for a small fee of just ~0.3%.
+            </Text>
+            <Link
+              variant="link"
+              textColor={"#818CF8"}
+              pl="0"
+              whiteSpace={"nowrap"}
+            >
+              Liquid Staking How-To{" "}
+              <ChevronRightIcon w={6} h={6} color="#818CF8" />
+            </Link>
+          </Box>
         </Flex>
         <Flex
           alignItems="center"
@@ -90,22 +97,25 @@ const Technology: NextPage = () => (
           h={["auto", "387px"]}
           my="32px"
         >
-            <Box mr={[0, "50%"]}  w="full" textAlign={"left"}>
-              <Text color="white" textStyle={"h3"}>
-                Secure the Network
-              </Text>
-              <Text color="white" my="30px">
-                Our algorithms automatically delegate NEAR across 95 validators
-                and monitor for performance and uptime so you don&apos;t have to
-                worry. This helps keep the network decentralised and your funds
-                secure.
-              </Text>
-              <Link variant="link" textColor={"#818CF8"} pl="0" whiteSpace={"nowrap"}>
-                DeFi with Meta Pool{" "}
-                <ChevronRightIcon w={6} h={6} color="#818CF8" />
-              </Link>
-            </Box>
-
+          <Box w="full" mr={[0, "50%"]} textAlign={"left"}>
+            <Text color="white" textStyle={"h3"} fontFamily="Inter">
+              Maximise returns in DeFi
+            </Text>
+            <Text color="white" my="30px" fontFamily="Inter">
+              Stake NEAR, receive stNEAR you can use across AMMs and Lending
+              protocols on Defi and Aurora. You can get attractive yields (20% —
+              90%) on top of your staking rewards.
+            </Text>
+            <Link
+              variant="link"
+              textColor={"#818CF8"}
+              pl="0"
+              whiteSpace={"nowrap"}
+            >
+              DeFi with Meta Pool{" "}
+              <ChevronRightIcon w={6} h={6} color="#818CF8" />
+            </Link>
+          </Box>
         </Flex>
       </Container>
     </Container>

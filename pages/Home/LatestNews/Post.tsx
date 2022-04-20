@@ -37,6 +37,7 @@ const Post: NextPage<Props> = ({
     p={6}
     overflow={"hidden"}
     mx="auto"
+    fontFamily="Inter"
   >
     <Box bg={"gray.100"} mt={-6} mx={-6} mb={6} pos={"relative"}>
       <Image src={cover} alt={title} />
@@ -47,13 +48,13 @@ const Post: NextPage<Props> = ({
         textTransform={"uppercase"}
         fontWeight={800}
         fontSize={"sm"}
-        letterSpacing={1.1}
+        letterSpacing="0.6px"
       >
         {tag}
       </Text>
-      <Heading color={"gray.700"} fontSize={"2xl"} fontFamily={"body"}>
+      <Text color={"gray.700"} fontFamily={"Inter"} fontWeight="bold">
         {title}
-      </Heading>
+      </Text>
       <Text color={"gray.500"}>{description}</Text>
     </Stack>
     <Spacer />

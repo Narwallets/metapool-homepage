@@ -20,7 +20,7 @@ const Investors: NextPage = () => (
     <Text
       color="secondary"
       fontFamily={"Inter"}
-      letterSpacing="wider"
+      letterSpacing="0.6px"
       fontWeight="semibold"
     >
       INVESTORS

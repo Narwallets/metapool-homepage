@@ -26,7 +26,7 @@ const Benefits: NextPage = () => (
         <Text
           color="secondary"
           fontFamily={"Inter"}
-          letterSpacing="wider"
+          letterSpacing="0.6px"
           fontWeight="semibold"
         >
           BENEFITS
@@ -36,6 +36,7 @@ const Benefits: NextPage = () => (
           pt={["15px", "15px"]}
           pb={["0px", "43px"]}
           lineHeight={"110%"}
+          fontFamily={"Space Grotesk"}
         >
           Ways to maximize
           <br />
@@ -44,7 +45,7 @@ const Benefits: NextPage = () => (
       </Box>
     </Flex>
     <HStack spacing="32px">
-      <SimpleGrid columns={[1, 3]} spacing={10} mx={[2, 10]}>
+      <SimpleGrid columns={[1, 3]} spacing={10} mx={[2, 10]} fontFamily="Inter">
         <Box textAlign={"left"}>
           <Image alt="Farming" src="/icons/benefits-farming.svg" />
           <br />

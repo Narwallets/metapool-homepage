@@ -18,7 +18,7 @@ const Security: NextPage = () => (
       <Text
         color="secondary"
         fontFamily={"Inter"}
-        letterSpacing="wider"
+        letterSpacing="0.6px"
         fontWeight="semibold"
       >
         SECURITY
@@ -28,12 +28,13 @@ const Security: NextPage = () => (
         pt={["15px", "15px"]}
         pb={["0px", "43px"]}
         lineHeight={"110%"}
+        fontFamily="Space Grotesk"
       >
         Trust issues?
         <br />
         We are audited.
       </Text>
-      <Text noOfLines={[3, 3]} w="50%">
+      <Text noOfLines={[3, 3]} w="50%" fontFamily="Inter">
         NEAR protocol delivers unparalleled speed, security, and reliability.
         Enjoy almost instant transactions and extremely low fees.
       </Text>

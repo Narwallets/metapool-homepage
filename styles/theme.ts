@@ -3,6 +3,14 @@ import { ButtonStyles as Button } from "./buttonStyles";
 import { LinkStyles as Link } from "./linkStyles";
 
 const theme = extendTheme({
+  letterSpacings: {
+    tighter: "-0.05em",
+    tight: "-0.025em",
+    normal: "-0.3px",
+    wide: "0.025em",
+    wider: "0.05em",
+    widest: "0.1em",
+  },
   breakpoints: {
     sm: "1000px",
   },
@@ -17,16 +25,14 @@ const theme = extendTheme({
     button: {
       fontFamily: "Inter, sans-serif",
     },
-    h1: {
+    h1: {       
       fontSize: "104px",
       fontWeight: "bold",
       lineHeight: "90%",
-      fontFace: "Space Grotesk",
     },
     h2: {
       fontSize: "48px",
       fontWeight: "bold",
-      fontFace: "Inter",
     },
     h3: {
       fontSize: "32px",
@@ -43,7 +49,7 @@ const theme = extendTheme({
   },
   fonts: {
     heading: "Inter, sans-serif",
-    body: "Space Grotesk",
+    body: "Inter",
   },
   colors: {
     primary: "#0F172A",
