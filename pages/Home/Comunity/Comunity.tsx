@@ -51,6 +51,7 @@ const Comunity: NextPage = () => (
               whiteSpace="nowrap"
               borderWidth="2px"
               textAlign={"center"}
+              maxW="sm"
             >
               Join Discord
             </Link>
