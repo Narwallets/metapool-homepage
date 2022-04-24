@@ -7,6 +7,7 @@ import {
   Link,
   Text,
   Heading,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Item from "./Item";
@@ -30,7 +31,7 @@ const Technology: NextPage = () => (
             TECHNOLOGY
           </Text>
           <Heading
-            size="4xl"
+            size={useBreakpointValue({ base: "2xl", lg: "4xl" })}
             pt={{ base: "15px", lg: "15px" }}
             pb={{ base: "0px", lg: "43px" }}
             lineHeight={"110%"}

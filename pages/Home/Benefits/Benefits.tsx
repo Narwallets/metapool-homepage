@@ -10,6 +10,7 @@ import {
   SimpleGrid,
   Text,
   Stack,
+  Heading,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
@@ -31,8 +32,8 @@ const Benefits: NextPage = () => (
         >
           BENEFITS
         </Text>
-        <Box
-          textStyle={["h3", "h2"]}
+        <Heading
+          size={"2xl"}
           pt={["15px", "15px"]}
           pb={["0px", "43px"]}
           lineHeight={"110%"}
@@ -41,7 +42,7 @@ const Benefits: NextPage = () => (
           Ways to maximize
           <br />
           returns with stNEAR
-        </Box>
+        </Heading>
       </Box>
     </Flex>
     <HStack spacing="32px">
