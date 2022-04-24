@@ -68,7 +68,10 @@ const Ecosystem: NextPage = () => (
         Mainnet
       </Flex>
     </Flex>
-    <SimpleGrid columns={{ base: 1, sm: 2, lg: 3 }} spacing={{ base: 5, lg: 10 }}>
+    <SimpleGrid
+      columns={{ base: 1, sm: 2, lg: 3 }}
+      spacing={{ base: 5, lg: 10 }}
+    >
       <Item
         title="Trisolaris"
         description="Trisolaris is the first AMM exchange on Aurora."
@@ -128,6 +131,7 @@ const Ecosystem: NextPage = () => (
         border={"2px"}
         borderColor="#E2E8F0"
         mx="auto"
+        w="full"
       >
         <Stack w="100%" justifyContent={"space-between"} px="0">
           <Square size="64px" bgColor={"#F1F5F9"} />
