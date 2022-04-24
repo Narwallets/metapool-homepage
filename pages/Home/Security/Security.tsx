@@ -4,15 +4,17 @@ import { Box, Container, Flex, Image, Link, Text } from "@chakra-ui/react";
 const Security: NextPage = () => (
   <Container
     maxW="container.xl"
-    px={["3rem", "10rem"]}
-    py={["3rem", "3rem"]}
+    px={{ base: "3rem", lg: "10rem" }}
+    py={{ base: "3rem", lg: "3rem" }}
     rounded={"32px"}
     bg={["url('bg-security.svg') no-repeat #F1F5F9"]}
-    bgPosition={["center center", "center right"]}
+    bgPosition={{ base: "center center", lg: "center right" }}
     my={["50px", "150px"]}
     display="flex"
     flexDirection="column"
     justifyContent="center"
+    mx="20px"
+    w="fit-content"
   >
     <Box textAlign="left" w="full" mr="50%" pt={["0"]} mb={"0"}>
       <Text
@@ -46,6 +48,7 @@ const Security: NextPage = () => (
           variant="solid"
           href="https://medium.com/meta-pool/meta-pools-smart-contract-audit-by-blocksec-5c4f0c8039a2"
           isExternal={true}
+          whiteSpace="nowrap"
         >
           See live audit
         </Link>

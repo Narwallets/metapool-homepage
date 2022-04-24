@@ -79,7 +79,7 @@ export default function LargeWithNewsletter() {
           <Stack align={"flex-start"}>
             <Stack direction={"column"}>
               <Text>Newsletter</Text>
-              <HStack>
+              <Stack direction={{ base: "column", xl: "row" }}>
                 <Input
                   placeholder={"Your email address"}
                   bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
@@ -93,7 +93,7 @@ export default function LargeWithNewsletter() {
                 <Button variant="outline" rounded="4px" color="white">
                   Suscribe
                 </Button>
-              </HStack>
+              </Stack>
             </Stack>
           </Stack>
 

@@ -8,6 +8,7 @@ import {
   HStack,
   Link,
   Image,
+  Heading,
 } from "@chakra-ui/react";
 
 interface Props {
@@ -18,7 +19,7 @@ interface Props {
 }
 
 const Item: NextPage<Props> = ({ apy, title, description, icon }) => (
-  <Square size="full" bg="white" rounded="2xl" boxShadow="2xl" p="10">
+  <Square bg="white" rounded="2xl" boxShadow="2xl" p="10">
     <VStack h="full" mx="auto">
       <HStack w="100%" justifyContent={"space-between"} px={["0px", "0px"]}>
         <Image alt="Oct" src={icon} />
@@ -35,13 +36,18 @@ const Item: NextPage<Props> = ({ apy, title, description, icon }) => (
         textAlign={"left"}
         pt="30px"
       >
-        <Box textStyle="h5" fontFamily="Inter">{title}</Box>
-        <Text noOfLines={[2, 2, 2]} fontFamily="Inter">{description}</Text>
+        <Heading size="sm" fontFamily="Inter">
+          {title}
+        </Heading>
+        <Text noOfLines={{ base: 2 }} fontFamily="Inter">
+          {description}
+        </Text>
       </Flex>
       <Link
         variant="solid"
         href="https://metapool.app/dapp/mainnet/meta/"
         mb="52px"
+        whiteSpace={"nowrap"}
       >
         Stake now
       </Link>

@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
-import { Box, Text, Flex, HStack, SimpleGrid } from "@chakra-ui/react";
+import { Box, Text, Flex, HStack, SimpleGrid, Heading } from "@chakra-ui/react";
 import Item from "./Item";
 
 const StakingFarms: NextPage = () => (
   <Flex
     w="100%"
     minHeight={"1000px"}
-    pt={["138px", "138px"]}
+    pt={{ base: "4rem", lg: "8rem" }}
     px="20px"
     fontSize="md"
     position="relative"
@@ -22,16 +22,16 @@ const StakingFarms: NextPage = () => (
       >
         STAKING FARMS
       </Text>
-      <Box textStyle="h2" pt={["15px", "15px"]} pb={["43px", "43px"]}>
+      <Heading size="2xl" pt={["15px", "15px"]} pb={["43px", "43px"]}>
         Supported networks
-      </Box>
+      </Heading>
       <Box pb={["76px", "76px"]} fontFamily="Inter">
         Meta Pool lets you stake tokens from many networks.
         <br />
         Choose a network below to get started.
       </Box>
-      <HStack spacing="32px">
-        <SimpleGrid columns={[1, 3]} spacing={10} mx={[0, 10]}>
+      <HStack spacing={{ base: "1rem", lg: "4rem" }}>
+        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{base: "2rem", lg: 10}}>
           <Item
             apy="11%"
             title="Stake Near"

@@ -1,50 +1,30 @@
 import type { NextPage } from "next";
-import { Center, Box, Image, Flex, Link } from "@chakra-ui/react";
+import { Center, Box, Flex, Link, Stack } from "@chakra-ui/react";
 import MetapoolData from "./MetapoolData";
-
 const Hero: NextPage = () => {
   return (
     <>
-      <Flex
-        w="100%"
-        justifyContent="space-between"
-        alignItems="center"
-        direction="row"
-        py="2rem"
-        px={["2rem", "4rem"]}
-      >
-        <Image alt="logo" src={"logo.svg"} w="202" h="34" />
-        <Link
-          colorScheme="primary"
-          variant="outlined"
-          borderWidth="2px"
-          href="https://metapool.app/dapp/mainnet/meta/"
-          display={["none", "initial"]}
-        >
-          Connect Wallet
-        </Link>
-      </Flex>
       <Center>
         <Box
           textStyle="h1"
           color="#0F172A"
           textAlign="center"
           lineHeight="90%"
-          fontSize={["4xl", "8xl"]}
-          pt={["2rem", "5rem"]}
+          fontSize={{ base: "3xl", sm: "6xl", lg: "8xl" }}
+          py={{ base: "1rem", lg: "2rem" }}
         >
           Stake NEAR,
           <br /> maximise returns
         </Box>
       </Center>
-      <Center p="4rem">
+      <Center p={{ base: "2rem" }}>
         <Box
           textStyle="h4"
           color="#0F172A"
           textAlign="center"
           lineHeight="110%"
           fontFamily={"Inter"}
-          fontWeight="normal"
+          fontWeight="semiBold"
           noOfLines={3}
         >
           Receive stNEAR to access liquidity without having to sell your assets.
@@ -59,20 +39,20 @@ const Hero: NextPage = () => {
           Start staking
         </Link>
       </Center>
-      <Flex
-        w="100%"
-        h={["152px", "182px"]}
+      <Stack
+        direction={{ base: "column", md: "row" }}
+        spacing={{base: "1rem", lg: "4rem"}}
+        px={{base: "0", md: "4rem"}}
+        py={{base: "1rem", lg: "0"}}
         justifyContent="space-between"
         alignItems="center"
-        direction={["column", "row"]}
-        px={["2rem", "4rem"]}
-        borderBottomRadius="104"
+        borderBottomRadius={{ base: "0px", md: "104px" }}
         bgColor="white"
       >
         <MetapoolData title="Total value locked (TVL)" value="$83,333,333" />
         <MetapoolData title="Annual percentage yield (APY)" value="10.08%" />
         <MetapoolData title="Validators" value="92" />
-      </Flex>
+      </Stack>
     </>
   );
 };

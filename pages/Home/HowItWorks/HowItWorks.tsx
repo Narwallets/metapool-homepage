@@ -11,6 +11,7 @@ import {
   Button,
   Link,
   Stack,
+  Heading,
 } from "@chakra-ui/react";
 
 const HowItWorks: NextPage = () => (
@@ -22,7 +23,7 @@ const HowItWorks: NextPage = () => (
     bg={"url(/bg-home-main.svg) no-repeat white"}
     bgPosition={["center", "top"]}
   >
-    <Container maxW="container.2xl" px={["1rem", "10rem"]} py="100px">
+    <Container maxW="container.2xl" px={{base: "1rem", lg: "10rem"}} py="100px">
       <Box textAlign="center">
         <Text
           color="secondary"
@@ -32,18 +33,19 @@ const HowItWorks: NextPage = () => (
         >
           HOW IT WORKS
         </Text>
-        <Box
-          textStyle={["h3", "h2"]}
+        <Heading
+          size="2xl"
+          fontFamily={["Space Grotesk"]}	
           pt={["15px", "15px"]}
           pb={["43px", "43px"]}
-          lineHeight="56px"
+          lineHeight="48px"
           maxW={"650px"}
           mx="auto"
         >
           Stake NEAR with Meta Pool in three simple steps
-        </Box>
+        </Heading>
         <HStack spacing="32px">
-          <SimpleGrid columns={[1, 3]} spacing={10} mx={10} my={10}>
+          <SimpleGrid columns={{base: 1, lg: 3}} spacing={10} mx={10} my={10}>
             <Box textAlign={"left"}>
               <Circle
                 size="64px"

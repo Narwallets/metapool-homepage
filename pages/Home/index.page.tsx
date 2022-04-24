@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { Container, Image, keyframes } from "@chakra-ui/react";
+import Header from "./Header";
 import Hero from "./Hero";
-import Notification from "./Notification";
 import StakingFarms from "./StakingFarms";
 import Ecosystem from "./Ecosystem";
 import Technology from "./Technology";
@@ -15,17 +15,22 @@ import HowItWorks from "./HowItWorks";
 
 const Home: NextPage = () => {
   return (
-    <Container position="relative" maxW='container.100' p={0} overflow="clip" maxWidth="100vw">
+    <Container
+      position="relative"
+      maxW="container.100"
+      p={0}
+      overflow="clip"
+      maxWidth="100vw"
+    >
       <Image
         alt="background"
         src="bg-home-main.svg"
         position="absolute"
-        w={["1082px", "2106px"]}
-        h={["841px", "1788px"]}
-        left={["-50%", "50%"]}
-        marginLeft={[null, "-1053px"]}
-        marginTop={[null,"-300px"]}
-        maxWidth="inherit"
+        top={{ base: "0%" }}
+        left={{ base: "0%" }}
+        marginLeft={{ base: "0px" }}
+        marginTop={{ base: "0px" }}
+        maxWidth={{ base: "inherit" }}
         animation={`${keyframes`
      from {transform: rotate(-20deg);}
      to {transform: rotate(10deg)}
@@ -34,6 +39,7 @@ const Home: NextPage = () => {
       />
 
       {/* <Notification /> */}
+      <Header />
       <Hero />
       <StakingFarms />
       <Ecosystem />

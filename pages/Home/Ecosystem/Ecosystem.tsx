@@ -6,11 +6,15 @@ import {
   Container,
   SimpleGrid,
   Circle,
+  Heading,
+  Tag,
+  Stack,
+  Square,
 } from "@chakra-ui/react";
 import Item from "./Item";
 
 const Ecosystem: NextPage = () => (
-  <Container maxW="container.2xl" pb="10rem" px={["3rem", "10rem"]}>
+  <Container maxW="container.2xl" pb="10rem">
     <Flex
       pt={["50px"]}
       fontSize="md"
@@ -27,10 +31,14 @@ const Ecosystem: NextPage = () => (
         >
           STNEAR ECOSYSTEM
         </Text>
-        <Box textStyle={["h3", "h2"]} pt={["15px", "15px"]} pb={["43px", "43px"]}>
+        <Heading
+          size="2xl"
+          pt={{ base: "15px", lg: "15px" }}
+          pb={{ base: "43px", lg: "43px" }}
+        >
           Use stNEAR across growing <br />
           DeFi Ecosystem
-        </Box>
+        </Heading>
         <Box pb={["76px", "76px"]}>
           NEAR protocol delivers unparalleled speed, security, and reliability.
           <br />
@@ -60,7 +68,7 @@ const Ecosystem: NextPage = () => (
         Mainnet
       </Flex>
     </Flex>
-    <SimpleGrid columns={[1, 3]} spacing={10}>
+    <SimpleGrid columns={{ base: 1, sm: 2, lg: 3 }} spacing={{ base: 5, lg: 10 }}>
       <Item
         title="Trisolaris"
         description="Trisolaris is the first AMM exchange on Aurora."
@@ -113,7 +121,35 @@ const Ecosystem: NextPage = () => (
         type="EXCHANGE"
         soon={true}
       />
-      <Item title="More comming soon" />
+      <Box
+        bg="white"
+        rounded="lg"
+        p={["1rem", "2rem"]}
+        border={"2px"}
+        borderColor="#E2E8F0"
+        mx="auto"
+      >
+        <Stack w="100%" justifyContent={"space-between"} px="0">
+          <Square size="64px" bgColor={"#F1F5F9"} />
+          <Box>
+            <Flex textStyle="h5" fontFamily={"Inter"}>
+              <Box w="80px" h="20px" bgColor={"#F1F5F9"} />
+              More Coming Soon
+              <Tag
+                textColor={"white"}
+                fontFamily={["Inter"]}
+                fontSize="10px"
+                fontWeight={"semibold"}
+                bg="#F59E0B"
+                borderRadius={"2px"}
+                mx="4px"
+              >
+                Soon!
+              </Tag>
+            </Flex>
+          </Box>
+        </Stack>
+      </Box>
     </SimpleGrid>
   </Container>
 );

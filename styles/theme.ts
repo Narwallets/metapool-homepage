@@ -1,4 +1,4 @@
-import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
 import { ButtonStyles as Button } from "./buttonStyles";
 import { LinkStyles as Link } from "./linkStyles";
 
@@ -11,13 +11,10 @@ const theme = extendTheme({
     wider: "0.05em",
     widest: "0.1em",
   },
-  breakpoints: {
-    sm: "1000px",
-  },
   styles: {
     global: {
       body: {
-        bg: "#F8FAFC",
+        bg: "white",
       },
     },
   },
@@ -26,24 +23,19 @@ const theme = extendTheme({
       fontFamily: "Inter, sans-serif",
     },
     h1: {       
-      fontSize: "104px",
       fontWeight: "bold",
       lineHeight: "90%",
     },
     h2: {
-      fontSize: "48px",
       fontWeight: "bold",
     },
     h3: {
-      fontSize: "32px",
       fontWeight: "semibold",
     },
     h4: {
-      fontSize: "24",
       fontWeight: "semibold",
     },
     h5: {
-      fontSize: "18",
       fontWeight: "semibold",
     },
   },

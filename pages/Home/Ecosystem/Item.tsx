@@ -1,5 +1,13 @@
 import type { NextPage } from "next";
-import { Box, Text, HStack, Image, Tag, Circle, Flex, Stack } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Image,
+  Tag,
+  Circle,
+  Flex,
+  Stack,
+} from "@chakra-ui/react";
 
 interface Props {
   title: string;
@@ -10,7 +18,14 @@ interface Props {
   soon?: boolean;
 }
 
-const Item: NextPage<Props> = ({ title, description, icon, type, env, soon }) => (
+const Item: NextPage<Props> = ({
+  title,
+  description,
+  icon,
+  type,
+  env,
+  soon,
+}) => (
   <Box
     maxW={["full", "500px"]}
     bg="white"
@@ -18,10 +33,23 @@ const Item: NextPage<Props> = ({ title, description, icon, type, env, soon }) =>
     p={["1rem", "2rem"]}
     border={"2px"}
     borderColor="#E2E8F0"
-    
+    mx="auto"
   >
-    <Stack direction={["column", "row"]} w="100%" justifyContent={"space-between"} px="0">
-      {icon && <Image src={icon} alt="Near" mr="2rem" maxWidth={["150px", null]} mx={["auto", "initial"]} />}
+    <Stack
+      direction={{ base: "column", lg: "row" }}
+      w="100%"
+      justifyContent={"space-between"}
+      px="0"
+    >
+      {icon && (
+        <Image
+          src={icon}
+          alt="Near"
+          mr="2rem"
+          maxWidth={["150px", null]}
+          mx={["auto", "initial"]}
+        />
+      )}
       <Box>
         <Tag
           fontFamily={["Inter"]}
@@ -42,17 +70,19 @@ const Item: NextPage<Props> = ({ title, description, icon, type, env, soon }) =>
             {env === "testnet" && (
               <Circle size="8px" bgColor="#F97316" mx="4px" />
             )}
-            <Tag
-              textColor={"white"}
-              fontFamily={["Inter"]}
-              fontSize="10px"
-              fontWeight={"semibold"}
-              bg="#F59E0B"
-              borderRadius={"2px"}
-              mx="4px"
-            >
-              Soon!
-            </Tag>
+            {soon && (
+              <Tag
+                textColor={"white"}
+                fontFamily={["Inter"]}
+                fontSize="10px"
+                fontWeight={"semibold"}
+                bg="#F59E0B"
+                borderRadius={"2px"}
+                mx="4px"
+              >
+                Soon!
+              </Tag>
+            )}
           </Flex>
         )}
         {description && <Text>{description}</Text>}

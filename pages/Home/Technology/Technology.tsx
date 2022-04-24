@@ -1,10 +1,18 @@
 import type { NextPage } from "next";
-import { Box, Container, Flex, Stack, Link, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  Stack,
+  Link,
+  Text,
+  Heading,
+} from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
 const Technology: NextPage = () => (
   <Box bgColor="#1E293B" textColor={"white"}>
-    <Container maxW="container.2xl" px={["3rem", "10rem"]}>
+    <Container maxW="container.2xl" px={{ base: "1rem", lg: "10rem" }}>
       <Flex
         pt={["50px"]}
         mb={"50px"}
@@ -21,28 +29,31 @@ const Technology: NextPage = () => (
           >
             TECHNOLOGY
           </Text>
-          <Box
-            textStyle={["h2", "h1"]}
-            pt={["15px", "15px"]}
-            pb={["0px", "43px"]}
+          <Heading
+            size="2xl"
+            pt={{ base: "15px", lg: "15px" }}
+            pb={{ base: "0px", lg: "43px" }}
             lineHeight={"110%"}
           >
             Meta Pool,
             <br />
             superior staking
-          </Box>
+          </Heading>
         </Box>
       </Flex>
-      <Container maxW="container.2xl" pb={["2rem", "10rem"]}>
+      <Container maxW="container.2xl" pb={{ base: "2rem", lg: "10rem" }}>
         <Flex
           alignItems="center"
           borderRadius={"2xl"}
-          bg={["", "url('/bg-technology-secure.svg') no-repeat center right"]}
-          bgSize={["cover", "unset"]}
-          h={["auto", "387px"]}
-          my={["0px", "32px"]}
+          bg={{
+            base: "",
+            lg: "url('/bg-technology-secure.svg') no-repeat center right",
+          }}
+          bgSize={{ base: "cover", lg: "unset" }}
+          h={{ base: "auto", lg: "387px" }}
+          my={{ base: "0px", lg: "32px" }}
         >
-          <Box mr={[0, "50%"]} w="full" textAlign={"left"}>
+          <Box mr={{ base: 0, lg: "50%" }} w="full" textAlign={"left"}>
             <Text color="white" textStyle={"h3"} fontFamily="Inter">
               Secure the Network
             </Text>
@@ -66,7 +77,10 @@ const Technology: NextPage = () => (
         <Flex
           alignItems="center"
           borderRadius={"2xl"}
-          bg={["", "url('/bg-technology-inmediate.svg') no-repeat center left"]}
+          bg={{
+            base: "",
+            lg: "url('/bg-technology-secure.svg') no-repeat center left",
+          }}
           h={["auto", "387px"]}
           my="32px"
         >
@@ -93,7 +107,10 @@ const Technology: NextPage = () => (
         <Flex
           alignItems="center"
           borderRadius={"2xl"}
-          bg={["", "url('/bg-technology-returns.svg') no-repeat center right"]}
+          bg={{
+            base: "",
+            lg: "url('/bg-technology-secure.svg') no-repeat center right",
+          }}
           h={["auto", "387px"]}
           my="32px"
         >
