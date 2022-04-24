@@ -45,7 +45,12 @@ const Benefits: NextPage = () => (
       </Box>
     </Flex>
     <HStack spacing="32px">
-      <SimpleGrid columns={[1, 3]} spacing={10} mx={[2, 10]} fontFamily="Inter">
+      <SimpleGrid
+        columns={{ base: 1, lg: 3 }}
+        spacing={10}
+        mx={{ base: 2, lg: 10 }}
+        fontFamily="Inter"
+      >
         <Box textAlign={"left"}>
           <Image alt="Farming" src="/icons/benefits-farming.svg" />
           <br />

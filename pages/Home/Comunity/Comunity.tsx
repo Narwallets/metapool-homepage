@@ -8,19 +8,24 @@ import {
   Text,
   Spacer,
   Link,
+  Heading,
 } from "@chakra-ui/react";
 import Platform from "./Platform";
 
 const Comunity: NextPage = () => (
   <Flex
-    pt={["50px"]}
+    pt={"50px"}
     fontSize="md"
     position="relative"
     justifyContent="center"
     bg={"url(/bg-comunity.svg) no-repeat"}
     bgSize="contain"
   >
-    <Container maxW="container.2xl" pb="10rem" px={["3rem", "10rem"]}>
+    <Container
+      maxW="container.2xl"
+      pb={{ base: "5rem", lg: "10rem" }}
+      px={{ base: "1rem", lg: "10rem" }}
+    >
       <Box textAlign="left" w="full">
         <Text
           color="secondary"
@@ -30,11 +35,11 @@ const Comunity: NextPage = () => (
         >
           COMMUNITY
         </Text>
-        <Box textStyle={["h3", "h2"]} pt={["15px", "15px"]} pb={["43px", "43px"]}>
+        <Heading size="2xl" pt={"15px"} pb={"43px"}>
           Join the community
-        </Box>
-        <Box pb={["76px", "76px"]}>
-          <Stack direction={["column", "row"]}>
+        </Heading>
+        <Box pb={"76px"}>
+          <Stack direction={{ base: "column", lg: "row" }}>
             <Text>
               Chat with 7000+ members and get help with your projects on
               Discord.
@@ -45,13 +50,14 @@ const Comunity: NextPage = () => (
               href="#"
               whiteSpace="nowrap"
               borderWidth="2px"
+              textAlign={"center"}
             >
               Join Discord
             </Link>
           </Stack>
         </Box>
       </Box>
-      <SimpleGrid columns={[1, 3]} spacing={[2, 10]}>
+      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 2, md: 10 }}>
         <Platform
           name="Telegram"
           description="Join the community"

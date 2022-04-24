@@ -1,22 +1,8 @@
 import type { NextPage } from "next";
-import {
-  Box,
-  Container,
-  Flex,
-  Text,
-  HStack,
-  SimpleGrid,
-  Center,
-  Image,
-} from "@chakra-ui/react";
+import { Container, Text, SimpleGrid, Image, Heading, Center } from "@chakra-ui/react";
 
 const Investors: NextPage = () => (
-  <Container
-    maxW="container.xl"
-    px={["3rem", "10rem"]}
-    py="100px"
-    textAlign="center"
-  >
+  <Center flexDirection={"column"} px="2rem">
     <Text
       color="secondary"
       fontFamily={"Inter"}
@@ -25,25 +11,52 @@ const Investors: NextPage = () => (
     >
       INVESTORS
     </Text>
-    <Box
-      textStyle="h2"
+    <Heading
+      as="h2"
       pt={["15px", "15px"]}
       pb={["43px", "43px"]}
-      noOfLines={[3, 2]}
       fontFamily="Space Grotesk"
-      lineHeight="56px"
     >
       Backed by great people
-    </Box>
-    <SimpleGrid columns={[3, 6]} spacing={10} my="100px" alignItems={"center"}>
-      <Image alt="DragonFly" src="/icons/investors-dragonfly.svg" />
-      <Image alt="ATT" src="/icons/investors-att.svg" />
-      <Image alt="Move" src="/icons/investors-move.svg" />
-      <Image alt="SVC" src="/icons/investors-svc.svg" />
-      <Image alt="DI" src="/icons/investors-di.svg" />
-      <Image alt="Blockwall" src="/icons/investors-blockwall.svg" />
+    </Heading>
+    <SimpleGrid
+      columns={{ base: 1, md: 3, lg: 3, xl: 6 }}
+      mx={{ base: "1rem", md: "3rem", lg: "0rem" }}
+      alignItems={"center"}
+      spacing={10}
+    >
+      <Image
+        alt="DragonFly"
+        src="/icons/investors-dragonfly.svg"
+        minW={"150px"}
+      />
+      <Image
+        alt="ATT"
+        src="/icons/investors-att.svg"
+        minW={"150px"}
+      />
+      <Image
+        alt="Move"
+        src="/icons/investors-move.svg"
+        minW={"150px"}
+      />
+      <Image
+        alt="SVC"
+        src="/icons/investors-svc.svg"
+        minW={"150px"}
+      />
+      <Image
+        alt="DI"
+        src="/icons/investors-di.svg"
+        minW={"150px"}
+      />
+      <Image
+        alt="Blockwall"
+        src="/icons/investors-blockwall.svg"
+        minW={"150px"}
+      />
     </SimpleGrid>
-  </Container>
+  </Center>
 );
 
 export default Investors;
