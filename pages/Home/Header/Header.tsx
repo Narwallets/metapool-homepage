@@ -5,7 +5,6 @@ import {
   Link,
   IconButton,
   useDisclosure,
-  useColorModeValue,
   Stack,
   Image,
 } from "@chakra-ui/react";
@@ -102,7 +101,7 @@ export default function Simple() {
                   rounded={"sm"}
                   _hover={{
                     textDecoration: "none",
-                    bg: useColorModeValue("gray.200", "gray.700"),
+                    bg: "gray.200",
                   }}
                   href={link.anchor}
                   onClick={onClose}

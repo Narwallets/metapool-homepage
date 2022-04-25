@@ -17,7 +17,7 @@ const LatestNews: NextPage = () => (
       pt={["15px", "15px"]}
       pb={["43px", "43px"]}
       noOfLines={[2, 2]}
-      fontFamily="Space Grotesk"
+      fontFamily="'Meta Space', 'Space Grotesk'"
       lineHeight="56px"
     >
       Latest news

@@ -22,7 +22,7 @@ const theme = extendTheme({
     button: {
       fontFamily: "Inter, sans-serif",
     },
-    h1: {       
+    h1: {
       fontWeight: "bold",
       lineHeight: "90%",
     },
@@ -40,7 +40,7 @@ const theme = extendTheme({
     },
   },
   fonts: {
-    heading: "Inter, sans-serif",
+    alternative: "'Meta Space', 'Space Grotesk'",
     body: "Inter",
   },
   colors: {

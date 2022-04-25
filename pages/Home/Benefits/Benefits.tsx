@@ -37,7 +37,7 @@ const Benefits: NextPage = () => (
           pt={["15px", "15px"]}
           pb={["0px", "43px"]}
           lineHeight={"110%"}
-          fontFamily={"Space Grotesk"}
+          fontFamily={"'Meta Space', 'Space Grotesk'"}
         >
           Ways to maximize
           <br />

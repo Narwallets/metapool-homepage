@@ -35,7 +35,12 @@ const Comunity: NextPage = () => (
         >
           COMMUNITY
         </Text>
-        <Heading size="2xl" pt={"15px"} pb={"43px"}>
+        <Heading
+          size="2xl"
+          pt={"15px"}
+          pb={"43px"}
+          fontFamily="'Meta Space', 'Space Grotesk'"
+        >
           Join the community
         </Heading>
         <Box pb={"76px"}>

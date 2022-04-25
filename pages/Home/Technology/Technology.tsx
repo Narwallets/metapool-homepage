@@ -32,7 +32,7 @@ const Technology: NextPage = () => (
             pt={{ base: "15px", lg: "15px" }}
             pb={{ base: "0px", lg: "43px" }}
             lineHeight={"110%"}
-            fontFamily="Space Grotesk"
+            fontFamily="'Meta Space', 'Space Grotesk'"
           >
             Meta Pool,
             <br />

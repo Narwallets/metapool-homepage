@@ -39,7 +39,7 @@ const HowItWorks: NextPage = () => (
         </Text>
         <Heading
           size="2xl"
-          fontFamily={["Space Grotesk"]}
+          fontFamily="'Meta Space', 'Space Grotestk'"
           pt={["15px", "15px"]}
           pb={["43px", "43px"]}
           lineHeight="48px"

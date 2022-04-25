@@ -7,11 +7,22 @@ interface Props {
 }
 
 const DataItem: NextPage<Props> = ({ title, value }) => (
-  <Box textAlign={{base: "center", md: "left"}} py={{base: "0", lg: "2rem"}}>
-    <Text fontSize={{base: "4xl"}} fontWeight="bold" fontFamily={["Space Grotesk"]}>
+  <Box
+    textAlign={{ base: "center", md: "left" }}
+    py={{ base: "0", lg: "2rem" }}
+  >
+    <Text
+      fontSize={{ base: "4xl" }}
+      fontWeight="bold"
+      fontFamily={"'Meta Space', 'Space Grotesk'"}
+    >
       {value}
     </Text>
-    <Text fontSize={{base: "md", sm: "lg"}} fontFamily={["Inter"]} textTransform="uppercase">
+    <Text
+      fontSize={{ base: "md", sm: "lg" }}
+      fontFamily={["Inter"]}
+      textTransform="uppercase"
+    >
       {title}
     </Text>
   </Box>

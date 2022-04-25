@@ -36,6 +36,7 @@ const Ecosystem: NextPage = () => (
             size="2xl"
             pt={{ base: "15px", lg: "15px" }}
             pb={{ base: "43px", lg: "43px" }}
+            fontFamily="'Meta Space', 'Space Grotestk'"
           >
             Use stNEAR across growing <br />
             DeFi Ecosystem

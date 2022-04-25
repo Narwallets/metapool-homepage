@@ -31,7 +31,12 @@ const StakingFarms: NextPage = () => (
         >
           STAKING FARMS
         </Text>
-        <Heading size="2xl" pt={["15px", "15px"]} pb={["43px", "43px"]}>
+        <Heading
+          size="2xl"
+          pt={["15px", "15px"]}
+          pb={["43px", "43px"]}
+          fontFamily="'Meta Space', 'Space Grotestk'"
+        >
           Supported networks
         </Heading>
         <Box pb={["76px", "76px"]} fontFamily="Inter">
