@@ -11,7 +11,7 @@ import {
 import Post from "./Post";
 
 const LatestNews: NextPage = () => (
-  <Container maxW="container.xl" py="100px" textAlign="center">
+  <Container maxW="container.xl" py={{base: 0, md: "7rem"}} textAlign="center">
     <Heading
       size="2xl"
       pt={["15px", "15px"]}

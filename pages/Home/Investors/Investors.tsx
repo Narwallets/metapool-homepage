@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import { Container, Text, SimpleGrid, Image, Heading, Center } from "@chakra-ui/react";
+import { Text, SimpleGrid, Image, Heading, Center } from "@chakra-ui/react";
 
 const Investors: NextPage = () => (
-  <Center flexDirection={"column"} px="2rem">
+  <Center flexDirection={"column"} px="2rem" py="7rem">
     <Text
       color="secondary"
       fontFamily={"Inter"}
@@ -30,26 +30,10 @@ const Investors: NextPage = () => (
         src="/icons/investors-dragonfly.svg"
         minW={"150px"}
       />
-      <Image
-        alt="ATT"
-        src="/icons/investors-att.svg"
-        minW={"150px"}
-      />
-      <Image
-        alt="Move"
-        src="/icons/investors-move.svg"
-        minW={"150px"}
-      />
-      <Image
-        alt="SVC"
-        src="/icons/investors-svc.svg"
-        minW={"150px"}
-      />
-      <Image
-        alt="DI"
-        src="/icons/investors-di.svg"
-        minW={"150px"}
-      />
+      <Image alt="ATT" src="/icons/investors-att.svg" minW={"150px"} />
+      <Image alt="Move" src="/icons/investors-move.svg" minW={"150px"} />
+      <Image alt="SVC" src="/icons/investors-svc.svg" minW={"150px"} />
+      <Image alt="DI" src="/icons/investors-di.svg" minW={"150px"} />
       <Image
         alt="Blockwall"
         src="/icons/investors-blockwall.svg"

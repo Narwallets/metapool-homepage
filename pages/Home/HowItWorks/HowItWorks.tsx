@@ -23,7 +23,11 @@ const HowItWorks: NextPage = () => (
     bg={"url(/bg-home-main.svg) no-repeat white"}
     bgPosition={["center", "top"]}
   >
-    <Container maxW="container.2xl" px={{base: "1rem", lg: "10rem"}} py="100px">
+    <Container
+      maxW="container.xl"
+      px={{ base: "1rem", lg: "10rem" }}
+      py="7rem"
+    >
       <Box textAlign="center">
         <Text
           color="secondary"
@@ -35,7 +39,7 @@ const HowItWorks: NextPage = () => (
         </Text>
         <Heading
           size="2xl"
-          fontFamily={["Space Grotesk"]}	
+          fontFamily={["Space Grotesk"]}
           pt={["15px", "15px"]}
           pb={["43px", "43px"]}
           lineHeight="48px"
@@ -45,7 +49,7 @@ const HowItWorks: NextPage = () => (
           Stake NEAR with Meta Pool in three simple steps
         </Heading>
         <HStack spacing="32px">
-          <SimpleGrid columns={{base: 1, lg: 3}} spacing={10} mx={10} my={10}>
+          <SimpleGrid columns={{ base: 1, lg: 3 }} spacing={10} mx={10} my={10}>
             <Box textAlign={"left"}>
               <Circle
                 size="64px"

@@ -3,20 +3,17 @@ import {
   Box,
   Container,
   Flex,
-  Stack,
-  Link,
   Text,
   Heading,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import { ChevronRightIcon } from "@chakra-ui/icons";
 import Item from "./Item";
 
 const Technology: NextPage = () => (
   <Box bgColor="#1E293B" textColor={"white"}>
     <Container maxW="container.xl">
       <Flex
-        pt={["50px"]}
+        pt={["7rem"]}
         fontSize="md"
         position="relative"
         justifyContent="center"

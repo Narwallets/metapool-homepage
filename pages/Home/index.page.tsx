@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Container, Image, keyframes } from "@chakra-ui/react";
+import { Box, Container, Image, keyframes } from "@chakra-ui/react";
 import Header from "./Header";
 import Hero from "./Hero";
 import StakingFarms from "./StakingFarms";
@@ -39,16 +39,26 @@ const Home: NextPage = () => {
       />
 
       {/* <Notification /> */}
+      <a id="top" />
       <Header />
       <Hero />
+      <a id="staking-farms" />
       <StakingFarms />
+      <a id="ecosystem" />
       <Ecosystem />
+      <a id="how-it-works" />
       <HowItWorks />
+      <a id="technology" />
       <Technology />
+      <a id="benefits" />
       <Benefits />
+      <a id="security" />
       <Security />
+      <a id="investors" />
       <Investors />
+      <a id="latest-news" />
       <LatestNews />
+      <a id="community" />
       <Comunity />
       <Footer />
     </Container>

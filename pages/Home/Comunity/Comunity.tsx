@@ -14,7 +14,7 @@ import Platform from "./Platform";
 
 const Comunity: NextPage = () => (
   <Flex
-    pt={"50px"}
+    pt={"8rem"}
     fontSize="md"
     position="relative"
     justifyContent="center"
@@ -22,7 +22,7 @@ const Comunity: NextPage = () => (
     bgSize="contain"
   >
     <Container
-      maxW="container.2xl"
+      maxW="container.xl"
       pb={{ base: "5rem", lg: "10rem" }}
       px={{ base: "1rem", lg: "10rem" }}
     >

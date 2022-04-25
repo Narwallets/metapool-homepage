@@ -3,7 +3,7 @@ import { Center, Box, Flex, Link, Stack } from "@chakra-ui/react";
 import MetapoolData from "./MetapoolData";
 const Hero: NextPage = () => {
   return (
-    <>
+    <Box pt="10rem">
       <Center>
         <Box
           textStyle="h1"
@@ -41,9 +41,9 @@ const Hero: NextPage = () => {
       </Center>
       <Stack
         direction={{ base: "column", md: "row" }}
-        spacing={{base: "1rem", lg: "4rem"}}
-        px={{base: "0", md: "4rem"}}
-        py={{base: "1rem", lg: "0"}}
+        spacing={{ base: "1rem", lg: "4rem" }}
+        px={{ base: "0", md: "4rem" }}
+        py={{ base: "1rem", lg: "0" }}
         justifyContent="space-between"
         alignItems="center"
         borderBottomRadius={{ base: "0px", md: "104px" }}
@@ -53,7 +53,8 @@ const Hero: NextPage = () => {
         <MetapoolData title="Annual percentage yield (APY)" value="10.08%" />
         <MetapoolData title="Validators" value="92" />
       </Stack>
-    </>
+      <a id="staking-farms" />
+    </Box>
   );
 };
 

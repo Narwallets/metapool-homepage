@@ -10,18 +10,18 @@ import {
 } from "@chakra-ui/react";
 
 const Security: NextPage = () => (
-  <Container maxW="container.2xl">
+  <Container maxW="container.xl">
     <Box
       px={{ base: "3rem", lg: "10rem" }}
       py={{ base: "3rem", lg: "3rem" }}
       rounded={"32px"}
       bg={["url('bg-security.svg') no-repeat #F1F5F9"]}
       bgPosition={{ base: "center center", lg: "center right" }}
-      my={["50px", "150px"]}
+      my={["4rem", "9rem"]}
       display="flex"
       flexDirection="column"
       justifyContent="center"
-      mx={{ base: "4rem", lg: "auto" }}
+      mx={{ base: "1rem", lg: "auto" }}
       w="fit-content"
     >
       <Box textAlign="left" w="full" mr="50%" pt={["0"]} mb={"0"}>
