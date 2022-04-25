@@ -12,6 +12,7 @@ import LatestNews from "./LatestNews";
 import Comunity from "./Comunity";
 import Footer from "./Footer";
 import HowItWorks from "./HowItWorks";
+import useSmoothScrollTo from "../../hooks/useSmoothScrollTo";
 
 const Home: NextPage = () => {
   return (
@@ -39,26 +40,26 @@ const Home: NextPage = () => {
       />
 
       {/* <Notification /> */}
-      <a id="top" />
       <Header />
+      <a id="#top" {...useSmoothScrollTo("#top")} />
       <Hero />
-      <a id="staking-farms" />
+      <a id="#staking-farms" {...useSmoothScrollTo("#staking-farms")} />
       <StakingFarms />
-      <a id="ecosystem" />
+      <a id="#ecosystem" {...useSmoothScrollTo("#ecosystem")} />
       <Ecosystem />
-      <a id="how-it-works" />
+      <a id="#how-it-works" {...useSmoothScrollTo("#how-it-works")} />
       <HowItWorks />
-      <a id="technology" />
+      <a id="#technology" {...useSmoothScrollTo("#technology")} />
       <Technology />
-      <a id="benefits" />
+      <a id="#benefits" {...useSmoothScrollTo("#benefits")} />
       <Benefits />
-      <a id="security" />
+      <a id="#security" {...useSmoothScrollTo("#security")} />
       <Security />
-      <a id="investors" />
+      <a id="#investors" {...useSmoothScrollTo("#investors")} />
       <Investors />
-      <a id="latest-news" />
+      <a id="#latest-news" {...useSmoothScrollTo("#latest-news")} />
       <LatestNews />
-      <a id="community" />
+      <a id="#community" {...useSmoothScrollTo("#community")} />
       <Comunity />
       <Footer />
     </Container>

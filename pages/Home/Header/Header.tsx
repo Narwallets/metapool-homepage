@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 import {
   Box,
   Flex,
@@ -26,6 +26,7 @@ const LINKS = [
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     const scrollFun = () => {
       setScrolled(window.pageYOffset > 50);
@@ -37,6 +38,7 @@ export default function Simple() {
       window.removeEventListener("scroll", scrollFun);
     };
   }, []);
+
   return (
     <>
       <Box
