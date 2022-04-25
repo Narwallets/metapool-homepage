@@ -68,31 +68,37 @@ const Comunity: NextPage = () => (
           name="Telegram"
           description="Join the community"
           icon="/icons/comunity-telegram.svg"
+          href="#"
         />
         <Platform
           name="Twitter"
           description="Follow @meta_pool"
           icon="/icons/comunity-twitter.svg"
+          href="https://twitter.com/meta_pool"
         />
         <Platform
           name="Discord"
           description="Ask questions"
           icon="/icons/comunity-discord.svg"
+          href="https://discord.com/invite/tG4XJzRtdQ"
         />
         <Platform
           name="Gitbook"
           description="Learn about Meta Pool"
           icon="/icons/comunity-gitbook.svg"
+          href="#"
         />
         <Platform
           name="Medium"
           description="Keep updated"
           icon="/icons/comunity-medium.svg"
+          href="https://medium.com/@meta_pool"
         />
         <Platform
           name="YouTube"
           description="Watch our channel"
           icon="/icons/comunity-youtube.svg"
+          href="#"
         />
       </SimpleGrid>
     </Container>

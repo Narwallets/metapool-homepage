@@ -11,7 +11,7 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 const LINKS = [
-  { title: "TOP", anchor: "#top" },
+  { title: "METAPOOL", anchor: "#top" },
   { title: "STAKING FARMS", anchor: "#staking-farms" },
   { title: "STNEAR ECOSYSTEM", anchor: "#ecosystem" },
   { title: "HOW IT WORKS", anchor: "#how-it-works" },

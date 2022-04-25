@@ -104,7 +104,7 @@ export default function LargeWithNewsletter() {
             <Link color="white" py="0px" px={0} href={"#"}>
               Gitbook
             </Link>
-            <Link py="0px" href={"#"} px={0}>
+            <Link py="0px" href={"https://metapool.app/Tokenomics_Governance_-_Meta_Pool_v6.pdf"} px={0}>
               Tokenomics
             </Link>
           </Stack>
@@ -112,7 +112,7 @@ export default function LargeWithNewsletter() {
             <Text pb="10px" fontWeight={"semibold"}>
               Resources
             </Text>
-            <Link p="0px" href={"#"}>
+            <Link p="0px" href={"https://medium.com/@meta_pool"}>
               Medium
             </Link>
             <Link p="0px" href={"#"}>
@@ -123,7 +123,7 @@ export default function LargeWithNewsletter() {
             <Text pb="10px" fontWeight={"semibold"}>
               Community
             </Text>
-            <Link p="0px" href={"#"}>
+            <Link href="https://twitter.com/meta_pool" p="0px">
               Twitter
             </Link>
             <Link p="0px" href={"#"}>
@@ -164,9 +164,9 @@ export default function LargeWithNewsletter() {
           <Text fontSize={"sm"} whiteSpace="nowrap">
             Terms and Conditions
           </Text>
-          <Text fontSize={"sm"} whiteSpace="nowrap">
+          <Link href="https://metapool.app/legal-notice-risk-disclosures.html" fontSize={"sm"} whiteSpace="nowrap">
             Legal Notice &amp; Risk Disclosures
-          </Text>
+          </Link>
         </Stack>
       </Container>
     </Box>
