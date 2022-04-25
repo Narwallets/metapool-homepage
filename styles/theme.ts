@@ -3,6 +3,7 @@ import { ButtonStyles as Button } from "./buttonStyles";
 import { LinkStyles as Link } from "./linkStyles";
 
 const theme = extendTheme({
+  baseStyle: { _focus: { boxShadow: "none" } },
   letterSpacings: {
     tighter: "-0.05em",
     tight: "-0.025em",

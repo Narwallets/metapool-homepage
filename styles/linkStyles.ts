@@ -7,6 +7,7 @@ export const LinkStyles = {
     px: "45px",
     borderColor: "primary",
     py: "16px",
+    _focus: { boxShadow: "none" },
   },
   variants: {
     solid: (props: any) => ({
@@ -22,8 +23,8 @@ export const LinkStyles = {
       color: "primary",
 
       _hover: {
-      color: "white",
-      bg: "primary",
+        color: "white",
+        bg: "primary",
       },
     }),
     link: (props: any) => ({

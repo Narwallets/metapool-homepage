@@ -64,7 +64,9 @@ export default function Simple() {
               }
               aria-label={"Open Menu"}
               onClick={isOpen ? onClose : onOpen}
-              boxShadow="none"
+              boxShadow="0"
+              outline={"none"}
+              sx={{ hover: { boxShadow: "0" }, focus: { boxShadow: "0" } }}
             />
             <Link
               colorScheme="primary"
@@ -88,11 +90,7 @@ export default function Simple() {
             w="full"
             boxShadow={"md"}
           >
-            <Stack
-              as={"nav"}
-              spacing={4}
-              textAlign="center"
-            >
+            <Stack as={"nav"} spacing={4} textAlign="center">
               {LINKS.map((link) => (
                 <Link
                   key={link.title}

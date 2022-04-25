@@ -4,6 +4,7 @@ export const ButtonStyles = {
   baseStyle: {
     borderRadius: "30px",
     fontFamily: "Inter, sans-serif",
+    _focus: { boxShadow: "none" },
   },
   sizes: {
     sm: {
