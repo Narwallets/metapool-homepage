@@ -1,9 +1,10 @@
 import { Text, Box } from "@chakra-ui/react";
 import type { NextPage } from "next";
+import NumberFormat from "react-number-format";
 
 interface Props {
   title: string;
-  value: string;
+  value: any;
 }
 
 const DataItem: NextPage<Props> = ({ title, value }) => (

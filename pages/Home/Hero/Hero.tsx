@@ -1,7 +1,19 @@
 import type { NextPage } from "next";
 import { Center, Box, Flex, Link, Stack, Heading } from "@chakra-ui/react";
 import MetapoolData from "./MetapoolData";
-const Hero: NextPage = () => {
+import NumberFormat from "react-number-format";
+
+interface Props {
+  tvl: string;
+  staked_pools_count: string;
+  st_near_30_day_apy: string;
+}
+
+const Hero: NextPage<Props> = ({
+  tvl,
+  staked_pools_count,
+  st_near_30_day_apy,
+}) => {
   return (
     <Box pt="10rem">
       <Center>
@@ -50,9 +62,31 @@ const Hero: NextPage = () => {
         borderBottomRadius={{ base: "0px", md: "104px" }}
         bgColor="white"
       >
-        <MetapoolData title="Total value locked (TVL)" value="$117,143,333" />
-        <MetapoolData title="Annual percentage yield (APY)" value="11%" />
-        <MetapoolData title="Validators" value="92" />
+        <MetapoolData
+          title="Total value locked (TVL)"
+          value={
+            <NumberFormat
+              value={tvl}
+              displayType={"text"}
+              thousandSeparator={true}
+              prefix={"$"}
+              decimalScale={0}
+            />
+          }
+        />
+        <MetapoolData
+          title="Annual percentage yield (APY)"
+          value={
+            <NumberFormat
+              value={st_near_30_day_apy}
+              displayType={"text"}
+              thousandSeparator={true}
+              suffix={"%"}
+              decimalScale={2}
+            />
+          }
+        />
+        <MetapoolData title="Validators" value={staked_pools_count} />
       </Stack>
     </Box>
   );
