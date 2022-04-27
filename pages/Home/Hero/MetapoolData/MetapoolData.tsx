@@ -17,7 +17,7 @@ const DataItem: NextPage<Props> = ({ title, value }) => (
       fontWeight="bold"
       fontFamily={"'Meta Space', 'Space Grotesk'"}
     >
-      {value}
+      {value ? value : "-"}
     </Text>
     <Text
       fontSize={{ base: "md", sm: "lg" }}

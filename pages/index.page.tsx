@@ -21,6 +21,7 @@ interface Props {
     tvl: string;
     staked_pools_count: string;
     st_near_30_day_apy: string;
+    ref_oct_st_near_apr: string;
   };
 }
 
@@ -62,7 +63,10 @@ const App: NextPage<Props> = ({ metrics }) => {
           st_near_30_day_apy={metrics?.st_near_30_day_apy}
         />
         <a id="#staking-farms" {...useSmoothScrollTo("#staking-farms")} />
-        <StakingFarms />
+        <StakingFarms
+          st_near_30_day_apy={metrics?.st_near_30_day_apy}
+          ref_oct_st_near_apr={metrics?.ref_oct_st_near_apr}
+        />
         <a id="#ecosystem" {...useSmoothScrollTo("#ecosystem")} />
         <Ecosystem />
         <a id="#how-it-works" {...useSmoothScrollTo("#how-it-works")} />

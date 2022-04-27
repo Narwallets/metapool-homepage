@@ -10,7 +10,15 @@ import {
 } from "@chakra-ui/react";
 import Item from "./Item";
 
-const StakingFarms: NextPage = () => (
+interface Props {
+  st_near_30_day_apy: string;
+  ref_oct_st_near_apr: string;
+}
+
+const StakingFarms: NextPage<Props> = ({
+  st_near_30_day_apy,
+  ref_oct_st_near_apr,
+}) => (
   <Flex
     w="100%"
     pt={{ base: "4rem", lg: "0rem" }}
@@ -50,19 +58,19 @@ const StakingFarms: NextPage = () => (
             spacing={{ base: "2rem", lg: 10 }}
           >
             <Item
-              apy="11%"
+              apy={st_near_30_day_apy}
               title="Stake Near"
               description="Stake any amount of ETH and earn daily staking rewards."
               icon="icons/staking-farms-near.svg"
             />
             <Item
-              apy="11%"
+              apy={st_near_30_day_apy}
               title="Stake wNear in Aurora"
               description="Stake any amount of ETH and earn daily staking rewards."
               icon="icons/staking-farms-aurora.svg"
             />
             <Item
-              apy="30%"
+              apy={ref_oct_st_near_apr}
               title="New OCT — stNEAR Farm"
               description="New OCT — stNEAR Farm"
               icon="icons/staking-farms-oct.svg"

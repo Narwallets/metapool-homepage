@@ -10,9 +10,10 @@ import {
   Image,
   Heading,
 } from "@chakra-ui/react";
+import NumberFormat from "react-number-format";
 
 interface Props {
-  apy: string;
+  apy: any;
   title: string;
   description: string;
   icon: string;
@@ -24,7 +25,19 @@ const Item: NextPage<Props> = ({ apy, title, description, icon }) => (
       <HStack w="100%" justifyContent={"space-between"} px={["0px", "0px"]}>
         <Image alt="Oct" src={icon} />
         <Box>
-          <Text textStyle="h3">{apy}</Text>
+          <Text textStyle="h3">
+            {apy ? (
+              <NumberFormat
+                value={apy}
+                displayType={"text"}
+                thousandSeparator={true}
+                suffix={"%"}
+                decimalScale={2}
+              />
+            ) : (
+              "-"
+            )}
+          </Text>
           <Text>APY</Text>
         </Box>
       </HStack>
