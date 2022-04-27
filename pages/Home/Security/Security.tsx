@@ -54,7 +54,7 @@ const Security: NextPage = () => (
         <Box mt="40px">
           <Link
             variant="solid"
-            href="https://medium.com/meta-pool/meta-pools-smart-contract-audit-by-blocksec-5c4f0c8039a2"
+            href="https://metapool.gitbook.io/master/litepaper-1/risks"
             isExternal={true}
             whiteSpace="nowrap"
           >

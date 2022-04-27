@@ -10,8 +10,22 @@ import {
 } from "@chakra-ui/react";
 import Post from "./Post";
 
-const LatestNews: NextPage = () => (
-  <Container maxW="container.xl" py={{base: 0, md: "7rem"}} textAlign="center">
+interface Props {
+  news: {
+    title: string;
+    creator: string;
+    link: string;
+    content: string;
+    categories: string;
+  }[];
+}
+
+const LatestNews: NextPage<Props> = ({ news }) => (
+  <Container
+    maxW="container.xl"
+    py={{ base: 0, md: "7rem" }}
+    textAlign="center"
+  >
     <Heading
       size="2xl"
       pt={["15px", "15px"]}
@@ -37,34 +51,27 @@ const LatestNews: NextPage = () => (
       my="100px"
       alignItems="flex-start"
     >
-      <Post
-        tag="AURORA"
-        title="Stake NEAR with Meta Pool from Aurora using Metamask"
-        description="We are happy to announce that this feature is now live and users are
-        able to stake..."
-        author="Claudio Cossio"
-        duration="6min"
-        cover="/medium/1.svg"
-      />
-      <Post
-        tag="DEFI"
-        title="Meta Pool and NEAR DeFi on Twitter Spaces"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo..."
-        author="Claudio Cossio"
-        duration="3min"
-        cover="/medium/2.svg"
-      />
-      <Post
-        tag="LENDING"
-        title="Aurigame now lists stNEAR"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo..."
-        author="Claudio Cossio"
-        duration="3min"
-        cover="/medium/3.svg"
-      />
+      {news.map((post) => (
+        <Post
+          key={post.title}
+          tag={post.categories[0]}
+          title={post.title}
+          description={post.content}
+          author={post.creator}
+          duration="6min"
+          cover={""}
+        />
+      ))}
     </SimpleGrid>
-    <Link variant="outlined" href="#" whiteSpace="nowrap" borderWidth="2px" fontSize={{base: "xs", lg: "lg"}}>
-      Read more news on Medium
+    <Link
+      variant="outlined"
+      target={`_blank`}
+      href="https://blog.metapool.app"
+      whiteSpace="nowrap"
+      borderWidth="2px"
+      fontSize={{ base: "xs", lg: "lg" }}
+    >
+      Read more in the Meta Pool Blog
     </Link>
   </Container>
 );

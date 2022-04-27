@@ -68,7 +68,7 @@ const Comunity: NextPage = () => (
           name="Telegram"
           description="Join the community"
           icon="/icons/comunity-telegram.svg"
-          href="#"
+          href="https://t.me/MetaPoolOfficialGroup"
         />
         <Platform
           name="Twitter"
@@ -86,19 +86,19 @@ const Comunity: NextPage = () => (
           name="Gitbook"
           description="Learn about Meta Pool"
           icon="/icons/comunity-gitbook.svg"
-          href="#"
+          href="https://metapool.gitbook.io/master/"
         />
         <Platform
-          name="Medium"
+          name="Meta Pool Blog"
           description="Keep updated"
-          icon="/icons/comunity-medium.svg"
-          href="https://medium.com/@meta_pool"
+          icon=""
+          href="https://blog.metapool.app"
         />
         <Platform
           name="YouTube"
           description="Watch our channel"
           icon="/icons/comunity-youtube.svg"
-          href="#"
+          href="https://www.youtube.com/channel/UCftgX55OpiouK8pmHydVT-g"
         />
       </SimpleGrid>
     </Container>

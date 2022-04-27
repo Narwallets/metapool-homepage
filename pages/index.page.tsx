@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import api from "../api";
 import { Container, Image, keyframes } from "@chakra-ui/react";
+import Parser from "rss-parser";
+
 import Header from "./Home/Header";
 import Hero from "./Home/Hero";
 import StakingFarms from "./Home/StakingFarms";
@@ -25,7 +27,7 @@ interface Props {
   };
 }
 
-const App: NextPage<Props> = ({ metrics }) => {
+const App: NextPage<Props> = ({ metrics, news }) => {
   return (
     <>
       <Head>
@@ -80,7 +82,7 @@ const App: NextPage<Props> = ({ metrics }) => {
         <a id="#investors" {...useSmoothScrollTo("#investors")} />
         <Investors />
         <a id="#latest-news" {...useSmoothScrollTo("#latest-news")} />
-        <LatestNews />
+        <LatestNews news={news} />
         <a id="#community" {...useSmoothScrollTo("#community")} />
         <Comunity />
         <Footer />
@@ -91,9 +93,13 @@ const App: NextPage<Props> = ({ metrics }) => {
 
 export async function getServerSideProps({}) {
   const metrics = await api.getMetrics();
+  const feed = await new Parser().parseURL("https://blog.metapool.app/feed");
+  const news = feed.items.slice(0, 3);
+  console.info({ feed, news });
   return {
     props: {
       metrics,
+      news,
     },
   };
 }

@@ -98,7 +98,12 @@ const Benefits: NextPage = () => (
       >
         Start staking
       </Link>
-      <Link variant="link" textColor={"primary"} whiteSpace="nowrap">
+      <Link
+        href="https://metapool.gitbook.io/master/"
+        variant="link"
+        textColor={"primary"}
+        whiteSpace="nowrap"
+      >
         Find out more <ChevronRightIcon w={6} h={6} color="primary" />
       </Link>
     </Stack>

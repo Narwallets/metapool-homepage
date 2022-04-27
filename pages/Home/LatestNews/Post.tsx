@@ -27,7 +27,7 @@ const Post: NextPage<Props> = ({
   cover,
 }) => (
   <Flex
-  flexDirection={"column"}
+    flexDirection={"column"}
     maxW={"384px"}
     w={"full"}
     minH="500px"
@@ -55,7 +55,9 @@ const Post: NextPage<Props> = ({
       <Text color={"gray.700"} fontFamily={"Inter"} fontWeight="bold">
         {title}
       </Text>
-      <Text color={"gray.500"}>{description}</Text>
+      <Text color={"gray.500"}>
+        <div dangerouslySetInnerHTML={{ __html: description }} />
+      </Text>
     </Stack>
     <Spacer />
     <Stack mt={6} direction={"row"} spacing={4} align={"center"}>

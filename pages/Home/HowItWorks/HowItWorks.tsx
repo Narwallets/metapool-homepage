@@ -115,6 +115,7 @@ const HowItWorks: NextPage = () => {
           mt={["50px", "50px"]}
           spacing={["0px", "20px"]}
           textAlign={["center", "left"]}
+          px={["1rem", "0"]}
         >
           <Link
             variant="solid"
@@ -123,7 +124,12 @@ const HowItWorks: NextPage = () => {
           >
             Start staking
           </Link>
-          <Link variant="link" textColor={"primary"} whiteSpace={"nowrap"}>
+          <Link
+            href="https://metapool.gitbook.io/master/"
+            variant="link"
+            textColor={"primary"}
+            whiteSpace={"nowrap"}
+          >
             Find out more <ChevronRightIcon w={6} h={6} color="primary" />
           </Link>
         </Stack>

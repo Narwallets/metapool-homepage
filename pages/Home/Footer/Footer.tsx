@@ -118,8 +118,8 @@ export default function LargeWithNewsletter() {
             <Text pb="10px" fontWeight={"semibold"}>
               Resources
             </Text>
-            <Link p="0px" href={"https://medium.com/@meta_pool"}>
-              Medium
+            <Link p="0px" href={"https://blog.metapool.app"}>
+              Meta Pool Blog
             </Link>
             <Link p="0px" href={"#"}>
               FAQ
@@ -132,13 +132,16 @@ export default function LargeWithNewsletter() {
             <Link href="https://twitter.com/meta_pool" p="0px">
               Twitter
             </Link>
-            <Link p="0px" href={"#"}>
+            <Link p="0px" href="https://t.me/MetaPoolOfficialChannel">
               Telegram
             </Link>
-            <Link p="0px" href={"#"}>
+            <Link p="0px" href={"https://github.com/Narwallets/meta-pool"}>
               Github
             </Link>
-            <Link p="0px" href={"#"}>
+            <Link
+              p="0px"
+              href={"https://www.youtube.com/channel/UCftgX55OpiouK8pmHydVT-g"}
+            >
               YouTube
             </Link>
           </Stack>
