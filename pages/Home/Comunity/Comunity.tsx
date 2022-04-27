@@ -52,7 +52,7 @@ const Comunity: NextPage = () => (
             <Spacer />
             <Link
               variant="outlined"
-              href="#"
+              href="https://discord.com/invite/tG4XJzRtdQ"
               whiteSpace="nowrap"
               borderWidth="2px"
               textAlign={"center"}

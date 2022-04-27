@@ -25,6 +25,7 @@ interface Props {
     st_near_30_day_apy: string;
     ref_oct_st_near_apr: string;
   };
+  news: any;
 }
 
 const App: NextPage<Props> = ({ metrics, news }) => {
