@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { Text, SimpleGrid, Image, Heading, Center } from "@chakra-ui/react";
 
 const Investors: NextPage = () => (
-  <Center flexDirection={"column"} px="2rem" py="7rem">
+  <Center flexDirection={"column"} px="2rem" py="5rem">
     <Text
       color="secondary"
       fontFamily={"Inter"}
@@ -14,7 +14,7 @@ const Investors: NextPage = () => (
     <Heading
       size="2xl"
       pt={["15px", "15px"]}
-      pb={["43px", "43px"]}
+      pb={["2rem", "7rem"]}
       fontFamily="'Meta Space', 'Space Grotesk'"
     >
       Backed by great people

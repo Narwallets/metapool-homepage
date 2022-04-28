@@ -13,7 +13,7 @@ const Security: NextPage = () => (
   <Container maxW="container.xl">
     <Box
       px={{ base: "3rem", lg: "10rem" }}
-      py={{ base: "3rem", lg: "3rem" }}
+      py="5rem"
       rounded={"32px"}
       bg={["url('bg-security.svg') no-repeat #F1F5F9"]}
       bgPosition={{ base: "center center", lg: "center right" }}
