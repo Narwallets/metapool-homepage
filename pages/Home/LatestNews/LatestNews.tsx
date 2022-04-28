@@ -16,7 +16,8 @@ interface Props {
     creator: string;
     link: string;
     content: string;
-    categories: string;
+    category: string;
+    image: string;
   }[];
 }
 
@@ -54,12 +55,11 @@ const LatestNews: NextPage<Props> = ({ news }) => (
       {news.map((post) => (
         <Post
           key={post.title}
-          tag={post.categories[0]}
+          tag={post.category}
           title={post.title}
-          description={post.content}
           author={post.creator}
-          duration="6min"
-          cover={""}
+          cover={post.image}
+          link={post.link}
         />
       ))}
     </SimpleGrid>

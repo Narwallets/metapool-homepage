@@ -3,6 +3,7 @@ import Head from "next/head";
 import api from "../api";
 import { Container, Image, keyframes } from "@chakra-ui/react";
 import Parser from "rss-parser";
+import * as cheerio from "cheerio";
 
 import Header from "./Home/Header";
 import Hero from "./Home/Hero";
@@ -94,9 +95,21 @@ const App: NextPage<Props> = ({ metrics, news }) => {
 
 export async function getServerSideProps({}) {
   const metrics = await api.getMetrics();
-  const feed = await new Parser().parseURL("https://blog.metapool.app/feed");
-  const news = feed.items.slice(0, 3);
-  console.info({ feed, news });
+  const parser = new Parser();
+  let feed = await parser.parseURL("https://blog.metapool.app/feed");
+  const news = feed.items
+    .map((item: any) => {
+      return {
+        title: item.title,
+        creator: item.creator,
+        category: item.categories[0],
+        image:
+          cheerio.load(item.content)("img").attr("data-large-file") || null,
+        link: item.link,
+      };
+    })
+    .slice(0, 3);
+
   return {
     props: {
       metrics,

@@ -4,33 +4,30 @@ import {
   Text,
   Image,
   Stack,
-  Heading,
   Spacer,
   Flex,
+  Link,
 } from "@chakra-ui/react";
 
 interface Props {
   tag: string;
   title: string;
-  description: string;
   author: string;
-  duration: string;
   cover: string;
+  link: string;
 }
 
 const Post: NextPage<Props> = ({
   tag,
   title,
-  description,
   author,
-  duration,
   cover,
+  link,
 }) => (
   <Flex
     flexDirection={"column"}
     maxW={"384px"}
     w={"full"}
-    minH="500px"
     bg={"white"}
     boxShadow={"2xl"}
     rounded={"md"}
@@ -52,18 +49,18 @@ const Post: NextPage<Props> = ({
       >
         {tag}
       </Text>
-      <Text color={"gray.700"} fontFamily={"Inter"} fontWeight="bold">
+      <Link target={"_blank"} href={link} variant="link" p={0} color={"gray.700"} fontFamily={"Inter"} fontWeight="bold">
         {title}
-      </Text>
-      <Text color={"gray.500"}>
+      </Link>
+      {/* <Text color={"gray.500"}>
         <div dangerouslySetInnerHTML={{ __html: description }} />
-      </Text>
+      </Text> */}
     </Stack>
     <Spacer />
     <Stack mt={6} direction={"row"} spacing={4} align={"center"}>
       <Text>{author}</Text>
       <Spacer />
-      <Text color={"gray.500"}>{duration} read</Text>
+      {/* <Text color={"gray.500"}>{duration} read</Text> */}
     </Stack>
   </Flex>
 );
