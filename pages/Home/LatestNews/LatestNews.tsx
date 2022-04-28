@@ -30,22 +30,22 @@ const LatestNews: NextPage<Props> = ({ news }) => (
     <Heading
       size="2xl"
       pt={["15px", "15px"]}
-      pb={["43px", "43px"]}
       noOfLines={[2, 2]}
       fontFamily="'Meta Space', 'Space Grotesk'"
       lineHeight="56px"
     >
       Latest news
     </Heading>
-    <Text
+    {/* <Text
       color="secondary"
       fontFamily={"Inter"}
       letterSpacing="0.6px"
       fontWeight="semibold"
+      pt={["43px", "43px"]}
     >
-      Lorem ipsum dolor sit amet consectetur, <br />
+      Get the latest news from ourLorem ipsum dolor sit amet consectetur, <br />
       adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
-    </Text>
+    </Text> */}
     <SimpleGrid
       columns={{ base: 1, lg: 3 }}
       spacing={10}
