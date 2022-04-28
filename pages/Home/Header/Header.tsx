@@ -29,13 +29,15 @@ export default function Simple() {
 
   useEffect(() => {
     const scrollFun = () => {
-      setScrolled(window.pageYOffset > 50);
+      if (typeof window !== "undefined") setScrolled(window.pageYOffset > 50);
     };
 
-    window.addEventListener("scroll", scrollFun);
+    if (typeof window !== "undefined")
+      window.addEventListener("scroll", scrollFun);
 
     return () => {
-      window.removeEventListener("scroll", scrollFun);
+      if (typeof window !== "undefined")
+        window.removeEventListener("scroll", scrollFun);
     };
   }, []);
 

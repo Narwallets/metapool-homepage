@@ -8,11 +8,14 @@ const useSmoothScrollTo = (id: string) => {
         ref?.current?.scrollIntoView({ behavior: "smooth" });
       }
     };
-    window.addEventListener("hashchange", listener, true);
+    if (typeof window !== "undefined")
+      window.addEventListener("hashchange", listener, true);
+
     return () => {
-      window.removeEventListener("hashchange", listener);
+      if (typeof window !== "undefined")
+        window.removeEventListener("hashchange", listener);
     };
-  }, []);
+  }, [id]);
   return {
     "data-anchor-id": id,
     ref,

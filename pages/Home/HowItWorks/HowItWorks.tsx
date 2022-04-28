@@ -52,7 +52,7 @@ const HowItWorks: NextPage = () => {
             <SimpleGrid
               columns={{ base: 1, lg: 3 }}
               spacing={10}
-              mx={10}
+              mx={{ base: 10, lg: 0 }}
               my={10}
             >
               <Box textAlign={"left"}>
@@ -115,7 +115,7 @@ const HowItWorks: NextPage = () => {
           mt={["50px", "50px"]}
           spacing={["0px", "20px"]}
           textAlign={["center", "left"]}
-          px={["1rem", "0"]}
+          px={{ base: "1rem", md: "2rem", lg: 0 }}
         >
           <Link
             variant="solid"
