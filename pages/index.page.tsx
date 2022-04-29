@@ -19,6 +19,10 @@ import LatestNews from "./Home/LatestNews";
 import Security from "./Home/Security";
 import Technology from "./Home/Technology";
 
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
+
 interface Props {
   metrics: {
     tvl: string;
@@ -27,9 +31,10 @@ interface Props {
     ref_oct_st_near_apr: string;
   };
   news: any;
+  platforms: any;
 }
 
-const App: NextPage<Props> = ({ metrics, news }) => {
+const App: NextPage<Props> = ({ metrics, news, platforms }) => {
   return (
     <>
       <Head>
@@ -72,7 +77,7 @@ const App: NextPage<Props> = ({ metrics, news }) => {
           ref_oct_st_near_apr={metrics?.ref_oct_st_near_apr}
         />
         <a id="#ecosystem" {...useSmoothScrollTo("#ecosystem")} />
-        <Ecosystem />
+        <Ecosystem platforms={platforms} />
         <a id="#how-it-works" {...useSmoothScrollTo("#how-it-works")} />
         <HowItWorks />
         <a id="#technology" {...useSmoothScrollTo("#technology")} />
@@ -109,11 +114,22 @@ export async function getServerSideProps({}) {
       };
     })
     .slice(0, 3);
+  const platforms = await prisma.platforms.findMany({
+    orderBy: [
+      {
+        order: "asc",
+      },
+    ],
+  });
+  console.info({ platforms });
+
+  prisma.$disconnect();
 
   return {
     props: {
       metrics,
       news,
+      platforms,
     },
   };
 }

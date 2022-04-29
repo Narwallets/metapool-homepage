@@ -13,7 +13,11 @@ import {
 } from "@chakra-ui/react";
 import Item from "./Item";
 
-const Ecosystem: NextPage = () => (
+interface Props {
+  platforms: any[];
+}
+
+const Ecosystem: NextPage<Props> = ({ platforms }) => (
   <Box bgColor="#F8FAFC">
     <Container maxW="container.xl" py="4rem">
       <Flex
@@ -75,58 +79,18 @@ const Ecosystem: NextPage = () => (
         columns={{ base: 1, sm: 2, lg: 3 }}
         spacing={{ base: 5, lg: 10 }}
       >
-        <Item
-          title="Trisolaris"
-          description="Trisolaris is the first AMM exchange on Aurora."
-          icon="icons/ecosystem-trisolaris.svg"
-          type="EXCHANGE"
-          env="mainnet"
-        />
-        <Item
-          title="Ref.Finance"
-          description="Trisolaris is the first AMM exchange on Aurora."
-          icon="icons/ecosystem-refinance.svg"
-          type="DEFI"
-          env="mainnet"
-        />
-        <Item
-          title="Burrow"
-          description="Trisolaris is the first AMM exchange on Aurora."
-          icon="icons/ecosystem-burrow.svg"
-          type="LENDING"
-          env="testnet"
-        />
-        <Item
-          title="Jumbo"
-          description="Trisolaris is the first AMM exchange on Aurora."
-          icon="icons/ecosystem-jumbo.svg"
-          type="EXCHANGE"
-          env="mainnet"
-          soon={true}
-        />
-        <Item
-          title="Aurigami"
-          description="Trisolaris is the first AMM exchange on Aurora."
-          icon="icons/ecosystem-aurigami.svg"
-          type="INFRASTRUCTURE"
-          env="mainnet"
-          soon={true}
-        />
-        <Item
-          title="Bastion"
-          description="Trisolaris is the first AMM exchange on Aurora."
-          icon="icons/ecosystem-bastion.svg"
-          type="LENDING"
-          env="testnet"
-          soon={true}
-        />
-        <Item
-          title="Wannaswap"
-          description="Trisolaris is the first AMM exchange on Aurora."
-          icon="icons/ecosystem-wannaswap.svg"
-          type="EXCHANGE"
-          soon={true}
-        />
+        {platforms.map((platform) => (
+          <Item
+            key={platform.title}
+            title={platform.title}
+            description={platform.description || "-"}
+            icon={platform.image}
+            type={platform.tag}
+            env={platform.test ? "testnet" : "mainnet"}
+            soon={platform.soon}
+          />
+        ))}
+
         <Box
           bg="white"
           rounded="lg"
