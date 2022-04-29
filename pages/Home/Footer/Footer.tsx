@@ -101,7 +101,7 @@ export default function LargeWithNewsletter() {
             <Text pb="10px" fontWeight={"semibold"}>
               Learn
             </Text>
-            <Link color="white" py="0px" px={0} href={"#"}>
+            <Link href="https://metapool.gitbook.io/master/" color="white" py="0px" px={0}>
               Gitbook
             </Link>
             <Link
