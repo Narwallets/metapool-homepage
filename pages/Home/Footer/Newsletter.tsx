@@ -13,7 +13,7 @@ const Newsletter = () => {
       email: "",
     },
     validationSchema: Yup.object().shape({
-      email: Yup.string().email("Invalid email").required("Required"),
+      email: Yup.string().email("Please enter a valid email").required("Required"),
     }),
     onSubmit: async (values) => {
       const { email } = values;

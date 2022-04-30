@@ -60,13 +60,13 @@ const StakingFarms: NextPage<Props> = ({
             <Item
               apy={st_near_30_day_apy}
               title="Stake Near"
-              description="Stake any amount of ETH and earn daily staking rewards."
+              description="Stake any amount of NEAR and earn daily staking rewards."
               icon="icons/staking-farms-near.svg"
             />
             <Item
               apy={st_near_30_day_apy}
-              title="Stake wNear in Aurora"
-              description="Stake any amount of ETH and earn daily staking rewards."
+              title="Stake wNEAR in Aurora"
+              description="Stake any amount of wNEAR and earn daily staking rewards."
               icon="icons/staking-farms-aurora.svg"
             />
             <Item

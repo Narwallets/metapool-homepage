@@ -68,7 +68,7 @@ const HowItWorks: NextPage = () => {
                 <br />
                 <Text textStyle="h5">Stake Near</Text>
                 <Text my={"13px"}>
-                  Deposit your NEAR into Meta Pool, we distribute it across best
+                  Deposit your NEAR or wNEAR into Meta Pool, we distribute it across best
                   performing validators, start earning staking rewards.
                 </Text>
               </Box>
