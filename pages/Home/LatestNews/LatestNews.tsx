@@ -25,7 +25,7 @@ const LatestNews: NextPage<Props> = ({ news }) => (
   <Box bgColor={"#F9FAFB"}>
     <Container
       maxW="container.xl"
-      py={{ base: 0, md: "5rem" }}
+      py={{ base: "5rem", md: "5rem" }}
       textAlign="center"
     >
       <Heading
