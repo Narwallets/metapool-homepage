@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Trisolaris",
+        "description": "Trisolaris is the first AMM exchange on Aurora.",
+        "image": "/icons/ecosystem-trisolaris.svg",
+        "tag": "EXCHANGE",
+        "test": false,
+        "soon": false
+    },
+    {
+        "title": "Ref.Finance",
+        "description": "Trisolaris is the first AMM exchange on Aurora.",
+        "image": "/icons/ecosystem-refinance.svg",
+        "tag": "DEFI",
+        "test": false,
+        "soon": false
+    },
+    {
+        "title": "Burrow",
+        "description": "Trisolaris is the first AMM exchange on Aurora.",
+        "image": "/icons/ecosystem-burrow.svg",
+        "tag": "LENDING",
+        "test": true,
+        "soon": false
+    },
+    {
+        "title": "Jumbo",
+        "description": "Trisolaris is the first AMM exchange on Aurora.",
+        "image": "/icons/ecosystem-jumbo.svg",
+        "tag": "EXCHANGES",
+        "test": true,
+        "soon": false
+    },
+    {
+        "title": "Aurigami",
+        "description": "Borrowing platform on Aurora.",
+        "image": "/icons/ecosystem-aurigami.svg",
+        "tag": "INFRASTRUCTURE",
+        "test": false,
+        "soon": true
+    },
+    {
+        "title": "Bastion",
+        "description": "Borrowing platform on Aurora. ",
+        "image": "/icons/ecosystem-bastion.svg",
+        "tag": "LENDING",
+        "test": false,
+        "soon": true
+    },
+    {
+        "title": "Wannaswap",
+        "description": "DEX on Aurora network.",
+        "image": "/icons/ecosystem-wannaswap.svg",
+        "tag": "EXCHANGES",
+        "test": true,
+        "soon": true
+    }
+]   

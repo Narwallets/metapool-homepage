@@ -20,6 +20,7 @@ const Comunity: NextPage = () => (
     justifyContent="center"
     bg={"url(/bg-comunity.svg) no-repeat"}
     bgSize="contain"
+    px="1rem"
   >
     <Container
       maxW="container.xl"

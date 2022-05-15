@@ -10,7 +10,7 @@ import {
 import Item from "./Item";
 
 const Technology: NextPage = () => (
-  <Box bgColor="#1E293B" textColor={"white"}>
+  <Box bgColor="#1E293B" textColor={"white"} px="1rem">
     <Container maxW="container.xl">
       <Flex
         pt={["7rem"]}

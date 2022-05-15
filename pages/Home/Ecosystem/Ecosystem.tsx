@@ -10,6 +10,8 @@ import {
   Tag,
   Stack,
   Square,
+  HStack,
+  VStack,
 } from "@chakra-ui/react";
 import Item from "./Item";
 
@@ -18,7 +20,7 @@ interface Props {
 }
 
 const Ecosystem: NextPage<Props> = ({ platforms }) => (
-  <Box bgColor="#F8FAFC">
+  <Box bgColor="#F8FAFC" px="1rem">
     <Container maxW="container.xl" py="4rem">
       <Flex
         pt={["50px"]}
@@ -100,12 +102,24 @@ const Ecosystem: NextPage<Props> = ({ platforms }) => (
           mx="auto"
           w="full"
         >
-          <Stack w="100%" justifyContent={"space-between"} px="0">
+          <HStack
+            spacing="1rem"
+            direction="row"
+            w="full"
+            alignItems={"flex-start"}
+            px="0"
+          >
             <Square size="64px" bgColor={"#F1F5F9"} />
-            <Box>
-              <Flex textStyle="h5" fontFamily={"Inter"}>
-                <Box w="80px" h="20px" bgColor={"#F1F5F9"} />
-                More Coming Soon
+            <VStack
+              spacing="1rem"
+              direction="column"
+              alignItems={"flex-start"}
+              textStyle="h5"
+              fontFamily={"Inter"}
+            >
+              <Box w="80px" h="20px" bgColor={"#F1F5F9"} />
+              <Text>
+                More Coming Soon{" "}
                 <Tag
                   textColor={"white"}
                   fontFamily={["Inter"]}
@@ -117,9 +131,9 @@ const Ecosystem: NextPage<Props> = ({ platforms }) => (
                 >
                   Soon!
                 </Tag>
-              </Flex>
-            </Box>
-          </Stack>
+              </Text>
+            </VStack>
+          </HStack>
         </Box>
       </SimpleGrid>
     </Container>

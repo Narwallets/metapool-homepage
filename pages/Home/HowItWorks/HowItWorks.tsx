@@ -25,10 +25,11 @@ const HowItWorks: NextPage = () => {
     >
       <Container
         maxW="container.xl"
-        px={{ base: "1rem", lg: "10rem" }}
+        px={{ base: "2rem", lg: "10rem" }}
         py="7rem"
       >
-        <Box textAlign="center">
+        <Box textAlign="center"
+        >
           <Text
             color="secondary"
             fontFamily={"Inter"}
@@ -48,11 +49,11 @@ const HowItWorks: NextPage = () => {
           >
             Stake NEAR with Meta Pool in three simple steps
           </Heading>
-          <HStack spacing="32px">
+          <HStack spacing="2rem">
             <SimpleGrid
               columns={{ base: 1, lg: 3 }}
               spacing={10}
-              mx={{ base: 10, lg: 0 }}
+              mx={{ base: "0", lg: 0 }}
               my={10}
             >
               <Box textAlign={"left"}>

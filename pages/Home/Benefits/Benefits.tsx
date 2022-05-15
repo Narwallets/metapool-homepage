@@ -15,7 +15,7 @@ import {
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
 const Benefits: NextPage = () => (
-  <Container maxW="container.xl" px={{ base: "3rem", lg: "10rem" }} py="5rem">
+  <Container maxW="container.xl" px={{ base: "2rem", lg: "10rem" }} py="5rem">
     <Flex
       pt={["50px"]}
       mb={"50px"}
