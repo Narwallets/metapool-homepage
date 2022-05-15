@@ -34,6 +34,7 @@ const Item: NextPage<Props> = ({
     border={"2px"}
     borderColor="#E2E8F0"
     mx="auto"
+    w="full"
   >
     <Stack
       direction={{ base: "column", lg: "row" }}

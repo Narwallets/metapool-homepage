@@ -22,7 +22,7 @@ interface Props {
 }
 
 const LatestNews: NextPage<Props> = ({ news }) => (
-  <Box bgColor={"#F9FAFB"}>
+  <Box bgColor={"#F9FAFB"} px="1rem">
     <Container
       maxW="container.xl"
       py={{ base: "5rem", md: "5rem" }}

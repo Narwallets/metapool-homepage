@@ -35,6 +35,7 @@ const Post: NextPage<Props> = ({
     overflow={"hidden"}
     mx="auto"
     fontFamily="Inter"
+    minH="420px"
   >
     <Box bg={"gray.100"} mt={-6} mx={-6} mb={6} pos={"relative"}>
       <Image src={cover} alt={title} />

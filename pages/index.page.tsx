@@ -19,9 +19,7 @@ import LatestNews from "./Home/LatestNews";
 import Security from "./Home/Security";
 import Technology from "./Home/Technology";
 
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
+import platforms from "../config/platforms.json";
 
 interface Props {
   metrics: {
@@ -31,10 +29,10 @@ interface Props {
     ref_oct_st_near_apr: string;
   };
   news: any;
-  platforms: any;
 }
 
-const App: NextPage<Props> = ({ metrics, news, platforms }) => {
+
+const App: NextPage<Props> = ({ metrics, news }) => {
   return (
     <>
       <Head>
@@ -114,22 +112,11 @@ export async function getServerSideProps({}) {
       };
     })
     .slice(0, 3);
-  const platforms = await prisma.platforms.findMany({
-    orderBy: [
-      {
-        order: "asc",
-      },
-    ],
-  });
-  console.info({ platforms });
-
-  prisma.$disconnect();
 
   return {
     props: {
       metrics,
       news,
-      platforms,
     },
   };
 }
