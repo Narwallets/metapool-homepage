@@ -8,62 +8,67 @@ import {
   Link,
   Text,
 } from "@chakra-ui/react";
+import useSmoothScrollTo from "../../../hooks/useSmoothScrollTo";
 
 const Security: NextPage = () => (
-  <Container maxW="container.xl">
-    <Box
-      px={{ base: "3rem", lg: "10rem" }}
-      py="5rem"
-      rounded={"32px"}
-      bg={["url('bg-security.svg') no-repeat #F1F5F9"]}
-      bgPosition={{ base: "center center", lg: "center right" }}
-      my={["4rem", "9rem"]}
-      display="flex"
-      flexDirection="column"
-      justifyContent="center"
-      mx={{ base: "1rem", lg: "auto" }}
-      w="fit-content"
-    >
-      <Box textAlign="left" w="full" mr="50%" pt={["0"]} mb={"0"}>
-        <Text
-          color="secondary"
-          fontFamily={"Inter"}
-          letterSpacing="0.6px"
-          fontWeight="semibold"
-        >
-          SECURITY
-        </Text>
-        <Heading
-          size="2xl"
-          pt={["15px", "15px"]}
-          pb={["0px", "43px"]}
-          lineHeight={"110%"}
-          fontFamily="'Meta Space', 'Space Grotesk'"
-        >
-          Trust issues?
-          <br />
-          We are audited.
-        </Heading>
-        <Text noOfLines={[3, 3]} w="50%" fontFamily="Inter">
-          NEAR protocol delivers unparalleled speed, security, and reliability.
-          Enjoy almost instant transactions and extremely low fees.
-        </Text>
-        <br />
-
-        <Image alt="Blocksec" src="/icons/blocksec.svg" />
-        <Box mt="40px">
-          <Link
-            variant="solid"
-            href="https://metapool.gitbook.io/master/litepaper-1/risks"
-            isExternal={true}
-            whiteSpace="nowrap"
+  <>
+    <a id="#security" {...useSmoothScrollTo("#security")} />
+    <Container maxW="container.xl">
+      <Box
+        px={{ base: "3rem", lg: "10rem" }}
+        py="5rem"
+        rounded={"32px"}
+        bg={["url('bg-security.svg') no-repeat #F1F5F9"]}
+        bgPosition={{ base: "center center", lg: "center right" }}
+        my={["4rem", "9rem"]}
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        mx={{ base: "1rem", lg: "auto" }}
+        w="fit-content"
+      >
+        <Box textAlign="left" w="full" mr="50%" pt={["0"]} mb={"0"}>
+          <Text
+            color="secondary"
+            fontFamily={"Inter"}
+            letterSpacing="0.6px"
+            fontWeight="semibold"
           >
-            See live audit
-          </Link>
+            SECURITY
+          </Text>
+          <Heading
+            size="2xl"
+            pt={["15px", "15px"]}
+            pb={["0px", "43px"]}
+            lineHeight={"110%"}
+            fontFamily="'Meta Space', 'Space Grotesk'"
+          >
+            Trust issues?
+            <br />
+            We are audited.
+          </Heading>
+          <Text noOfLines={[3, 3]} w="50%" fontFamily="Inter">
+            NEAR protocol delivers unparalleled speed, security, and
+            reliability. Enjoy almost instant transactions and extremely low
+            fees.
+          </Text>
+          <br />
+
+          <Image alt="Blocksec" src="/icons/blocksec.svg" />
+          <Box mt="40px">
+            <Link
+              variant="solid"
+              href="https://metapool.gitbook.io/master/litepaper-1/risks"
+              isExternal={true}
+              whiteSpace="nowrap"
+            >
+              See live audit
+            </Link>
+          </Box>
         </Box>
       </Box>
-    </Box>
-  </Container>
+    </Container>
+  </>
 );
 
 export default Security;

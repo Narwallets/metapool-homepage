@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Center, Box, Flex, Link, Stack, Heading } from "@chakra-ui/react";
+import { Center, Box, Link, Stack, Heading } from "@chakra-ui/react";
 import MetapoolData from "./MetapoolData";
 import NumberFormat from "react-number-format";
 

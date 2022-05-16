@@ -63,32 +63,22 @@ const App: NextPage<Props> = ({ metrics, news }) => {
 
         {/* <Notification /> */}
         <Header />
-        <a id="#top" {...useSmoothScrollTo("#top")} />
         <Hero
           tvl={metrics?.tvl}
           staked_pools_count={metrics?.staked_pools_count}
           st_near_30_day_apy={metrics?.st_near_30_day_apy}
         />
-        <a id="#staking-farms" {...useSmoothScrollTo("#staking-farms")} />
         <StakingFarms
           st_near_30_day_apy={metrics?.st_near_30_day_apy}
           ref_oct_st_near_apr={metrics?.ref_oct_st_near_apr}
         />
-        <a id="#ecosystem" {...useSmoothScrollTo("#ecosystem")} />
         <Ecosystem platforms={platforms} />
-        <a id="#how-it-works" {...useSmoothScrollTo("#how-it-works")} />
         <HowItWorks />
-        <a id="#technology" {...useSmoothScrollTo("#technology")} />
         <Technology />
-        <a id="#benefits" {...useSmoothScrollTo("#benefits")} />
         <Benefits />
-        <a id="#security" {...useSmoothScrollTo("#security")} />
         <Security />
-        <a id="#investors" {...useSmoothScrollTo("#investors")} />
         <Investors />
-        <a id="#latest-news" {...useSmoothScrollTo("#latest-news")} />
         <LatestNews news={news} />
-        <a id="#community" {...useSmoothScrollTo("#community")} />
         <Comunity />
         <Footer />
       </Container>
