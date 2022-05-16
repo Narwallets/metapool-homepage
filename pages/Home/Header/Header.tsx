@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Box,
   Flex,
@@ -9,9 +9,10 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import useSmoothScrollTo from "../../../hooks/useSmoothScrollTo";
 
 const LINKS = [
-  { title: "METAPOOL", anchor: "#top" },
+  { title: "TOP", anchor: "#top" },
   { title: "STAKING FARMS", anchor: "#staking-farms" },
   { title: "STNEAR ECOSYSTEM", anchor: "#ecosystem" },
   { title: "HOW IT WORKS", anchor: "#how-it-works" },
@@ -43,6 +44,7 @@ export default function Simple() {
 
   return (
     <>
+      <a id="#top" {...useSmoothScrollTo("#top")} />
       <Box
         bg={scrolled ? "white" : "transparent"}
         boxShadow={scrolled ? "md" : "none"}
@@ -53,7 +55,9 @@ export default function Simple() {
         w="full"
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <Image alt="logo" src={"logo.svg"} w="202" h="34" />
+          <Link href="/#top">
+            <Image alt="logo" src={"logo.svg"} w="202" h="34" />
+          </Link>
           <Flex alignItems={"center"}>
             <IconButton
               variant={"none"}

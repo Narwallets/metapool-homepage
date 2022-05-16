@@ -12,9 +12,11 @@ import {
   Stack,
   Heading,
 } from "@chakra-ui/react";
+import useSmoothScrollTo from "../../../hooks/useSmoothScrollTo";
 
-const HowItWorks: NextPage = () => {
-  return (
+const HowItWorks: NextPage = () => (
+  <>
+    <a id="#how-it-works" {...useSmoothScrollTo("#how-it-works")} />
     <Flex
       fontSize="md"
       position="relative"
@@ -28,8 +30,7 @@ const HowItWorks: NextPage = () => {
         px={{ base: "2rem", lg: "10rem" }}
         py="7rem"
       >
-        <Box textAlign="center"
-        >
+        <Box textAlign="center">
           <Text
             color="secondary"
             fontFamily={"Inter"}
@@ -69,8 +70,9 @@ const HowItWorks: NextPage = () => {
                 <br />
                 <Text textStyle="h5">Stake Near</Text>
                 <Text my={"13px"}>
-                  Deposit your NEAR or wNEAR into Meta Pool, we distribute it across best
-                  performing validators, start earning staking rewards.
+                  Deposit your NEAR or wNEAR into Meta Pool, we distribute it
+                  across best performing validators, start earning staking
+                  rewards.
                 </Text>
               </Box>
               <Box textAlign={"left"}>
@@ -136,7 +138,7 @@ const HowItWorks: NextPage = () => {
         </Stack>
       </Container>
     </Flex>
-  );
-};
+  </>
+);
 
 export default HowItWorks;
