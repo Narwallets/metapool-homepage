@@ -99,7 +99,7 @@ function Footer() {
             Terms and Conditions
           </Text> */}
           <Link
-            href="https://metapool.app/legal-notice-risk-disclosures.html"
+            href="/legal-notice-risk-disclosures"
             fontSize={"sm"}
             whiteSpace="nowrap"
             p="0"

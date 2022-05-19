@@ -5,14 +5,11 @@ import { Container, Image, keyframes } from "@chakra-ui/react";
 import Parser from "rss-parser";
 import * as cheerio from "cheerio";
 
-import Header from "./Home/Header";
 import Hero from "./Home/Hero";
 import StakingFarms from "./Home/StakingFarms";
-import useSmoothScrollTo from "../hooks/useSmoothScrollTo";
 import Benefits from "./Home/Benefits";
 import Comunity from "./Home/Comunity";
 import Ecosystem from "./Home/Ecosystem";
-import Footer from "./Home/Footer";
 import HowItWorks from "./Home/HowItWorks";
 import Investors from "./Home/Investors";
 import LatestNews from "./Home/LatestNews";
@@ -20,6 +17,7 @@ import Security from "./Home/Security";
 import Technology from "./Home/Technology";
 
 import platforms from "../config/platforms.json";
+import Layout from "../components/Layout";
 
 interface Props {
   metrics: {
@@ -31,20 +29,13 @@ interface Props {
   news: any;
 }
 
-
 const App: NextPage<Props> = ({ metrics, news }) => {
   return (
     <>
       <Head>
         <title>Meta Pool - liquid staking on NEAR blockchain - stNEAR</title>
       </Head>
-      <Container
-        position="relative"
-        maxW="container.100"
-        p={0}
-        overflow="clip"
-        maxWidth="100vw"
-      >
+      
         <Image
           alt="background"
           src="bg-home-main.svg"
@@ -62,26 +53,25 @@ const App: NextPage<Props> = ({ metrics, news }) => {
         />
 
         {/* <Notification /> */}
-        <Header />
-        <Hero
-          tvl={metrics?.tvl}
-          staked_pools_count={metrics?.staked_pools_count}
-          st_near_30_day_apy={metrics?.st_near_30_day_apy}
-        />
-        <StakingFarms
-          st_near_30_day_apy={metrics?.st_near_30_day_apy}
-          ref_oct_st_near_apr={metrics?.ref_oct_st_near_apr}
-        />
-        <Ecosystem platforms={platforms} />
-        <HowItWorks />
-        <Technology />
-        <Benefits />
-        <Security />
-        <Investors />
-        <LatestNews news={news} />
-        <Comunity />
-        <Footer />
-      </Container>
+        <Layout>
+          <Hero
+            tvl={metrics?.tvl}
+            staked_pools_count={metrics?.staked_pools_count}
+            st_near_30_day_apy={metrics?.st_near_30_day_apy}
+          />
+          <StakingFarms
+            st_near_30_day_apy={metrics?.st_near_30_day_apy}
+            ref_oct_st_near_apr={metrics?.ref_oct_st_near_apr}
+          />
+          <Ecosystem platforms={platforms} />
+          <HowItWorks />
+          <Technology />
+          <Benefits />
+          <Security />
+          <Investors />
+          <LatestNews news={news} />
+          <Comunity />
+        </Layout>
     </>
   );
 };

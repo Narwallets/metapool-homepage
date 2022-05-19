@@ -9,7 +9,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import useSmoothScrollTo from "../../../hooks/useSmoothScrollTo";
+import useSmoothScrollTo from "../../hooks/useSmoothScrollTo";
 
 const LINKS = [
   { title: "TOP", anchor: "#top" },
@@ -24,7 +24,7 @@ const LINKS = [
   { title: "COMMUNITY", anchor: "#community" },
 ];
 
-export default function Simple() {
+export default function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [scrolled, setScrolled] = useState(false);
 
@@ -48,8 +48,8 @@ export default function Simple() {
       <Box
         bg={scrolled ? "white" : "transparent"}
         boxShadow={scrolled ? "md" : "none"}
-        py="1rem"
         px={"2rem"}
+        pt="1rem"
         position="fixed"
         zIndex="101"
         w="full"

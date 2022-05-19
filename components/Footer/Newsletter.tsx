@@ -2,7 +2,7 @@ import { Stack, Text, FormControl, Input, Button } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 import * as Yup from "yup";
 import { useFormik } from "formik";
-import useSubscribeToNewsletter from "../../../hooks/useSubscribeToNewsletter";
+import useSubscribeToNewsletter from "../../hooks/useSubscribeToNewsletter";
 
 const Newsletter = () => {
   const { subscribe, isLoading, isSuccess } = useSubscribeToNewsletter();
