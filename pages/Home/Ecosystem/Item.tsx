@@ -1,13 +1,5 @@
 import type { NextPage } from "next";
-import {
-  Box,
-  Text,
-  Image,
-  Tag,
-  Circle,
-  Flex,
-  Stack,
-} from "@chakra-ui/react";
+import { Box, Text, Image, Tag, Circle, Flex, Stack } from "@chakra-ui/react";
 
 interface Props {
   title: string;
@@ -15,17 +7,9 @@ interface Props {
   icon?: string;
   type?: string;
   env?: string;
-  soon?: boolean;
 }
 
-const Item: NextPage<Props> = ({
-  title,
-  description,
-  icon,
-  type,
-  env,
-  soon,
-}) => (
+const Item: NextPage<Props> = ({ title, description, icon, type, env }) => (
   <Box
     maxW={["full", "500px"]}
     bg="white"
@@ -70,19 +54,6 @@ const Item: NextPage<Props> = ({
             )}
             {env === "testnet" && (
               <Circle size="8px" bgColor="#F97316" mx="4px" />
-            )}
-            {soon && (
-              <Tag
-                textColor={"white"}
-                fontFamily={["Inter"]}
-                fontSize="10px"
-                fontWeight={"semibold"}
-                bg="#F59E0B"
-                borderRadius={"2px"}
-                mx="4px"
-              >
-                Soon!
-              </Tag>
             )}
           </Flex>
         )}
