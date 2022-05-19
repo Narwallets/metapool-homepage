@@ -51,7 +51,7 @@ const Technology: NextPage = () => (
               worry. This helps keep the network decentralised and your funds
               secure."
             linkText="Security reference"
-            linkHref="#"
+            linkHref="https://metapool.gitbook.io/master/litepaper-1/risks/audits"
             image="/bg-technology-secure.svg"
             inverted={false}
           />
@@ -61,7 +61,7 @@ const Technology: NextPage = () => (
           Meta Pool, you are able to access your funds immediately through
           Liquid Unstaking for a small fee of just ~0.3%."
             linkText="Liquid Staking How-To"
-            linkHref="#"
+            linkHref="https://metapool.gitbook.io/master/tutorials-1/meta-pool-on-near/how-to-stake-step-by-step"
             image="bg-technology-inmediate.svg"
             inverted={true}
           />
@@ -71,7 +71,7 @@ const Technology: NextPage = () => (
           protocols on Defi and Aurora. You can get attractive yields (20% —
           90%) on top of your staking rewards."
             linkText="DeFi with Meta Pool"
-            linkHref="#"
+            linkHref="#ecosystem"
             image="bg-technology-returns.svg"
             inverted={false}
           />

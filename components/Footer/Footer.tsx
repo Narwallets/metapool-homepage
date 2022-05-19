@@ -71,19 +71,19 @@ function Footer() {
             </Link>
           </Stack>
           <Stack align={"flex-start"}>
-            <Text pb="10px" fontWeight={"semibold"}>
+            <Link href="https://metapool.gitbook.io/master/contact-us" pb="10px" fontWeight={"semibold"}>
               Contact
-            </Text>
-            <Link p="0px" href={"#"}>
+            </Link>
+            <Link p="0px" href={"https://metapool.gitbook.io/master/"}>
               About us
             </Link>
-            <Link p="0px" href={"#"}>
+            <Link p="0px" href={"https://discord.gg/znPg3dsTzM"}>
               Support
             </Link>
-            <Link p="0px" href={"#"}>
+            {/* <Link p="0px" href={"#"}>
               Help Center
-            </Link>
-            <Link p="0px" href={"#"}>
+            </Link> */}
+            <Link p="0px" href={"https://airtable.com/shru3vdm0kJzFXXZC"}>
               Careers
             </Link>
           </Stack>
@@ -92,14 +92,14 @@ function Footer() {
           <Text fontSize={"sm"} w="full">
             © 2022 Meta Pool by Narwallets
           </Text>
-          <Text fontSize={"sm"} whiteSpace="nowrap">
+          {/* <Text fontSize={"sm"} whiteSpace="nowrap">
             Privacy
           </Text>
           <Text fontSize={"sm"} whiteSpace="nowrap">
             Terms and Conditions
-          </Text>
+          </Text> */}
           <Link
-            href="https://metapool.app/legal-notice-risk-disclosures.html"
+            href="/legal-notice-risk-disclosures"
             fontSize={"sm"}
             whiteSpace="nowrap"
             p="0"

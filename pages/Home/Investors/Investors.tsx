@@ -23,23 +23,31 @@ const Investors: NextPage = () => (
         Backed by great people
       </Heading>
       <SimpleGrid
-        columns={{ base: 1, md: 3, lg: 3, xl: 6 }}
-        mx={{ base: "1rem", md: "3rem", lg: "0rem" }}
+        columns={{ base: 2, md: 3, lg: 3, xl: 6 }}
+        mx={{ base: "1rem", md: "3rem", lg: "3rem" }}
         alignItems={"center"}
         spacing={10}
       >
+        <Image alt="DragonFly" src="/investors/dragonfly.svg" minW={"150px"} />
+        <Image alt="ATT" src="/investors/att.svg" minW={"150px"} />
+        <Image alt="Move" src="/investors/move.svg" minW={"150px"} />
+        <Image alt="SVC" src="/investors/svc.svg" minW={"150px"} />
+        <Image alt="DI" src="/investors/di.svg" minW={"150px"} />
+        <Image alt="Blockwall" src="/investors/blockwall.svg" minW={"150px"} />
         <Image
-          alt="DragonFly"
-          src="/icons/investors-dragonfly.svg"
+          alt="Palmera"
+          src="/investors/palmera_crypto.svg"
           minW={"150px"}
         />
-        <Image alt="ATT" src="/icons/investors-att.svg" minW={"150px"} />
-        <Image alt="Move" src="/icons/investors-move.svg" minW={"150px"} />
-        <Image alt="SVC" src="/icons/investors-svc.svg" minW={"150px"} />
-        <Image alt="DI" src="/icons/investors-di.svg" minW={"150px"} />
         <Image
-          alt="Blockwall"
-          src="/icons/investors-blockwall.svg"
+          alt="Warburg"
+          src="/investors/warburg_serres.svg"
+          minW={"150px"}
+        />
+        <Image alt="IOSG" src="/investors/iosg_ventures.svg" minW={"150px"} />
+        <Image
+          alt="Big Brain Holdings"
+          src="/investors/big_brain_holdings.svg"
           minW={"150px"}
         />
       </SimpleGrid>
