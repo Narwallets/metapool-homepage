@@ -48,7 +48,11 @@ function Footer() {
             <Link p="0px" href={"https://blog.metapool.app"} isExternal={true}>
               Meta Pool Blog
             </Link>
-            <Link p="0px" href={"#"}>
+            <Link
+              p="0px"
+              href={"https://metapool.gitbook.io/master/faq/faq"}
+              isExternal={true}
+            >
               FAQ
             </Link>
           </Stack>
