@@ -9,7 +9,7 @@ interface Props {
 }
 
 const Comunity: NextPage<Props> = ({ name, description, href, icon }) => (
-  <Link p="0" href={href} fontWeight={600}>
+  <Link p="0" href={href} fontWeight={600} isExternal={true}>
     <Stack
       mt={6}
       direction={"row"}
