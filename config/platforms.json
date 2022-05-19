@@ -10,7 +10,7 @@
         "title": "Ref.Finance",
         "description": "Ref Finance is one of the core projects in the DeFi ecosystem on NEAR. Its main objective is to bring together the core components of DeFi, namely, decentralized exchange (DEX).",
         "image": "/ecosystem/refinance.svg",
-        "tag": "DEFI",
+        "tag": "EXCHANGE",
         "test": false
     },
     {
@@ -24,14 +24,14 @@
         "title": "Jumbo",
         "description": "Jumbo Exchange is the one-stop solution for everyone seeking an ungoverned decentralized solution.",
         "image": "/ecosystem/jumbo.svg",
-        "tag": "EXCHANGES",
+        "tag": "EXCHANGE",
         "test": false
     },
     {
         "title": "Aurigami",
         "description": "Aurigami is a decentralised, non-custodial liquidity protocol. Enables users to effortlessly lend, borrow, and earn interest with their digital assets.",
         "image": "/ecosystem/aurigami.svg",
-        "tag": "INFRASTRUCTURE",
+        "tag": "LENDING",
         "test": false
     },
     {
@@ -45,7 +45,7 @@
         "title": "Wannaswap",
         "description": "Wannswap is one of the first AMM DEX built on Aurora EVM of the NEAR blockchain.",
         "image": "/ecosystem/wannaswap.svg",
-        "tag": "EXCHANGES",
+        "tag": "EXCHANGE",
         "test": false
     },
     {
