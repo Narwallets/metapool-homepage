@@ -111,7 +111,7 @@ const Legal: NextPage = () => (
             <br />
           </div>
           We do not make any warranties or representations of any kind with
-          regard to the $META Token (the "$META"), and we expressly disclaim all
+          regard to the $META Token (the &quot;$META&quot;), and we expressly disclaim all
           warranties and representations relating to $META, whether express or
           implied, including, without limitation, any implied warranties of
           merchantability, fitness for a particular purpose, title, and
