@@ -26,6 +26,7 @@ function Footer() {
               color="white"
               py="0px"
               px={0}
+              isExternal={true}
             >
               Gitbook
             </Link>
@@ -34,6 +35,7 @@ function Footer() {
               href={
                 "https://metapool.app/Tokenomics_Governance_-_Meta_Pool_v6.pdf"
               }
+              isExternal={true}
               px={0}
             >
               Tokenomics
@@ -43,7 +45,7 @@ function Footer() {
             <Text pb="10px" fontWeight={"semibold"}>
               Resources
             </Text>
-            <Link p="0px" href={"https://blog.metapool.app"}>
+            <Link p="0px" href={"https://blog.metapool.app"} isExternal={true}>
               Meta Pool Blog
             </Link>
             <Link p="0px" href={"#"}>
@@ -54,36 +56,61 @@ function Footer() {
             <Text pb="10px" fontWeight={"semibold"}>
               Community
             </Text>
-            <Link href="https://twitter.com/meta_pool" p="0px">
+            <Link
+              href="https://twitter.com/meta_pool"
+              p="0px"
+              isExternal={true}
+            >
               Twitter
             </Link>
-            <Link p="0px" href="https://t.me/MetaPoolOfficialChannel">
+            <Link
+              p="0px"
+              href="https://t.me/MetaPoolOfficialChannel"
+              isExternal={true}
+            >
               Telegram
             </Link>
-            <Link p="0px" href={"https://github.com/Narwallets/meta-pool"}>
+            <Link
+              p="0px"
+              href={"https://github.com/Narwallets/meta-pool"}
+              isExternal={true}
+            >
               Github
             </Link>
             <Link
               p="0px"
               href={"https://www.youtube.com/channel/UCftgX55OpiouK8pmHydVT-g"}
+              isExternal={true}
             >
               YouTube
             </Link>
           </Stack>
           <Stack align={"flex-start"}>
-            <Link href="https://metapool.gitbook.io/master/contact-us" pb="10px" fontWeight={"semibold"}>
+            <Text pb="10px" fontWeight={"semibold"}>
               Contact
-            </Link>
-            <Link p="0px" href={"https://metapool.gitbook.io/master/"}>
+            </Text>
+            <Link
+              p="0px"
+              href={"https://metapool.gitbook.io/master/"}
+              isExternal={true}
+            >
               About us
             </Link>
-            <Link p="0px" href={"https://discord.gg/znPg3dsTzM"}>
+            <Link
+              p="0px"
+              href={"https://discord.gg/znPg3dsTzM"}
+              isExternal={true}
+            >
               Support
             </Link>
             {/* <Link p="0px" href={"#"}>
               Help Center
             </Link> */}
-            <Link p="0px" href={"https://airtable.com/shru3vdm0kJzFXXZC"}>
+            <Link
+              p="0px"
+              href={"https://airtable.com/shru3vdm0kJzFXXZC"}
+              isExternal={true}
+            >
               Careers
             </Link>
           </Stack>

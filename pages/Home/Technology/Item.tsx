@@ -45,19 +45,10 @@ const Item: NextPage<Props> = ({
         w="full"
         textAlign={"left"}
       >
-        <Heading
-          size="md"
-          color="white"
-          textStyle={"h3"}
-          fontFamily="Inter"
-        >
+        <Heading size="md" color="white" textStyle={"h3"} fontFamily="Inter">
           {title}
         </Heading>
-        <Text
-          color="white"
-          my="30px"
-          fontFamily="Inter"
-        >
+        <Text color="white" my="30px" fontFamily="Inter">
           {description}
         </Text>
         <Link
@@ -66,6 +57,7 @@ const Item: NextPage<Props> = ({
           textColor={"#818CF8"}
           pl="0"
           whiteSpace={"nowrap"}
+          isExternal={true}
         >
           {linkText} <ChevronRightIcon w={6} h={6} color="#818CF8" />
         </Link>

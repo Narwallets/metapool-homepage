@@ -61,6 +61,7 @@ const Comunity: NextPage = () => (
                 borderWidth="2px"
                 textAlign={"center"}
                 maxW="sm"
+                isExternal={true}
               >
                 Join Discord
               </Link>

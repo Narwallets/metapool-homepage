@@ -132,6 +132,7 @@ const HowItWorks: NextPage = () => (
             variant="link"
             textColor={"primary"}
             whiteSpace={"nowrap"}
+            isExternal={true}
           >
             Find out more <ChevronRightIcon w={6} h={6} color="primary" />
           </Link>
