@@ -49,7 +49,7 @@ export default function Header() {
         bg={scrolled ? "white" : "transparent"}
         boxShadow={scrolled ? "md" : "none"}
         px={"2rem"}
-        pt="1rem"
+        py="1rem"
         position="fixed"
         zIndex="101"
         w="full"

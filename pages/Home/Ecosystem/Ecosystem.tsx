@@ -91,7 +91,6 @@ const Ecosystem: NextPage<Props> = ({ platforms }) => (
               icon={platform.image}
               type={platform.tag}
               env={platform.test ? "testnet" : "mainnet"}
-              soon={platform.soon}
             />
           ))}
 

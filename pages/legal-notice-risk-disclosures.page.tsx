@@ -359,7 +359,7 @@ const Legal: NextPage = () => (
             </div>
           </div>
         </section>
-        <p></p><br />
+        <p></p><br /><br />
       </Container>
     </Layout>
   </>

@@ -35,7 +35,13 @@ const App: NextPage<Props> = ({ metrics, news }) => {
       <Head>
         <title>Meta Pool - liquid staking on NEAR blockchain - stNEAR</title>
       </Head>
-      
+      <Container
+        position="relative"
+        maxW="container.100"
+        p={0}
+        overflow="clip"
+        maxWidth="100vw"
+      >
         <Image
           alt="background"
           src="bg-home-main.svg"
@@ -72,6 +78,7 @@ const App: NextPage<Props> = ({ metrics, news }) => {
           <LatestNews news={news} />
           <Comunity />
         </Layout>
+      </Container>
     </>
   );
 };
