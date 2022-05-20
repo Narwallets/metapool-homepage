@@ -29,7 +29,7 @@ const Item: NextPage<Props> = ({ title, description, icon, type, env }) => (
       {icon && (
         <Image
           src={icon}
-          alt="Near"
+          alt="NEAR"
           mr="2rem"
           maxWidth={["150px", null]}
           mx={["auto", "initial"]}

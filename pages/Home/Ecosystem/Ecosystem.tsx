@@ -50,7 +50,7 @@ const Ecosystem: NextPage<Props> = ({ platforms }) => (
               DeFi Ecosystem
             </Heading>
             <Box pb={["76px", "76px"]}>
-              NEAR protocol delivers unparalleled speed, security, and
+              NEAR Protocol delivers unparalleled speed, security, and
               reliability.
               <br />
               Enjoy almost instant transactions and extremely low fees.

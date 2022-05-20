@@ -71,7 +71,7 @@ const Benefits: NextPage = () => (
             <br />
             <Text textStyle="h5">Borrowing</Text>
             <Text my={"13px"}>
-              Access liquidity without selling NEAR by borrowing Stablecoins
+              Access liquidity without selling NEAR by borrowing stablecoins and other assets
               using stNEAR as Collateral.
             </Text>
           </Box>

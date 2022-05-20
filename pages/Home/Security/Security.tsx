@@ -48,7 +48,7 @@ const Security: NextPage = () => (
             We are audited.
           </Heading>
           <Text noOfLines={[3, 3]} w="50%" fontFamily="Inter">
-            NEAR protocol delivers unparalleled speed, security, and
+            NEAR Protocol delivers unparalleled speed, security, and
             reliability. Enjoy almost instant transactions and extremely low
             fees.
           </Text>

@@ -40,7 +40,7 @@ const StakingFarms: NextPage<Props> = ({
             letterSpacing="0.6px"
             fontWeight="semibold"
           >
-            STAKING FARMS
+            STAKING AND FARMS
           </Text>
           <Heading
             size="2xl"
@@ -51,7 +51,7 @@ const StakingFarms: NextPage<Props> = ({
             Supported networks
           </Heading>
           <Box pb={["76px", "76px"]} fontFamily="Inter">
-            Meta Pool lets you stake tokens from many networks.
+            Meta Pool lets you stake tokens from NEAR and Aurora networks.
             <br />
             Choose a network below to get started.
           </Box>
@@ -62,7 +62,7 @@ const StakingFarms: NextPage<Props> = ({
             >
               <Item
                 apy={st_near_30_day_apy}
-                title="Stake Near"
+                title="Stake NEAR"
                 description="Stake any amount of NEAR and earn daily staking rewards."
                 icon="icons/staking-farms-near.svg"
               />
@@ -74,8 +74,8 @@ const StakingFarms: NextPage<Props> = ({
               />
               <Item
                 apy={ref_oct_st_near_apr}
-                title="New OCT — stNEAR Farm"
-                description="New OCT — stNEAR Farm"
+                title="NEW OCT <> stNEAR Farm"
+                description="Farm in a few clicks with Meta Recipes"
                 icon="icons/staking-farms-oct.svg"
               />
             </SimpleGrid>

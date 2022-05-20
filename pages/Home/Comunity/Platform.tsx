@@ -26,7 +26,7 @@ const Comunity: NextPage<Props> = ({ name, description, href, icon }) => (
         <Text p="0" fontWeight={600}>
           {name}
         </Text>
-        <Text color={"gray.500"}>{description}</Text>
+        <Text color={"gray.500"} whiteSpace="nowrap">{description}</Text>
       </Stack>
     </Stack>
   </Link>

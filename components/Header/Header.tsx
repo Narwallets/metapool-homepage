@@ -13,7 +13,7 @@ import useSmoothScrollTo from "../../hooks/useSmoothScrollTo";
 
 const LINKS = [
   { title: "TOP", anchor: "#top" },
-  { title: "STAKING FARMS", anchor: "#staking-farms" },
+  { title: "STAKING AND FARMS", anchor: "#staking-farms" },
   { title: "STNEAR ECOSYSTEM", anchor: "#ecosystem" },
   { title: "HOW IT WORKS", anchor: "#how-it-works" },
   { title: "TECHNOLOGY", anchor: "#technology" },
