@@ -22,8 +22,10 @@ const Item: NextPage<Props> = ({ title, description, icon, type, env }) => (
   >
     <Stack
       direction={{ base: "column", lg: "row" }}
+      spacing="2rem"
       w="100%"
       justifyContent={"space-between"}
+      alignItems="flex-start"
       px="0"
     >
       {icon && (
@@ -33,6 +35,7 @@ const Item: NextPage<Props> = ({ title, description, icon, type, env }) => (
           mr="2rem"
           maxWidth={["150px", null]}
           mx={["auto", "initial"]}
+          mt="0rem"
         />
       )}
       <Box>

@@ -50,7 +50,7 @@ const Comunity: NextPage = () => (
           <Box pb={"76px"}>
             <Stack direction={{ base: "column", lg: "row" }}>
               <Text>
-                Chat with 7000+ members and get help with your projects on
+                Social networks with 7000+ members and get help with your projects on
                 Discord.
               </Text>
               <Spacer />

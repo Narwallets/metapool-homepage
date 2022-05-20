@@ -25,7 +25,7 @@ const Security: NextPage = () => (
         flexDirection="column"
         justifyContent="center"
         mx={{ base: "1rem", lg: "auto" }}
-        w="fit-content"
+        w="full"
       >
         <Box textAlign="left" w="full" mr="50%" pt={["0"]} mb={"0"}>
           <Text
@@ -47,10 +47,8 @@ const Security: NextPage = () => (
             <br />
             We are audited.
           </Heading>
-          <Text noOfLines={[3, 3]} w="50%" fontFamily="Inter">
-            NEAR Protocol delivers unparalleled speed, security, and
-            reliability. Enjoy almost instant transactions and extremely low
-            fees.
+          <Text fontFamily="Inter">
+            Audit of Meta Pool repositories and contracts was passed in BlockSec 
           </Text>
           <br />
 
