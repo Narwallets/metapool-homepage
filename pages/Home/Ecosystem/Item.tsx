@@ -21,7 +21,7 @@ const Item: NextPage<Props> = ({ title, description, icon, type, env }) => (
     w="full"
   >
     <Stack
-      direction={{ base: "column", lg: "row" }}
+      direction={"row"}
       spacing="2rem"
       w="100%"
       justifyContent={"space-between"}

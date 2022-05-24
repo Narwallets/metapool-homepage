@@ -57,7 +57,7 @@ const Item: NextPage<Props> = ({
           textColor={"#818CF8"}
           pl="0"
           whiteSpace={"nowrap"}
-          isExternal={true}
+          isExternal
         >
           {linkText} <ChevronRightIcon w={6} h={6} color="#818CF8" />
         </Link>

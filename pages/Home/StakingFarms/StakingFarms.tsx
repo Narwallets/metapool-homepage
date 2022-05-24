@@ -40,7 +40,7 @@ const StakingFarms: NextPage<Props> = ({
             letterSpacing="0.6px"
             fontWeight="semibold"
           >
-            STAKING AND FARMS
+            Explore our growing range of Products
           </Text>
           <Heading
             size="2xl"
@@ -48,12 +48,14 @@ const StakingFarms: NextPage<Props> = ({
             pb={["43px", "43px"]}
             fontFamily="'Meta Space', 'Space Grotestk'"
           >
-            Supported networks
+            Enter the Meta Pool Ecosystem
           </Heading>
           <Box pb={["76px", "76px"]} fontFamily="Inter">
-            Meta Pool lets you stake tokens from NEAR and Aurora networks.
+            At Meta Pool we thrive in building products.
             <br />
-            Choose a network below to get started.
+            You can stake NEAR direcly on NEAR Mainnet or Aurora, or use stNEAR to fundraise through Meta Yield.
+            <br />
+            More amazing use cases coming soon...
           </Box>
           <HStack spacing={{ base: "1rem", lg: "4rem" }}>
             <SimpleGrid
@@ -65,18 +67,21 @@ const StakingFarms: NextPage<Props> = ({
                 title="Stake NEAR"
                 description="Stake any amount of NEAR and earn daily staking rewards."
                 icon="icons/staking-farms-near.svg"
+                url="https://metapool.app/dapp/mainnet/meta/"
               />
               <Item
                 apy={st_near_30_day_apy}
                 title="Stake wNEAR in Aurora"
                 description="Stake any amount of wNEAR and earn daily staking rewards."
                 icon="icons/staking-farms-aurora.svg"
+                url="https://metapool.app/dapp/mainnet/metapool-aurora/"
               />
               <Item
                 apy={ref_oct_st_near_apr}
                 title="NEW OCT <> stNEAR Farm"
                 description="Farm in a few clicks with Meta Recipes"
                 icon="icons/staking-farms-oct.svg"
+                url="https://metapool.app/dapp/mainnet/meta/"
               />
             </SimpleGrid>
           </HStack>

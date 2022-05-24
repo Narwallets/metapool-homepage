@@ -98,6 +98,7 @@ const Benefits: NextPage = () => (
           variant="solid"
           href="https://metapool.app/dapp/mainnet/meta/"
           whiteSpace="nowrap"
+          isExternal
         >
           Start staking
         </Link>
@@ -106,7 +107,7 @@ const Benefits: NextPage = () => (
           variant="link"
           textColor={"primary"}
           whiteSpace="nowrap"
-          isExternal={true}
+          isExternal
         >
           Find out more <ChevronRightIcon w={6} h={6} color="primary" />
         </Link>

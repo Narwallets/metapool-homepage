@@ -50,8 +50,8 @@ const Comunity: NextPage = () => (
           <Box pb={"76px"}>
             <Stack direction={{ base: "column", lg: "row" }}>
               <Text>
-                Social networks with 7000+ members and get help with your projects on
-                Discord.
+                Discover our social media and interact with more than 13.000+
+                members and get help in our Discord.
               </Text>
               <Spacer />
               <Link
@@ -61,7 +61,7 @@ const Comunity: NextPage = () => (
                 borderWidth="2px"
                 textAlign={"center"}
                 maxW="sm"
-                isExternal={true}
+                isExternal
               >
                 Join Discord
               </Link>
