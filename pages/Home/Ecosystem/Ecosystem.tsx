@@ -11,6 +11,7 @@ import {
   Square,
   HStack,
   VStack,
+  Stack,
 } from "@chakra-ui/react";
 import Item from "./Item";
 import useSmoothScrollTo from "../../../hooks/useSmoothScrollTo";
@@ -80,7 +81,7 @@ const Ecosystem: NextPage<Props> = ({ platforms }) => (
           </Flex>
         </Flex>
         <SimpleGrid
-          columns={{ base: 1, sm: 2, lg: 3 }}
+          columns={{ base: 1, sm: 1, lg: 2, xl: 3 }}
           spacing={{ base: 5, lg: 10 }}
         >
           {platforms.map((platform) => (
@@ -95,6 +96,7 @@ const Ecosystem: NextPage<Props> = ({ platforms }) => (
           ))}
 
           <Box
+            maxW={["full", "500px"]}
             bg="white"
             rounded="lg"
             p={["1rem", "2rem"]}
@@ -103,9 +105,9 @@ const Ecosystem: NextPage<Props> = ({ platforms }) => (
             mx="auto"
             w="full"
           >
-            <HStack
+            <Stack
+              direction={"row"}
               spacing="1rem"
-              direction="row"
               w="full"
               alignItems={"flex-start"}
               px="0"
@@ -134,7 +136,7 @@ const Ecosystem: NextPage<Props> = ({ platforms }) => (
                   </Tag>
                 </Text>
               </VStack>
-            </HStack>
+            </Stack>
           </Box>
         </SimpleGrid>
       </Container>

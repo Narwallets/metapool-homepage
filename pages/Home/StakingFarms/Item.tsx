@@ -17,9 +17,10 @@ interface Props {
   title: string;
   description: string;
   icon: string;
+  url: string;
 }
 
-const Item: NextPage<Props> = ({ apy, title, description, icon }) => (
+const Item: NextPage<Props> = ({ apy, title, description, icon, url }) => (
   <Square bg="white" rounded="2xl" boxShadow="2xl" p="10">
     <VStack h="full" mx="auto">
       <HStack w="100%" justifyContent={"space-between"} px={["0px", "0px"]}>
@@ -58,9 +59,10 @@ const Item: NextPage<Props> = ({ apy, title, description, icon }) => (
       </Flex>
       <Link
         variant="solid"
-        href="https://metapool.app/dapp/mainnet/meta/"
+        href={url}
         mb="52px"
         whiteSpace={"nowrap"}
+        isExternal
       >
         Stake now
       </Link>

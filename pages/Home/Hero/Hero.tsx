@@ -26,8 +26,7 @@ const Hero: NextPage<Props> = ({
           fontSize={{ base: "3xl", sm: "6xl", lg: "8xl" }}
           fontFamily={"'Meta Space', 'Space Grotesk'"}
         >
-          Stake NEAR,
-          <br /> maximise returns
+          Stake. Earn. DeFi.
         </Heading>
       </Center>
       <Center p={{ base: "3rem" }}>
@@ -40,7 +39,7 @@ const Hero: NextPage<Props> = ({
           fontWeight="semiBold"
           noOfLines={3}
         >
-          Receive stNEAR to access liquidity without having to sell your assets.
+          Liquid stake NEAR, receive stNEAR and participate in DeFi to increase APY
         </Box>
       </Center>
       <Center>
@@ -48,6 +47,7 @@ const Hero: NextPage<Props> = ({
           variant="solid"
           href="https://metapool.app/dapp/mainnet/meta/"
           mb="52px"
+          isExternal
         >
           Start staking
         </Link>

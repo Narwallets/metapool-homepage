@@ -114,25 +114,34 @@ const HowItWorks: NextPage = () => (
           </HStack>
         </Box>
         <Stack
-          direction={["column", "row"]}
-          mt={["50px", "50px"]}
-          spacing={["0px", "20px"]}
-          textAlign={["center", "left"]}
+          direction={{ base: "column", lg: "row" }}
+          mt={"50px"}
+          spacing={"1rem"}
+          textAlign={{ base: "center", lg: "left" }}
           px={{ base: "1rem", md: "2rem", lg: 0 }}
         >
           <Link
             variant="solid"
+            href="https://metapool.app/dapp/mainnet/metapool-aurora/"
+            whiteSpace={"nowrap"}
+            isExternal
+          >
+            Stake on Aurora
+          </Link>
+          <Link
+            variant="solid"
             href="https://metapool.app/dapp/mainnet/meta/"
             whiteSpace={"nowrap"}
+            isExternal
           >
-            Start staking
+            Stake on NEAR
           </Link>
           <Link
             href="https://metapool.gitbook.io/master/"
             variant="link"
             textColor={"primary"}
             whiteSpace={"nowrap"}
-            isExternal={true}
+            isExternal
           >
             Find out more <ChevronRightIcon w={6} h={6} color="primary" />
           </Link>

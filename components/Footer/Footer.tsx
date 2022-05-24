@@ -26,7 +26,7 @@ function Footer() {
               color="white"
               py="0px"
               px={0}
-              isExternal={true}
+              isExternal
             >
               Gitbook
             </Link>
@@ -35,7 +35,7 @@ function Footer() {
               href={
                 "https://metapool.app/Tokenomics_Governance_-_Meta_Pool_v6.pdf"
               }
-              isExternal={true}
+              isExternal
               px={0}
             >
               Tokenomics
@@ -45,13 +45,13 @@ function Footer() {
             <Text pb="10px" fontWeight={"semibold"}>
               Resources
             </Text>
-            <Link p="0px" href={"https://blog.metapool.app"} isExternal={true}>
+            <Link p="0px" href={"https://blog.metapool.app"} isExternal>
               Meta Pool Blog
             </Link>
             <Link
               p="0px"
               href={"https://metapool.gitbook.io/master/faq/faq"}
-              isExternal={true}
+              isExternal
             >
               FAQ
             </Link>
@@ -63,28 +63,28 @@ function Footer() {
             <Link
               href="https://twitter.com/meta_pool"
               p="0px"
-              isExternal={true}
+              isExternal
             >
               Twitter
             </Link>
             <Link
               p="0px"
               href="https://t.me/MetaPoolOfficialChannel"
-              isExternal={true}
+              isExternal
             >
               Telegram
             </Link>
             <Link
               p="0px"
               href={"https://github.com/Narwallets/meta-pool"}
-              isExternal={true}
+              isExternal
             >
               Github
             </Link>
             <Link
               p="0px"
               href={"https://www.youtube.com/channel/UCftgX55OpiouK8pmHydVT-g"}
-              isExternal={true}
+              isExternal
             >
               YouTube
             </Link>
@@ -96,14 +96,14 @@ function Footer() {
             <Link
               p="0px"
               href={"https://metapool.gitbook.io/master/"}
-              isExternal={true}
+              isExternal
             >
               About us
             </Link>
             <Link
               p="0px"
               href={"https://discord.gg/znPg3dsTzM"}
-              isExternal={true}
+              isExternal
             >
               Support
             </Link>
@@ -113,7 +113,7 @@ function Footer() {
             <Link
               p="0px"
               href={"https://airtable.com/shru3vdm0kJzFXXZC"}
-              isExternal={true}
+              isExternal
             >
               Careers
             </Link>

@@ -57,7 +57,7 @@ const Security: NextPage = () => (
             <Link
               variant="solid"
               href="https://metapool.gitbook.io/master/litepaper-1/risks"
-              isExternal={true}
+              isExternal
               whiteSpace="nowrap"
             >
               See live audit
