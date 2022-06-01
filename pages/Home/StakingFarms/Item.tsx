@@ -13,21 +13,36 @@ import {
 import NumberFormat from "react-number-format";
 
 interface Props {
-  apy: any;
+  apy?: any;
   title: string;
   description: string;
   icon: string;
   url: string;
+  ctaLabel: string;
+  disclamer?: string;
 }
 
-const Item: NextPage<Props> = ({ apy, title, description, icon, url }) => (
-  <Square bg="white" rounded="2xl" boxShadow="2xl" p="10">
-    <VStack h="full" mx="auto">
-      <HStack w="100%" justifyContent={"space-between"} px={["0px", "0px"]}>
+const Item: NextPage<Props> = ({
+  apy,
+  title,
+  description,
+  icon,
+  url,
+  ctaLabel,
+  disclamer = false,
+}) => (
+  <Box bg="white" rounded="2xl" boxShadow="2xl" p="10">
+    <VStack mx="auto" spacing="1rem">
+      <HStack
+        w="100%"
+        justifyContent={"space-between"}
+        spacing="1rem"
+        minH="4rem"
+      >
         <Image alt="Oct" src={icon} />
-        <Box>
-          <Text textStyle="h3">
-            {apy ? (
+        {apy && (
+          <Box>
+            <Text textStyle="h3" fontSize="3xl">
               <NumberFormat
                 value={apy}
                 displayType={"text"}
@@ -35,27 +50,23 @@ const Item: NextPage<Props> = ({ apy, title, description, icon, url }) => (
                 suffix={"%"}
                 decimalScale={2}
               />
-            ) : (
-              "-"
-            )}
-          </Text>
-          <Text>APY</Text>
-        </Box>
+            </Text>
+            <Text>APY</Text>
+          </Box>
+        )}
       </HStack>
       <Flex
-        h="full"
         direction={"column"}
         justifyContent="flex-start"
         alignItems={"flex-start"}
         textAlign={"left"}
         pt="30px"
+        minH="11rem"
       >
         <Heading size="sm" fontFamily="Inter">
           {title}
         </Heading>
-        <Text noOfLines={{ base: 2 }} fontFamily="Inter">
-          {description}
-        </Text>
+        <Text fontFamily="Inter">{description}</Text>
       </Flex>
       <Link
         variant="solid"
@@ -64,10 +75,15 @@ const Item: NextPage<Props> = ({ apy, title, description, icon, url }) => (
         whiteSpace={"nowrap"}
         isExternal
       >
-        Stake now
+        {ctaLabel}
       </Link>
+      {disclamer && (
+        <Text fontSize="xs" color="#94A3B8" pt="2rem">
+          * {disclamer}
+        </Text>
+      )}
     </VStack>
-  </Square>
+  </Box>
 );
 
 export default Item;

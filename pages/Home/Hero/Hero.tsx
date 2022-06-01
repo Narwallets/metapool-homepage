@@ -26,20 +26,22 @@ const Hero: NextPage<Props> = ({
           fontSize={{ base: "3xl", sm: "6xl", lg: "8xl" }}
           fontFamily={"'Meta Space', 'Space Grotesk'"}
         >
-          Stake. Earn. DeFi.
+          Stake it until<br /> you make it.
         </Heading>
       </Center>
       <Center p={{ base: "3rem" }}>
         <Box
-          textStyle="h4"
+          fontSize={"2xl"}
           color="#0F172A"
           textAlign="center"
           lineHeight="110%"
           fontFamily={"Inter"}
           fontWeight="semiBold"
-          noOfLines={3}
+          maxWidth={865}
         >
-          Liquid stake NEAR, receive stNEAR and participate in DeFi to increase APY
+          Stake NEAR. Receive stNEAR to simultaneously accrue staking rewards
+          and unlock liquidity to participate in DeFi activities on NEAR and
+          Aurora
         </Box>
       </Center>
       <Center>

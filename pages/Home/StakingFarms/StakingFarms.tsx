@@ -13,13 +13,9 @@ import useSmoothScrollTo from "../../../hooks/useSmoothScrollTo";
 
 interface Props {
   st_near_30_day_apy: string;
-  ref_oct_st_near_apr: string;
 }
 
-const StakingFarms: NextPage<Props> = ({
-  st_near_30_day_apy,
-  ref_oct_st_near_apr,
-}) => (
+const StakingFarms: NextPage<Props> = ({ st_near_30_day_apy }) => (
   <>
     <a id="#staking-farms" {...useSmoothScrollTo("#staking-farms")} />
     <Flex
@@ -39,6 +35,7 @@ const StakingFarms: NextPage<Props> = ({
             fontFamily={"Inter"}
             letterSpacing="0.6px"
             fontWeight="semibold"
+            textTransform={"uppercase"}
           >
             Explore our growing range of Products
           </Text>
@@ -48,14 +45,17 @@ const StakingFarms: NextPage<Props> = ({
             pb={["43px", "43px"]}
             fontFamily="'Meta Space', 'Space Grotestk'"
           >
-            Enter the Meta Pool Ecosystem
+            Enter the Meta Pool ecosystem
           </Heading>
-          <Box pb={["76px", "76px"]} fontFamily="Inter">
-            At Meta Pool we thrive in building products.
-            <br />
-            You can stake NEAR direcly on NEAR Mainnet or Aurora, or use stNEAR to fundraise through Meta Yield.
-            <br />
-            More amazing use cases coming soon...
+          <Box
+            pb={["76px", "76px"]}
+            fontFamily="Inter"
+            maxWidth={"550"}
+            mx="auto"
+          >
+            At Meta Pool we thrive in building products. Currently, you can
+            stake NEAR directly on NEAR Mainnet or Aurora, or use stNEAR to
+            fundraise through Meta Yield. More amazing use cases coming soon...
           </Box>
           <HStack spacing={{ base: "1rem", lg: "4rem" }}>
             <SimpleGrid
@@ -63,24 +63,26 @@ const StakingFarms: NextPage<Props> = ({
               spacing={{ base: "2rem", lg: 10 }}
             >
               <Item
+                ctaLabel="Stake now"
                 apy={st_near_30_day_apy}
                 title="Stake NEAR"
-                description="Stake any amount of NEAR and earn daily staking rewards."
+                description="Deposit NEAR. Receive stNEAR. Earn staking rewards. Easy."
                 icon="icons/staking-farms-near.svg"
                 url="https://metapool.app/dapp/mainnet/meta/"
+                disclamer="APY is based on the 30 day average price of stNEAR"
               />
               <Item
-                apy={st_near_30_day_apy}
-                title="Stake wNEAR in Aurora"
-                description="Stake any amount of wNEAR and earn daily staking rewards."
+                ctaLabel="Stake now"
+                title="Stake wNear in Aurora"
+                description="Deposit wNEAR directly from Aurora with your Metamask wallet. Receive stNEAR. "
                 icon="icons/staking-farms-aurora.svg"
                 url="https://metapool.app/dapp/mainnet/metapool-aurora/"
               />
               <Item
-                apy={ref_oct_st_near_apr}
-                title="NEW OCT <> stNEAR Farm"
-                description="Farm in a few clicks with Meta Recipes"
-                icon="icons/staking-farms-oct.svg"
+                ctaLabel="Go to Meta Yield"
+                title="Meta Yield: Support Ecosystem, Extra Rewards"
+                description="Stake NEAR and use your stNEAR to support crypto-based projects, and earn their tokens."
+                icon="icons/staking-farms-metayield.svg"
                 url="https://metapool.app/dapp/mainnet/meta/"
               />
             </SimpleGrid>

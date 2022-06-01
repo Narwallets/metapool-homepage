@@ -48,7 +48,8 @@ const Security: NextPage = () => (
             We are audited.
           </Heading>
           <Text fontFamily="Inter">
-            Audit of Meta Pool repositories and contracts was passed in BlockSec 
+            Security is our top priority. All our code is reviewed and audited
+            by top security firms in the industry.
           </Text>
           <br />
 
@@ -60,7 +61,7 @@ const Security: NextPage = () => (
               isExternal
               whiteSpace="nowrap"
             >
-              See live audit
+              Read Audit Report
             </Link>
           </Box>
         </Box>

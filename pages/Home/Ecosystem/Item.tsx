@@ -5,11 +5,11 @@ interface Props {
   title: string;
   description?: string;
   icon?: string;
-  type?: string;
+  tags: string[];
   env?: string;
 }
 
-const Item: NextPage<Props> = ({ title, description, icon, type, env }) => (
+const Item: NextPage<Props> = ({ title, description, icon, tags, env }) => (
   <Box
     maxW={["full", "500px"]}
     bg="white"
@@ -39,16 +39,21 @@ const Item: NextPage<Props> = ({ title, description, icon, type, env }) => (
         />
       )}
       <Box>
-        <Tag
-          fontFamily={["Inter"]}
-          fontSize="10px"
-          fontWeight={"semibold"}
-          bg="#F1F5F9"
-          borderRadius={"4px"}
-          mb="32px"
-        >
-          {type}
-        </Tag>
+        {tags.map((tag) => (
+          <Tag
+            key={`tag-${tag}`}
+            fontFamily={["Inter"]}
+            fontSize="10px"
+            fontWeight={"semibold"}
+            bg="#F1F5F9"
+            borderRadius={"4px"}
+            mb="32px"
+            mr="8px"
+          >
+            {tag}
+          </Tag>
+        ))}
+
         {title && (
           <Flex textStyle="h5" fontFamily={"Inter"}>
             {title}{" "}

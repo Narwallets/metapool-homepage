@@ -68,11 +68,10 @@ const HowItWorks: NextPage = () => (
                   1
                 </Circle>
                 <br />
-                <Text textStyle="h5">Stake NEAR</Text>
+                <Text textStyle="h5">Deposit NEAR</Text>
                 <Text my={"13px"}>
-                  Deposit your NEAR or wNEAR into Meta Pool, we distribute it
-                  across best performing validators, start earning staking
-                  rewards.
+                  Deposit your NEAR into Meta Pool, we distribute it across best
+                  performing validators, start earning staking rewards.
                 </Text>
               </Box>
               <Box textAlign={"left"}>
@@ -90,7 +89,7 @@ const HowItWorks: NextPage = () => (
                 <Text my={"13px"}>
                   Staked NEAR (stNEAR) is a liquid token that represents your
                   deposit/position with Meta Pool and that you can use across a
-                  growing number of dApps.
+                  growing number of DeFi apps.
                 </Text>
               </Box>
               <Box textAlign={"left"}>
@@ -107,7 +106,7 @@ const HowItWorks: NextPage = () => (
                 <Text textStyle="h5">Participate in DeFi</Text>
                 <Text my={"13px"}>
                   Deploy your stNEAR into the growing number of DeFi platforms
-                  for maximum capital efficiency.
+                  for maximum capital efficiency and additional APY.
                 </Text>
               </Box>
             </SimpleGrid>

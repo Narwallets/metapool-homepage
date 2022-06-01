@@ -1,58 +1,78 @@
 [
     {
         "title": "Trisolaris",
-        "description": "Trisolaris is #1 Dex on the Aurora engine, an EVM compatible blockchain running in the NEAR ecosystem.",
+        "description": "#1 Dex on NEAR's Aurora EVM.",
         "image": "/ecosystem/trisolaris.svg",
-        "tag": "EXCHANGE",
+        "tags": [
+            "DEX",
+            "AMM",
+            "FARMING"
+        ],
         "test": false
     },
     {
         "title": "Ref.Finance",
-        "description": "Ref Finance is one of the core projects in the DeFi ecosystem on NEAR. Its main objective is to bring together the core components of DeFi, namely, decentralized exchange (DEX).",
+        "description": "First AMM & DEX on NEAR.",
         "image": "/ecosystem/refinance.svg",
-        "tag": "EXCHANGE",
+        "tags": [
+            "DEX",
+            "AMM",
+            "STABLESWAP"
+        ],
         "test": false
     },
     {
-        "title": "Burrow",
-        "description": "Burrow is a decentralized, non-custodial, autonomous money market similar in nature to Aave and Compound.",
+        "title": "Burrow Cash",
+        "description": "Burrow Cash is the first NEAR Native lending protocol.",
         "image": "/ecosystem/burrow.svg",
-        "tag": "LENDING",
+        "tags": [
+            "LENDING"
+        ],
         "test": false
     },
     {
-        "title": "Jumbo",
-        "description": "Jumbo Exchange is the one-stop solution for everyone seeking an ungoverned decentralized solution.",
-        "image": "/ecosystem/jumbo.svg",
-        "tag": "EXCHANGE",
+        "title": "Oin Finance",
+        "description": "Multi chain synthetic stablecoins issuer available on NEAR and Aurora.",
+        "image": "/ecosystem/oin.svg",
+        "tags": [
+            "LENDING",
+            "STABLECOIN"
+        ],
         "test": false
     },
     {
         "title": "Aurigami",
-        "description": "Aurigami is a decentralised, non-custodial liquidity protocol. Enables users to effortlessly lend, borrow, and earn interest with their digital assets.",
+        "description": "Lend, borrow, and earn with ease on Aurora.",
         "image": "/ecosystem/aurigami.svg",
-        "tag": "LENDING",
+        "tags": ["LENDING"],
         "test": false
     },
     {
         "title": "Bastion",
-        "description": "Bastion is an algorithmic, DeFi lending protocol on Aurora, NEAR’s gas-less EVM layer.",
+        "description": "The Liquidity Foundation of Aurora.",
         "image": "/ecosystem/bastion.svg",
-        "tag": "LENDING",
+        "tags": ["LENDING", "STABLESWAP"],
         "test": false
     },
     {
         "title": "Wannaswap",
-        "description": "Wannswap is one of the first AMM DEX built on Aurora EVM of the NEAR blockchain.",
+        "description": "DEX on Aurora network.",
         "image": "/ecosystem/wannaswap.svg",
-        "tag": "EXCHANGE",
+        "tags": ["DEX", "FARMING"],
         "test": false
     },
     {
-        "title": "Polaris Finance",
-        "description": "The first algorithmic stablecoin on Aurora chain, pegged to the price of 1 NEAR via seigniorage.",
+        "title": "Polaris",
+        "description": "Synthetic stablecoin pegged to $NEAR, $ETH & $xTRI.",
         "image": "/ecosystem/polaris.svg",
-        "tag": "FARMING",
+        "tags": ["FARMING", "STABLECOIN"],
+        "test": false
+    },
+    {
+        "title": "BlueBit",
+        "description": "Native Yield Aggregator built on Aurora.",
+        "image": "/ecosystem/bluebit.svg",
+        "tags": ["YIELD OPTIMIZER", "FARMING"],
         "test": false
     }
 ]

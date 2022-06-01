@@ -32,13 +32,13 @@ const LatestNews: NextPage<Props> = ({ news }) => (
         textAlign="center"
       >
         <Heading
-          size="2xl"
+          size="3xl"
           pt={["15px", "15px"]}
           noOfLines={[2, 2]}
           fontFamily="'Meta Space', 'Space Grotesk'"
           lineHeight="56px"
         >
-          Latest news
+          Latest News from our Blog
         </Heading>
         {/* <Text
       color="secondary"

@@ -39,7 +39,7 @@ const Ecosystem: NextPage<Props> = ({ platforms }) => (
               letterSpacing="0.6px"
               fontWeight="semibold"
             >
-              STNEAR ECOSYSTEM
+              DEFI MONEY LEGOS
             </Text>
             <Heading
               size="2xl"
@@ -47,14 +47,13 @@ const Ecosystem: NextPage<Props> = ({ platforms }) => (
               pb={{ base: "43px", lg: "43px" }}
               fontFamily="'Meta Space', 'Space Grotestk'"
             >
-              Use stNEAR across growing <br />
+              Use stNEAR across <br />
               DeFi Ecosystem
             </Heading>
             <Box pb={["76px", "76px"]}>
-              NEAR Protocol delivers unparalleled speed, security, and
-              reliability.
-              <br />
-              Enjoy almost instant transactions and extremely low fees.
+              Maximum Capital Efficiency. stNEAR has been widely adopted by <br />
+              all the leading DeFi protocols creating an ever increasing number<br />
+               of strategies to optimize returns.
             </Box>
           </Box>
         </Flex>
@@ -90,7 +89,7 @@ const Ecosystem: NextPage<Props> = ({ platforms }) => (
               title={platform.title}
               description={platform.description || "-"}
               icon={platform.image}
-              type={platform.tag}
+              tags={platform.tags}
               env={platform.test ? "testnet" : "mainnet"}
             />
           ))}
