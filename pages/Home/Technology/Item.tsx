@@ -7,7 +7,8 @@ interface Props {
   description: string;
   linkText: string;
   linkHref: string;
-  image: string;
+  imageDesktop: string;
+  imageMobile: string;
   inverted: boolean;
 }
 
@@ -16,32 +17,33 @@ const Item: NextPage<Props> = ({
   description,
   linkText,
   linkHref,
-  image,
+  imageDesktop,
+  imageMobile,
   inverted,
 }) => (
   <>
     <Flex
-      alignItems="center"
+      alignItems={{ base: "flex-start", sm: "center" }}
       borderRadius={"2xl"}
       bgImage={{
-        base: "",
-        sm: `url('${image}')`,
+        base: `url('${imageMobile}')`,
+        sm: `url('${imageDesktop}')`,
       }}
       bgRepeat="no-repeat"
-      bgSize={{ base: "cover", lg: "unset" }}
+      bgSize={{ base: "contain"}}
       backgroundPosition={{
-        base: inverted ? "left" : "right",
-        lg: inverted ? "left" : "right",
+        base: "bottom",
+        sm: inverted ? "left" : "right",
       }}
       border="1px"
       borderColor="gray.600"
-      h={{ base: "auto", md: "387px" }}
-      my={{ base: "2rem", lg: "2rem" }}
+      h={{ base: "600px", sm: "387px" }}
+      my={{ base: "2rem", sm: "2rem" }}
       p="2rem"
     >
       <Box
-        ml={{ base: 0, md: inverted ? "50%" : 0 }}
-        mr={{ base: 0, md: !inverted ? "50%" : 0 }}
+        ml={{ base: 0, sm: inverted ? "50%" : 0 }}
+        mr={{ base: 0, sm: !inverted ? "50%" : 0 }}
         w="full"
         textAlign={"left"}
       >

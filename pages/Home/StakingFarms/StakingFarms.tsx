@@ -20,7 +20,7 @@ const StakingFarms: NextPage<Props> = ({ st_near_30_day_apy }) => (
     <a id="#staking-farms" {...useSmoothScrollTo("#staking-farms")} />
     <Flex
       w="100%"
-      pt={{ base: "4rem", lg: "0rem" }}
+      pt={{ base: "0rem", lg: "0rem" }}
       px="20px"
       fontSize="md"
       position="relative"
@@ -28,7 +28,7 @@ const StakingFarms: NextPage<Props> = ({ st_near_30_day_apy }) => (
       bg={"url(/staking-farms-bg.svg) center bottom no-repeat"}
       bgSize="contain"
     >
-      <Container maxW="container.xl" py="10rem">
+      <Container maxW="container.xl" py={{ base: "4rem", lg: "10rem" }}>
         <Box textAlign="center">
           <Text
             color="secondary"
@@ -57,7 +57,7 @@ const StakingFarms: NextPage<Props> = ({ st_near_30_day_apy }) => (
             stake NEAR directly on NEAR Mainnet or Aurora, or use stNEAR to
             fundraise through Meta Yield. More amazing use cases coming soon...
           </Box>
-          <HStack spacing={{ base: "1rem", lg: "4rem" }}>
+          <HStack>
             <SimpleGrid
               columns={{ base: 1, md: 3 }}
               spacing={{ base: "2rem", lg: 10 }}

@@ -7,6 +7,7 @@ import {
   useDisclosure,
   Stack,
   Image,
+  Spacer,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import useSmoothScrollTo from "../../hooks/useSmoothScrollTo";
@@ -55,13 +56,13 @@ export default function Header() {
         w="full"
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <Link href="/#top">
-            <Image alt="logo" src={"logo.svg"} w="202" h="34" />
+          <Link m={0} p={0} href="/#top">
+            <Image m={0} p={0} alt="logo" src={"logo.svg"} w={69} h={36} />
           </Link>
           <Flex alignItems={"center"}>
             <IconButton
               variant={"none"}
-              bgColor="white"
+              bgColor="transparent"
               color="black"
               icon={
                 isOpen ? (

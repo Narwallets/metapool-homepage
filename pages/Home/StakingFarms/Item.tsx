@@ -37,7 +37,7 @@ const Item: NextPage<Props> = ({
         w="100%"
         justifyContent={"space-between"}
         spacing="1rem"
-        minH="4rem"
+        minH={{base: "0", lg: "4rem"}}
       >
         <Image alt="Oct" src={icon} />
         {apy && (
@@ -61,7 +61,7 @@ const Item: NextPage<Props> = ({
         alignItems={"flex-start"}
         textAlign={"left"}
         pt="30px"
-        minH="11rem"
+        minH={{base: "0", lg: "11rem"}}
       >
         <Heading size="sm" fontFamily="Inter">
           {title}

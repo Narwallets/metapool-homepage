@@ -45,11 +45,9 @@ const App: NextPage<Props> = ({ metrics, news }) => {
           alt="background"
           src="bg-home-main.svg"
           position="absolute"
-          top={{ base: "0%" }}
-          left={{ base: "0%" }}
-          marginLeft={{ base: "0px" }}
-          marginTop={{ base: "0px" }}
-          maxWidth={{ base: "inherit" }}
+          marginLeft={{ base: "-815px", md: "0px" }}
+          marginTop={{ base: "-100px", md: "0px" }}
+          maxWidth={{ base: "max-content", md: "inherit" }}
           animation={`${keyframes`
      from {transform: rotate(-20deg);}
      to {transform: rotate(10deg)}

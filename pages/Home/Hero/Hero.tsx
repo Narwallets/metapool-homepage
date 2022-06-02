@@ -23,15 +23,16 @@ const Hero: NextPage<Props> = ({
           color="#0F172A"
           textAlign="center"
           lineHeight="90%"
-          fontSize={{ base: "3xl", sm: "6xl", lg: "8xl" }}
+          fontSize={{ base: "5xl", sm: "6xl", lg: "8xl" }}
           fontFamily={"'Meta Space', 'Space Grotesk'"}
         >
-          Stake it until<br /> you make it.
+          Stake it until
+          <br /> you make it.
         </Heading>
       </Center>
       <Center p={{ base: "3rem" }}>
         <Box
-          fontSize={"2xl"}
+          fontSize={{ base: "xl", md: "2xl" }}
           color="#0F172A"
           textAlign="center"
           lineHeight="110%"
@@ -61,7 +62,7 @@ const Hero: NextPage<Props> = ({
         py={{ base: "1rem", lg: "0" }}
         justifyContent="space-between"
         alignItems="center"
-        borderBottomRadius={{ base: "0px", md: "104px" }}
+        borderBottomRadius={{ base: "64px", md: "104px" }}
         bgColor="white"
       >
         <MetapoolData

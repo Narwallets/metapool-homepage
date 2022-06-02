@@ -75,6 +75,7 @@ const LatestNews: NextPage<Props> = ({ news }) => (
           borderWidth="2px"
           fontSize={{ base: "xs", lg: "lg" }}
           isExternal
+          noOfLines={2}
         >
           Read more in the Meta Pool Blog
         </Link>
