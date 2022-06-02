@@ -23,9 +23,10 @@ const Investors: NextPage = () => (
         Backed by great people
       </Heading>
       <SimpleGrid
-        columns={{ base: 2, md: 3, lg: 3, xl: 6 }}
+        columns={{ base: 1, md: 3, lg: 3, xl: 6 }}
         mx={{ base: "1rem", md: "3rem", lg: "3rem" }}
         alignItems={"center"}
+        justifyContent="center"
         spacing={10}
       >
         <Image alt="DragonFly" src="/investors/dragonfly.svg" minW={"150px"} />
