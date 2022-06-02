@@ -39,7 +39,6 @@ const App: NextPage<Props> = ({ metrics, news }) => {
         maxW="container.100"
         p={0}
         overflow="clip"
-        maxWidth="100vw"
       >
         <Image
           alt="background"
