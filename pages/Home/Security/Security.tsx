@@ -35,7 +35,7 @@ const Security: NextPage = () => (
         <Box
           textAlign="left"
           w="full"
-          mr="50%"
+          mr={{ base: 0, md: "50%" }}
           pt={["0"]}
           mb={{ base: "20rem", lg: 0 }}
         >
@@ -58,7 +58,7 @@ const Security: NextPage = () => (
             <br />
             We are audited.
           </Heading>
-          <Text fontFamily="Inter" pr={{base: "auto", sm: "50%"}}>
+          <Text fontFamily="Inter" pr={{ base: "auto", sm: "50%" }}>
             Security is our top priority. All our code is reviewed and audited
             by top security firms in the industry.
           </Text>
