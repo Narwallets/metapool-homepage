@@ -121,19 +121,11 @@ const HowItWorks: NextPage = () => (
         >
           <Link
             variant="solid"
-            href="https://metapool.app/dapp/mainnet/metapool-aurora/"
-            whiteSpace={"nowrap"}
-            isExternal
-          >
-            Stake on Aurora
-          </Link>
-          <Link
-            variant="solid"
             href="https://metapool.app/dapp/mainnet/meta/"
             whiteSpace={"nowrap"}
             isExternal
           >
-            Stake on NEAR
+            Start staking
           </Link>
           <Link
             href="https://metapool.gitbook.io/master/"
