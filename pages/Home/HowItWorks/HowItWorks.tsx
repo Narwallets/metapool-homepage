@@ -116,7 +116,7 @@ const HowItWorks: NextPage = () => (
           direction={{ base: "column", lg: "row" }}
           mt={"50px"}
           spacing={"1rem"}
-          textAlign={{ base: "center", lg: "left" }}
+          textAlign={{ base: "center", lg: "center" }}
           px={{ base: "1rem", md: "2rem", lg: 0 }}
         >
           <Link
@@ -124,17 +124,9 @@ const HowItWorks: NextPage = () => (
             href="https://metapool.app/dapp/mainnet/meta/"
             whiteSpace={"nowrap"}
             isExternal
+            mx="auto"
           >
             Start staking
-          </Link>
-          <Link
-            href="https://metapool.gitbook.io/master/"
-            variant="link"
-            textColor={"primary"}
-            whiteSpace={"nowrap"}
-            isExternal
-          >
-            Find out more <ChevronRightIcon w={6} h={6} color="primary" />
           </Link>
         </Stack>
       </Container>

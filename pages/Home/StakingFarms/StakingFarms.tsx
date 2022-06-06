@@ -83,7 +83,7 @@ const StakingFarms: NextPage<Props> = ({ st_near_30_day_apy }) => (
                 title="Meta Yield: Support Ecosystem, Extra Rewards"
                 description="Stake NEAR and use your stNEAR to support crypto-based projects, and earn their tokens."
                 icon="icons/staking-farms-metayield.svg"
-                url="https://metapool.app/dapp/mainnet/meta/"
+                url="https://metayield.app/"
               />
             </SimpleGrid>
           </HStack>

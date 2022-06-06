@@ -23,7 +23,7 @@ const Comunity: NextPage<Props> = ({ name, description, href, icon }) => (
     >
       <Avatar src={icon} />
       <Stack direction={"column"} spacing={0} fontSize={"sm"}>
-        <Text p="0" fontWeight={600}>
+        <Text p="0" fontWeight="semibold">
           {name}
         </Text>
         <Text color={"gray.500"} whiteSpace="nowrap">{description}</Text>

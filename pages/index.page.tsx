@@ -34,19 +34,17 @@ const App: NextPage<Props> = ({ metrics, news }) => {
       <Head>
         <title>Meta Pool - liquid staking on NEAR blockchain - stNEAR</title>
       </Head>
-      <Container
-        position="relative"
-        maxW="container.100"
-        p={0}
-        overflow="clip"
-      >
+      <Container position="relative" maxW="container.100" p={0} overflow="clip">
         <Image
           alt="background"
           src="bg-home-main.svg"
           position="absolute"
           marginLeft={{ base: "-815px", md: "0px" }}
-          marginTop={{ base: "-100px", md: "0px" }}
           maxWidth={{ base: "max-content", md: "inherit" }}
+          top={{ base: "initial", md: 0 }}
+          left={{ base: "-100px", md: "inherit" }}
+          marginTop={{ base: "-100px", md: "inherit" }}
+          maxH={{ base: "max-content", md: "70rem" }}
           animation={`${keyframes`
      from {transform: rotate(-20deg);}
      to {transform: rotate(10deg)}

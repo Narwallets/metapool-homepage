@@ -49,7 +49,7 @@ const Hero: NextPage<Props> = ({
         <Link
           variant="solid"
           href="https://metapool.app/dapp/mainnet/meta/"
-          mb="52px"
+          mb="6rem"
           isExternal
         >
           Start staking

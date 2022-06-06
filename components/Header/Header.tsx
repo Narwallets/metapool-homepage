@@ -84,7 +84,7 @@ export default function Header() {
               href="https://metapool.app/dapp/mainnet/meta/"
               display={{ base: "none", md: "initial" }}
             >
-              Connect Wallet
+              Start staking
             </Link>
           </Flex>
         </Flex>
