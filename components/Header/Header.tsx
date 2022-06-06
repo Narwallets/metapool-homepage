@@ -53,9 +53,13 @@ export default function Header() {
         zIndex="101"
         w="full"
       >
-        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}
-        mx={"2rem"}
-        my="1rem">
+        <Flex
+          h={16}
+          alignItems={"center"}
+          justifyContent={"space-between"}
+          mx={"2rem"}
+          my="1rem"
+        >
           <Link m={0} p={0} href="/#top">
             <Image m={0} p={0} alt="logo" src={"logo.svg"} w={69} h={36} />
           </Link>
@@ -66,9 +70,17 @@ export default function Header() {
               color="black"
               icon={
                 isOpen ? (
-                  <CloseIcon w="100px" h="20px" outline="none" />
+                  <CloseIcon
+                    w={{ base: "initial", md: "100px" }}
+                    h="20px"
+                    outline="none"
+                  />
                 ) : (
-                  <HamburgerIcon w="100px" h="40px" outline="none" />
+                  <HamburgerIcon
+                    w={{ base: "initial", md: "100px" }}
+                    h="40px"
+                    outline="none"
+                  />
                 )
               }
               aria-label={"Open Menu"}
