@@ -55,7 +55,7 @@ const LatestNews: NextPage<Props> = ({ news }) => (
           my="100px"
           alignItems="flex-start"
         >
-          {news.map((post) => (
+          {news?.map((post) => (
             <Post
               key={post.title}
               tag={post.category}

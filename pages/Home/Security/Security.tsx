@@ -67,7 +67,7 @@ const Security: NextPage = () => (
           <Image
             mx={{ base: "auto", sm: "0" }}
             alt="Blocksec"
-            src="/icons/blocksec.svg"
+            src="icons/blocksec.svg"
           />
           <Box
             mt="40px"

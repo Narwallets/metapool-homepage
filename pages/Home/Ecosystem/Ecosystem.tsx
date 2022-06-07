@@ -30,7 +30,7 @@ const Ecosystem: NextPage<Props> = ({ platforms }) => (
           fontSize="md"
           position="relative"
           justifyContent="center"
-          bg={"url(/staking-farms-bg.svg) center 600px no-repeat"}
+          bg={"url(staking-farms-bg.svg) center 600px no-repeat"}
         >
           <Box textAlign="left" w="full">
             <Text
@@ -124,7 +124,7 @@ const Ecosystem: NextPage<Props> = ({ platforms }) => (
                   More Coming Soon{" "}
                   <Tag
                     textColor={"white"}
-                    fontFamily={["Inter"]}
+                    fontFamily={"Inter"}
                     fontSize="10px"
                     fontWeight={"semibold"}
                     bg="#F59E0B"

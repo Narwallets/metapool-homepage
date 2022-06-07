@@ -55,6 +55,13 @@ function Footer() {
             >
               FAQ
             </Link>
+            <Link
+              p="0px"
+              href={"https://drive.google.com/drive/u/0/folders/1tp1Dgr1jJOqZVgyiWi4K34poklwX9E74"}
+              isExternal
+            >
+              Brand Kit
+            </Link>
           </Stack>
           <Stack align={"flex-start"}>
             <Text pb="10px" fontWeight={"semibold"}>

@@ -2,7 +2,7 @@
     {
         "title": "Trisolaris",
         "description": "#1 Dex on NEAR's Aurora EVM.",
-        "image": "/ecosystem/trisolaris.svg",
+        "image": "ecosystem/trisolaris.svg",
         "tags": [
             "DEX",
             "AMM",
@@ -13,7 +13,7 @@
     {
         "title": "Ref.Finance",
         "description": "First AMM & DEX on NEAR.",
-        "image": "/ecosystem/refinance.svg",
+        "image": "ecosystem/refinance.svg",
         "tags": [
             "DEX",
             "AMM",
@@ -24,7 +24,7 @@
     {
         "title": "Burrow Cash",
         "description": "Burrow Cash is the first NEAR Native lending protocol.",
-        "image": "/ecosystem/burrow.svg",
+        "image": "ecosystem/burrow.svg",
         "tags": [
             "LENDING"
         ],
@@ -33,7 +33,7 @@
     {
         "title": "Oin Finance",
         "description": "Multi chain synthetic stablecoins issuer available on NEAR and Aurora.",
-        "image": "/ecosystem/oin.svg",
+        "image": "ecosystem/oin.svg",
         "tags": [
             "LENDING",
             "STABLECOIN"
@@ -43,35 +43,35 @@
     {
         "title": "Aurigami",
         "description": "Lend, borrow, and earn with ease on Aurora.",
-        "image": "/ecosystem/aurigami.svg",
+        "image": "ecosystem/aurigami.svg",
         "tags": ["LENDING"],
         "test": false
     },
     {
         "title": "Bastion",
         "description": "The Liquidity Foundation of Aurora.",
-        "image": "/ecosystem/bastion.svg",
+        "image": "ecosystem/bastion.svg",
         "tags": ["LENDING", "STABLESWAP"],
         "test": false
     },
     {
         "title": "Wannaswap",
         "description": "DEX on Aurora network.",
-        "image": "/ecosystem/wannaswap.svg",
+        "image": "ecosystem/wannaswap.svg",
         "tags": ["DEX", "FARMING"],
         "test": false
     },
     {
         "title": "Polaris",
         "description": "Synthetic stablecoin pegged to $NEAR, $ETH & $xTRI.",
-        "image": "/ecosystem/polaris.svg",
+        "image": "ecosystem/polaris.svg",
         "tags": ["FARMING", "STABLECOIN"],
         "test": false
     },
     {
         "title": "BlueBit",
         "description": "Native Yield Aggregator built on Aurora.",
-        "image": "/ecosystem/bluebit.svg",
+        "image": "ecosystem/bluebit.svg",
         "tags": ["YIELD OPTIMIZER", "FARMING"],
         "test": false
     }

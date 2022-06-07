@@ -17,7 +17,7 @@ const Notification: NextPage = () => (
       This is a news update that worth to pay attention and maybe click on it
     </Text>
     <Box position="absolute" right="20px" top="50%" marginTop="-9px">
-      <Image src="/icons/close.svg" alt="close" width="17px" height="17px" />
+      <Image src="icons/close.svg" alt="close" width="17px" height="17px" />
     </Box>
   </Flex>
 );

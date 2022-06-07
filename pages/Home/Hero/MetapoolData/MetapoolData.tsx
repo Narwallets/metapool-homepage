@@ -21,7 +21,7 @@ const DataItem: NextPage<Props> = ({ title, value }) => (
     </Text>
     <Text
       fontSize={{ base: "md", sm: "lg" }}
-      fontFamily={["Inter"]}
+      fontFamily={"Inter"}
       textTransform="uppercase"
     >
       {title}

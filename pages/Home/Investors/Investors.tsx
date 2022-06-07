@@ -29,26 +29,26 @@ const Investors: NextPage = () => (
         justifyContent="center"
         spacing={10}
       >
-        <Image alt="DragonFly" src="/investors/dragonfly.svg" minW={"150px"} />
-        <Image alt="ATT" src="/investors/att.svg" minW={"150px"} />
-        <Image alt="Move" src="/investors/move.svg" minW={"150px"} />
-        <Image alt="SVC" src="/investors/svc.svg" minW={"150px"} />
-        <Image alt="DI" src="/investors/di.svg" minW={"150px"} />
-        <Image alt="Blockwall" src="/investors/blockwall.svg" minW={"150px"} />
+        <Image alt="DragonFly" src="investors/dragonfly.svg" minW={"150px"} />
+        <Image alt="ATT" src="investors/att.svg" minW={"150px"} />
+        <Image alt="Move" src="investors/move.svg" minW={"150px"} />
+        <Image alt="SVC" src="investors/svc.svg" minW={"150px"} />
+        <Image alt="DI" src="investors/di.svg" minW={"150px"} />
+        <Image alt="Blockwall" src="investors/blockwall.svg" minW={"150px"} />
         <Image
           alt="Palmera"
-          src="/investors/palmera_crypto.svg"
+          src="investors/palmera_crypto.svg"
           minW={"150px"}
         />
         <Image
           alt="Warburg"
-          src="/investors/warburg_serres.svg"
+          src="investors/warburg_serres.svg"
           minW={"150px"}
         />
-        <Image alt="IOSG" src="/investors/iosg_ventures.svg" minW={"150px"} />
+        <Image alt="IOSG" src="investors/iosg_ventures.svg" minW={"150px"} />
         <Image
           alt="Big Brain Holdings"
-          src="/investors/big_brain_holdings.svg"
+          src="investors/big_brain_holdings.svg"
           minW={"150px"}
         />
       </SimpleGrid>

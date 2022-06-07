@@ -56,7 +56,7 @@ const Benefits: NextPage = () => (
           fontFamily="Inter"
         >
           <Box textAlign={"left"}>
-            <Image alt="Farming" src="/icons/benefits-farming.svg" />
+            <Image alt="Farming" src="icons/benefits-farming.svg" />
             <br />
             <br />
             <Text textStyle="h5">Farming</Text>
@@ -66,7 +66,7 @@ const Benefits: NextPage = () => (
             </Text>
           </Box>
           <Box textAlign={"left"}>
-            <Image alt="Borrowing" src="/icons/benefits-borrowing.svg" />
+            <Image alt="Borrowing" src="icons/benefits-borrowing.svg" />
             <br />
             <br />
             <Text textStyle="h5">Borrowing</Text>
@@ -76,7 +76,7 @@ const Benefits: NextPage = () => (
             </Text>
           </Box>
           <Box textAlign={"left"}>
-            <Image alt="Lending" src="/icons/benefits-lending.svg" />
+            <Image alt="Lending" src="icons/benefits-lending.svg" />
             <br />
             <br />
             <Text textStyle="h5">Lending</Text>

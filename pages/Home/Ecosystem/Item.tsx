@@ -42,7 +42,7 @@ const Item: NextPage<Props> = ({ title, description, icon, tags, env }) => (
         {tags.map((tag) => (
           <Tag
             key={`tag-${tag}`}
-            fontFamily={["Inter"]}
+            fontFamily={"Inter"}
             fontSize="10px"
             fontWeight={"semibold"}
             bg="#F1F5F9"

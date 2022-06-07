@@ -25,7 +25,7 @@ const StakingFarms: NextPage<Props> = ({ st_near_30_day_apy }) => (
       fontSize="md"
       position="relative"
       justifyContent="center"
-      bg={"url(/staking-farms-bg.svg) center bottom no-repeat"}
+      bg={"url(staking-farms-bg.svg) center bottom no-repeat"}
       bgSize="contain"
     >
       <Container maxW="container.xl" py={{ base: "4rem", lg: "10rem" }}>

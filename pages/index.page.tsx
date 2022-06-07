@@ -28,13 +28,18 @@ interface Props {
   news: any;
 }
 
-const App: NextPage<Props> = ({ metrics, news }) => {
+function App({ metrics, news }: Props) {
   return (
     <>
       <Head>
         <title>Meta Pool - liquid staking on NEAR blockchain - stNEAR</title>
       </Head>
-      <Container position="relative" maxW="container.100" p={0} overflow="hidden">
+      <Container
+        position="relative"
+        maxW="container.100"
+        p={0}
+        overflow="hidden"
+      >
         <Image
           alt="background"
           src="bg-home-main.svg"
@@ -72,9 +77,9 @@ const App: NextPage<Props> = ({ metrics, news }) => {
       </Container>
     </>
   );
-};
+}
 
-export async function getServerSideProps({}) {
+App.getInitialProps = async () => {
   const metrics = await api.getMetrics();
   const parser = new Parser();
   let feed = await parser.parseURL("https://blog.metapool.app/feed");
@@ -90,13 +95,14 @@ export async function getServerSideProps({}) {
       };
     })
     .slice(0, 3);
-
+  console.info({
+    metrics,
+    news,
+  });
   return {
-    props: {
-      metrics,
-      news,
-    },
+    metrics,
+    news,
   };
-}
+};
 
 export default App;

@@ -21,7 +21,7 @@ const Comunity: NextPage = () => (
       fontSize="md"
       position="relative"
       justifyContent="center"
-      bg={"url(/bg-comunity.svg) no-repeat"}
+      bg={"url(bg-comunity.svg) no-repeat"}
       bgSize="contain"
       bgColor="#F1F5F9"
       px="1rem"
@@ -73,25 +73,25 @@ const Comunity: NextPage = () => (
           <Platform
             name="Telegram"
             description="Join the community"
-            icon="/icons/comunity-telegram.svg"
+            icon="icons/comunity-telegram.svg"
             href="https://t.me/MetaPoolOfficialGroup"
           />
           <Platform
             name="Twitter"
             description="Follow @meta_pool"
-            icon="/icons/comunity-twitter.svg"
+            icon="icons/comunity-twitter.svg"
             href="https://twitter.com/meta_pool"
           />
           <Platform
             name="Discord"
             description="Ask questions"
-            icon="/icons/comunity-discord.svg"
+            icon="icons/comunity-discord.svg"
             href="https://discord.com/invite/tG4XJzRtdQ"
           />
           <Platform
             name="Gitbook"
             description="Learn about Meta Pool"
-            icon="/icons/comunity-gitbook.svg"
+            icon="icons/comunity-gitbook.svg"
             href="https://metapool.gitbook.io/master/"
           />
           <Platform
@@ -103,7 +103,7 @@ const Comunity: NextPage = () => (
           <Platform
             name="YouTube"
             description="Watch our channel"
-            icon="/icons/comunity-youtube.svg"
+            icon="icons/comunity-youtube.svg"
             href="https://www.youtube.com/channel/UCftgX55OpiouK8pmHydVT-g"
           />
         </SimpleGrid>
