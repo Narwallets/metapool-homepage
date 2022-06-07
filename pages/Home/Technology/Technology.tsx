@@ -51,8 +51,8 @@ const Technology: NextPage = () => (
               This helps keep the network decentralised and your funds secure."
             linkText="Security reference"
             linkHref="https://metapool.gitbook.io/master/litepaper-1/risks/audits"
-            imageDesktop="bg-technology-secure.svg"
-            imageMobile="bg-technology-mobile-secure.svg"
+            imageDesktop="images/bg-technology-secure.svg"
+            imageMobile="images/bg-technology-mobile-secure.svg"
             inverted={false}
           />
           <Item
@@ -60,8 +60,8 @@ const Technology: NextPage = () => (
             description="Traditional unstaking can take up to 72 hours. When you stake with Meta Pool, you are able to access your funds immediately through Liquid Unstaking for a small fee of just ~0.3%."
             linkText="Liquid Staking How-To"
             linkHref="https://metapool.gitbook.io/master/tutorials-1/meta-pool-on-near/how-to-stake-step-by-step"
-            imageDesktop="bg-technology-inmediate.svg"
-            imageMobile="bg-technology-mobile-inmediate.svg"
+            imageDesktop="images/bg-technology-inmediate.svg"
+            imageMobile="images/bg-technology-mobile-inmediate.svg"
             inverted={true}
           />
           <Item
@@ -69,8 +69,8 @@ const Technology: NextPage = () => (
             description="Stake NEAR, receive stNEAR you can use across AMMs and Lending protocols on NEAR and Aurora. You can get attractive yields (20% — 90%) on top of your staking rewards."
             linkText="DeFi with Meta Pool"
             linkHref="#ecosystem"
-            imageDesktop="bg-technology-returns.svg"
-            imageMobile="bg-technology-mobile-returns.svg"
+            imageDesktop="images/bg-technology-returns.svg"
+            imageMobile="images/bg-technology-mobile-returns.svg"
             inverted={false}
           />
         </Box>

@@ -42,7 +42,7 @@ function App({ metrics, news }: Props) {
       >
         <Image
           alt="background"
-          src="bg-home-main.svg"
+          src="images/bg-home-main.svg"
           position="absolute"
           marginLeft={{ base: "-815px", md: "0px" }}
           maxWidth={{ base: "max-content", md: "inherit" }}

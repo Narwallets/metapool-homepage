@@ -22,7 +22,7 @@ const HowItWorks: NextPage = () => (
       position="relative"
       justifyContent="center"
       fontFamily={"Inter"}
-      bg={"url(/bg-home-main.svg) no-repeat white"}
+      bg={"url(images/bg-home-main.svg) no-repeat white"}
       bgPosition={["center", "top"]}
     >
       <Container

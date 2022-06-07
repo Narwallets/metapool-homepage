@@ -137,7 +137,7 @@ function Footer() {
             Terms and Conditions
           </Text> */}
           <Link
-            href="/legal-notice-risk-disclosures"
+            href="/legal-notice-risk-disclosures.html"
             fontSize={"sm"}
             whiteSpace="nowrap"
             p="0"

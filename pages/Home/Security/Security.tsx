@@ -19,8 +19,8 @@ const Security: NextPage = () => (
         py="5rem"
         rounded={"32px"}
         bgImage={{
-          base: `url('bg-security-mobile.svg')`,
-          sm: `url('bg-security.svg')`,
+          base: `url('images/bg-security-mobile.svg')`,
+          sm: `url('images/bg-security.svg')`,
         }}
         bgRepeat="no-repeat"
         bgColor="#F1F5F9"

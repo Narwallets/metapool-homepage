@@ -30,7 +30,7 @@ const Ecosystem: NextPage<Props> = ({ platforms }) => (
           fontSize="md"
           position="relative"
           justifyContent="center"
-          bg={"url(staking-farms-bg.svg) center 600px no-repeat"}
+          bg={"url(images/staking-farms-bg.svg) center 600px no-repeat"}
         >
           <Box textAlign="left" w="full">
             <Text
