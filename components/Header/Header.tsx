@@ -31,15 +31,13 @@ export default function Header() {
 
   useEffect(() => {
     const scrollFun = () => {
-      if (typeof window !== "undefined") setScrolled(window.pageYOffset > 50);
+      setScrolled(window.pageYOffset > 50);
     };
 
-    if (typeof window !== "undefined")
-      window.addEventListener("scroll", scrollFun);
+    window.addEventListener("scroll", scrollFun);
 
     return () => {
-      if (typeof window !== "undefined")
-        window.removeEventListener("scroll", scrollFun);
+      window.removeEventListener("scroll", scrollFun);
     };
   }, []);
 

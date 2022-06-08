@@ -18,6 +18,7 @@ import Technology from "./Home/Technology";
 
 import platforms from "../config/platforms.json";
 import Layout from "../components/Layout";
+import Script from "next/script";
 
 interface Props {
   metrics: {

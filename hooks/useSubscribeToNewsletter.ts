@@ -3,7 +3,7 @@ import { useMutation } from "react-query";
 
 const useSubscribeToNewsletter = () => {
   const { mutate, isLoading, isSuccess } = useMutation((email: string) =>
-    axios.post("/api/newsletter/subscribe", { email }).then((res) => res.data)
+    axios.post("https://metapool-homepage.vercel.app/api/newsletter/subscribe", { email }).then((res) => res.data)
   );
   return {
     subscribe: mutate,

@@ -72,7 +72,7 @@ const Hero: NextPage<Props> = ({
               value={tvl}
               displayType={"text"}
               thousandSeparator={true}
-              prefix={"$"}
+              suffix={" NEAR"}
               decimalScale={0}
             />
           }
