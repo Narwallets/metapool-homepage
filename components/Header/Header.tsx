@@ -59,7 +59,7 @@ export default function Header() {
           my="1rem"
         >
           <Link m={0} p={0} href="/#top">
-            <Image m={0} p={0} alt="logo" src={"/images/logo.svg"} w={69} h={36} />
+            <Image m={0} p={0} alt="logo" src={"/images/logo.svg"} h={"24px"} />
           </Link>
           <Flex alignItems={"center"}>
             <IconButton
@@ -74,10 +74,11 @@ export default function Header() {
                     outline="none"
                   />
                 ) : (
-                  <HamburgerIcon
+                  <Image
                     w={{ base: "initial", md: "100px" }}
-                    h="40px"
-                    outline="none"
+                    h="18px"
+                    alt="logo"
+                    src={"/icons/burger.svg"}
                   />
                 )
               }
