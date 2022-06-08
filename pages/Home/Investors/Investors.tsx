@@ -29,28 +29,67 @@ const Investors: NextPage = () => (
         justifyContent="center"
         spacing={10}
       >
-        <Image alt="DragonFly" src="investors/dragonfly.svg" minW={"150px"} />
         <Image
-          alt="Palmera"
-          src="investors/palmera_crypto.svg"
-          minW={"150px"}
+          alt="DragonFly"
+          src="investors/dragonfly.svg"
+          h={{ base: "150px", md: "100px" }}
+          mx="auto"
         />
-        <Image alt="IOSG" src="investors/iosg_ventures.svg" minW={"150px"} />
-        <Image alt="ATT" src="investors/att.svg" minW={"150px"} />
-        <Image alt="Move" src="investors/move.svg" minW={"150px"} />
-        <Image alt="SVC" src="investors/svc.svg" minW={"150px"} />
-        <Image alt="DI" src="investors/di.svg" minW={"150px"} />
-        <Image alt="Blockwall" src="investors/blockwall.svg" minW={"150px"} />
+        <Image alt="Palmera" src="investors/palmera_crypto.svg" h={"120px"} />
+        <Image
+          alt="IOSG"
+          src="investors/iosg_ventures.svg"
+          h={{ base: "150px", md: "100px" }}
+          mx="auto"
+        />
+        <Image
+          alt="ATT"
+          src="investors/att.svg"
+          h={{ base: "150px", md: "100px" }}
+          mx="auto"
+        />
+        <Image
+          alt="Move"
+          src="investors/move.svg"
+          h={{ base: "150px", md: "100px" }}
+          mx="auto"
+        />
+        <Image
+          alt="SVC"
+          src="investors/svc.svg"
+          h={{ base: "150px", md: "100px" }}
+          mx="auto"
+        />
+        <Image
+          alt="DI"
+          src="investors/di.svg"
+          h={{ base: "150px", md: "100px" }}
+          mx="auto"
+        />
+        <Image
+          alt="Blockwall"
+          src="investors/blockwall.svg"
+          h={{ base: "150px", md: "100px" }}
+          mx="auto"
+        />
         <Image
           alt="Warburg"
           src="investors/warburg_serres.svg"
-          minW={"150px"}
+          h={{ base: "150px", md: "100px" }}
+          mx="auto"
         />
 
         <Image
           alt="Big Brain Holdings"
           src="investors/big_brain_holdings.svg"
-          minW={"150px"}
+          h={{ base: "150px", md: "100px" }}
+          mx="auto"
+        />
+        <Image
+          alt="Darma Capital"
+          src="investors/darma.svg"
+          h={{ base: "150px", md: "100px" }}
+          mx="auto"
         />
       </SimpleGrid>
     </Center>
