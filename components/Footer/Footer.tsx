@@ -57,7 +57,9 @@ function Footer() {
             </Link>
             <Link
               p="0px"
-              href={"https://drive.google.com/drive/u/0/folders/1tp1Dgr1jJOqZVgyiWi4K34poklwX9E74"}
+              href={
+                "https://drive.google.com/drive/u/0/folders/1tp1Dgr1jJOqZVgyiWi4K34poklwX9E74"
+              }
               isExternal
             >
               Brand Kit
@@ -67,11 +69,7 @@ function Footer() {
             <Text pb="10px" fontWeight={"semibold"}>
               Community
             </Text>
-            <Link
-              href="https://twitter.com/meta_pool"
-              p="0px"
-              isExternal
-            >
+            <Link href="https://twitter.com/meta_pool" p="0px" isExternal>
               Twitter
             </Link>
             <Link
@@ -95,6 +93,13 @@ function Footer() {
             >
               YouTube
             </Link>
+            <Link
+              p="0px"
+              href={"https://discord.com/invite/tG4XJzRtdQ"}
+              isExternal
+            >
+              Discord
+            </Link>
           </Stack>
           <Stack align={"flex-start"}>
             <Text pb="10px" fontWeight={"semibold"}>
@@ -107,11 +112,7 @@ function Footer() {
             >
               About us
             </Link>
-            <Link
-              p="0px"
-              href={"https://discord.gg/znPg3dsTzM"}
-              isExternal
-            >
+            <Link p="0px" href={"https://discord.gg/znPg3dsTzM"} isExternal>
               Support
             </Link>
             {/* <Link p="0px" href={"#"}>
