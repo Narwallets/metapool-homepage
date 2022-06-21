@@ -38,7 +38,7 @@ const Item: NextPage<Props> = ({ title, description, icon, tags, env }) => (
           mt="0rem"
         />
       )}
-      <Box>
+      <Box flexGrow={1}>
         {tags.map((tag) => (
           <Tag
             key={`tag-${tag}`}
