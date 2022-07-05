@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://metapool.app/</loc>
-    <lastmod>2022-06-21</lastmod>
+    <lastmod>2022-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
       <image:image>
@@ -125,10 +125,22 @@
         <image:loc>https://metapool.app/investors/darma.svg</image:loc>
         <image:title>Darma Capital</image:title>
       </image:image>
+      <image:image>
+        <image:loc>https://blog.metapool.app/wp-content/uploads/2022/06/Webp.net-resizeimage-1-1-1024x576.png</image:loc>
+        <image:title>Liquid Staking on NEAR Protocol: Benefits and Values</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://blog.metapool.app/wp-content/uploads/2022/06/Webp.net-resizeimage-1-1024x576.png</image:loc>
+        <image:title>Deep Dive: How DAOrecords is Redefining the Future of Audio NFTs</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://blog.metapool.app/wp-content/uploads/2022/06/everything-you-need-to-know-ab-1024x576.png</image:loc>
+        <image:title>Everything you Need to Know about the Meta Pool Liquidity Pool</image:title>
+      </image:image>
   </url>
   <url>
     <loc>https://metapool.app/dapp/mainnet/meta/</loc>
-    <lastmod>2022-04-10</lastmod>
+    <lastmod>2022-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
       <image:image>
@@ -176,15 +188,15 @@
   </url>
   <url>
     <loc>https://metapool.app/dapp/mainnet/metapool-aurora/</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/medium-logo.6a7eefc3.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/medium-logo.039f0382.svg</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/discord.d5079de0.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/discord.8794180e.svg</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
@@ -192,7 +204,7 @@
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/twitter2.0bff66fe.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/twitter2.6f32565f.svg</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
@@ -200,35 +212,69 @@
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/up_down_arrow.82707ab4.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/up_down_arrow.7c8dcecd.svg</image:loc>
         <image:title>arrow down</image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/stnear.efd80041.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/stnear.f3e25dcb.svg</image:loc>
         <image:title>st</image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/warning.366ed46d.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/warning.b1d2172c.svg</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/info.91668e47.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/info.50ae5b8d.svg</image:loc>
         <image:title></image:title>
       </image:image>
   </url>
   <url>
     <loc>https://metapool.app/legal-notice-risk-disclosures.html</loc>
-    <lastmod>2022-06-07</lastmod>
+    <lastmod>2022-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://metapool.app/images/logo.svg</image:loc>
         <image:title>logo</image:title>
       </image:image>
+      <image:image>
+        <image:loc>https://metapool.app/icons/burger.svg</image:loc>
+        <image:title>logo</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/06/17/everything-you-need-to-know-about-the-meta-pool-liquidity-pool/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/06/23/liquid-staking-on-near-protocol-benefits-and-values/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/06/21/deep-dive-how-daorecords-is-redefining-the-intersection-of-music-and-nfts/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/category/liquid-staking/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://metapool.app/dapp/mainnet/meta/?utm_source=meta_pool_blog&amp;utm_medium=btn_about</loc>
-    <lastmod>2022-04-10</lastmod>
+    <lastmod>2022-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
       <image:image>
@@ -269,8 +315,26 @@
       </image:image>
   </url>
   <url>
+    <loc>https://blog.metapool.app/2022/06/28/updates-to-meta-pools-operator-fee-schedule/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/05/13/how-to-back-a-project-on-meta-yield-step-by-step-guide/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/category/farming/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.metapool.app/</loc>
-    <lastmod>2022-06-21</lastmod>
+    <lastmod>2022-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
       <image:image>
@@ -393,6 +457,36 @@
         <image:loc>https://www.metapool.app/investors/darma.svg</image:loc>
         <image:title>Darma Capital</image:title>
       </image:image>
+      <image:image>
+        <image:loc>https://blog.metapool.app/wp-content/uploads/2022/06/Webp.net-resizeimage-1-1-1024x576.png</image:loc>
+        <image:title>Liquid Staking on NEAR Protocol: Benefits and Values</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://blog.metapool.app/wp-content/uploads/2022/06/Webp.net-resizeimage-1-1024x576.png</image:loc>
+        <image:title>Deep Dive: How DAOrecords is Redefining the Future of Audio NFTs</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://blog.metapool.app/wp-content/uploads/2022/06/everything-you-need-to-know-ab-1024x576.png</image:loc>
+        <image:title>Everything you Need to Know about the Meta Pool Liquidity Pool</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/06/09/daorecords-launches-fundraising-campaign-on-meta-yield/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/category/recipes/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/category/stnear/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://metapool.app/Tokenomics__Governance_-_Meta_Pool_v4.pdf</loc>
@@ -402,21 +496,91 @@
   </url>
   <url>
     <loc>https://metapool.app/dapp/mainnet/meta-recipes/?p=0</loc>
-    <lastmod>2022-05-03</lastmod>
+    <lastmod>2022-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://blog.metapool.app/2022/06/08/how-to-guide-yield-farming-with-liquidity-pools/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+      <image:image>
+        <image:loc>https://blog.metapool.app/wp-content/uploads/2022/06/Ref.finance-Logo.svg</image:loc>
+        <image:title>Ref Finance Logo</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://blog.metapool.app/wp-content/uploads/2022/06/Trisolaris-Logo.svg</image:loc>
+        <image:title>Trisolaris Logo</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://blog.metapool.app/wp-content/uploads/2022/06/aurigami.svg</image:loc>
+        <image:title>Aurigami Logo</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://blog.metapool.app/wp-content/uploads/2022/06/wannaswap.svg</image:loc>
+        <image:title>Wannaswap Logo</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/06/02/meta-yield-proves-its-kickstarter-for-near-model-with-successful-pembrock-fundraising-campaign/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/category/automated-market-maker/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/category/lending/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/category/meta-yield/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/05/23/pembrock-finance-deep-dive-into-the-only-leveraged-yield-farming-project-on-near/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/category/defi/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/category/meta/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/05/12/a-guide-to-stnear-and-liquid-staking-near-native-token/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://metapool.app/dapp/mainnet/metapool-aurora/?utm_source=meta_pool_blog&amp;utm_medium=btn_about</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/medium-logo.6a7eefc3.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/medium-logo.039f0382.svg</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/discord.d5079de0.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/discord.8794180e.svg</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
@@ -424,7 +588,7 @@
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/twitter2.0bff66fe.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/twitter2.6f32565f.svg</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
@@ -432,25 +596,31 @@
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/up_down_arrow.82707ab4.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/up_down_arrow.7c8dcecd.svg</image:loc>
         <image:title>arrow down</image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/stnear.efd80041.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/stnear.f3e25dcb.svg</image:loc>
         <image:title>st</image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/warning.366ed46d.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/warning.b1d2172c.svg</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/info.91668e47.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/info.50ae5b8d.svg</image:loc>
         <image:title></image:title>
       </image:image>
   </url>
   <url>
+    <loc>https://blog.metapool.app/category/news/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://metapool.app/?_gl=1*1x0vj2o*_ga*MTIyNjg0MjQyOC4xNjQ3Mzk4OTky*_ga_330HH1R960*MTY1NDcwMDA5Ni4xNzAuMS4xNjU0NzAzMzc0LjA.</loc>
-    <lastmod>2022-06-21</lastmod>
+    <lastmod>2022-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
       <image:image>
@@ -573,10 +743,34 @@
         <image:loc>https://metapool.app/investors/darma.svg</image:loc>
         <image:title>Darma Capital</image:title>
       </image:image>
+      <image:image>
+        <image:loc>https://blog.metapool.app/wp-content/uploads/2022/06/Webp.net-resizeimage-1-1-1024x576.png</image:loc>
+        <image:title>Liquid Staking on NEAR Protocol: Benefits and Values</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://blog.metapool.app/wp-content/uploads/2022/06/Webp.net-resizeimage-1-1024x576.png</image:loc>
+        <image:title>Deep Dive: How DAOrecords is Redefining the Future of Audio NFTs</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://blog.metapool.app/wp-content/uploads/2022/06/everything-you-need-to-know-ab-1024x576.png</image:loc>
+        <image:title>Everything you Need to Know about the Meta Pool Liquidity Pool</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/06/14/meta-pool-in-the-long-run/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/04/07/march-madness-meta-pool-tvl-increases-by-300-to-an-all-time-high-ath-of-us120m/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://metapool.app/dapp/mainnet/meta/?utm_source=meta_pool_blog&amp;utm_medium=btn</loc>
-    <lastmod>2022-04-10</lastmod>
+    <lastmod>2022-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
       <image:image>
@@ -617,14 +811,56 @@
       </image:image>
   </url>
   <url>
+    <loc>https://blog.metapool.app/2022/03/08/introducing-meta-recipes-easily-migrate-liquidity-into-stnear-farms-and-pools/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/04/14/stnear-launch-on-jumbo/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/04/18/get-stnear-directly-from-aurora-with-meta-pool/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/04/21/twitter-meme-contest-stnear-tri-pool-with-rift-and-trisolaris/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/04/20/trisolaris-and-meta-pool-launch-stnear-tri-liquidity-pool-with-rift/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://metapool.app/dapp/mainnet/meta-recipes/</loc>
-    <lastmod>2022-05-03</lastmod>
+    <lastmod>2022-06-23</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/03/21/stake-near-with-meta-pool-from-aurora-using-metamask/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/05/05/pembrock-finance-launches-fundraising-campaign-leveraging-meta-yield-kickstarter-platform/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://metapool.app/dapp/mainnet/meta/?_gl=1*zncetx*_ga*MTIyNjg0MjQyOC4xNjQ3Mzk4OTky*_ga_330HH1R960*MTY1MjM4NTY3MS4xMTIuMS4xNjUyMzg2NDgwLjA.</loc>
-    <lastmod>2022-04-10</lastmod>
+    <lastmod>2022-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
       <image:image>
@@ -665,32 +901,84 @@
       </image:image>
   </url>
   <url>
+    <loc>https://blog.metapool.app/2022/04/12/the-beginners-guide-to-defi-leveraging-on-near/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/05/19/dapplooker-for-near-now-available-with-stnear-and-staking-dashboard/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/disclaimer/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/03/10/bastion-becomes-first-lending-protocol-on-aurora-to-list-stnear/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.metapool.app/legal-notice-risk-disclosures.html</loc>
-    <lastmod>2022-06-07</lastmod>
+    <lastmod>2022-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
       <image:image>
         <image:loc>https://www.metapool.app/images/logo.svg</image:loc>
         <image:title>logo</image:title>
       </image:image>
+      <image:image>
+        <image:loc>https://www.metapool.app/icons/burger.svg</image:loc>
+        <image:title>logo</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/05/03/stnear-integrates-with-polaris-finance/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/03/23/1-5-million-near-delegation-from-proximity-labs/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/04/19/web3-fundraising-through-liquid-staking-with-meta-yield/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blog.metapool.app/2022/03/09/launching-3-new-farms-with-wannaswap/</loc>
+    <lastmod>2022-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://metapool.app/dapp/mainnet/meta-recipes/?p=0&amp;_gl=1*6x5sxb*_ga*MTIyNjg0MjQyOC4xNjQ3Mzk4OTky*_ga_330HH1R960*MTY1NTgyNzg0MC4xOTkuMS4xNjU1ODMxNjQ4LjA.</loc>
-    <lastmod>2022-05-03</lastmod>
+    <lastmod>2022-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://metapool.app/dapp/mainnet/metapool-aurora/?utm_source=meta_pool_blog&amp;utm_medium=btn_stake_wNEAR</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/medium-logo.6a7eefc3.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/medium-logo.039f0382.svg</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/discord.d5079de0.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/discord.8794180e.svg</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
@@ -698,7 +986,7 @@
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/twitter2.0bff66fe.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/twitter2.6f32565f.svg</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
@@ -706,25 +994,25 @@
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/up_down_arrow.82707ab4.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/up_down_arrow.7c8dcecd.svg</image:loc>
         <image:title>arrow down</image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/stnear.efd80041.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/stnear.f3e25dcb.svg</image:loc>
         <image:title>st</image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/warning.366ed46d.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/warning.b1d2172c.svg</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/info.91668e47.svg</image:loc>
+        <image:loc>https://metapool.app/dapp/mainnet/metapool-aurora/info.50ae5b8d.svg</image:loc>
         <image:title></image:title>
       </image:image>
   </url>
   <url>
     <loc>https://metapool.app/dapp/mainnet/meta-recipes/?p=0&amp;_gl=1*1xwses0*_ga*MTIyNjg0MjQyOC4xNjQ3Mzk4OTky*_ga_330HH1R960*MTY1NTgyNzg0MC4xOTkuMS4xNjU1ODMxNjQ4LjA.</loc>
-    <lastmod>2022-05-03</lastmod>
+    <lastmod>2022-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
