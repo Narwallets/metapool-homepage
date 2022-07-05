@@ -6,7 +6,11 @@ import Layout from "../components/Layout";
 const Legal: NextPage = () => (
   <>
     <Head>
-      <title>Meta Pool - liquid staking on NEAR blockchain - stNEAR</title>
+      <title>Meta Pool Legal Notice and Risk Disclosure Statement</title>
+      <meta
+        name="description"
+        content="Meta Pool Liquid Staking Platform Legal Notice and Risk Disclosure Statement"
+      />
     </Head>
     <Layout>
       <Container maxW="container.xl" pt="6rem">
@@ -65,7 +69,8 @@ const Legal: NextPage = () => (
         $META Tokens or any other assets. Nothing in the Materials constitutes a
         recommendation or solicitation to use Meta Pool platform, Meta Pool
         protocol, or any related products or services.
-        <br /><br />
+        <br />
+        <br />
         <p>
           Always make sure to verify that the information that you believe is
           provided by Narwallets is posted or communicated by our authorised
@@ -111,12 +116,13 @@ const Legal: NextPage = () => (
             <br />
           </div>
           We do not make any warranties or representations of any kind with
-          regard to the $META Token (the &quot;$META&quot;), and we expressly disclaim all
-          warranties and representations relating to $META, whether express or
-          implied, including, without limitation, any implied warranties of
-          merchantability, fitness for a particular purpose, title, and
-          non-infringement.
-          <br /><br />
+          regard to the $META Token (the &quot;$META&quot;), and we expressly
+          disclaim all warranties and representations relating to $META, whether
+          express or implied, including, without limitation, any implied
+          warranties of merchantability, fitness for a particular purpose,
+          title, and non-infringement.
+          <br />
+          <br />
           <p>
             $META is provided on an «as is» and «as available» basis. There is
             no guarantee that $META will perform as expected or hold any
@@ -158,7 +164,9 @@ const Legal: NextPage = () => (
             persons, including, but not limited to, those maintained by the
             United Nations Security Council or the European Union.
           </p>
-          <p></p><br /><br />
+          <p></p>
+          <br />
+          <br />
           <div>
             <b>$META Token Community Launch Event.</b>
           </div>
@@ -169,8 +177,10 @@ const Legal: NextPage = () => (
           from the CLE. Assets contributed to the CLE cannot be redeemed or
           withdrawn by Narwallets. Upon completion of the CLE, the assets are
           technically routed to the Meta Pool treasury
-          <p></p><br />
-          <p></p><br />
+          <p></p>
+          <br />
+          <p></p>
+          <br />
           <div>
             <b>Meta Pool platform is in its Beta Stage</b>
           </div>
@@ -187,8 +197,10 @@ const Legal: NextPage = () => (
           or for any claims, losses, damages or other liabilities, whether in
           contract, tort or otherwise, arising out of or in connection with the
           Meta Pool platform, Meta Pool protocol, their operation or use.
-          <p></p><br />
-          <p></p><br />
+          <p></p>
+          <br />
+          <p></p>
+          <br />
           <div>
             <b>Forward-Looking Statements</b>
           </div>
@@ -214,8 +226,10 @@ const Legal: NextPage = () => (
           introduction of new regulations and laws, market changes, the
           performance of Meta Pool platform or related products, other business
           and market conditions.
-          <p></p><br />
-          <p></p><br />
+          <p></p>
+          <br />
+          <p></p>
+          <br />
           <div>
             <b>No Advice</b>
           </div>
@@ -225,8 +239,10 @@ const Legal: NextPage = () => (
           any part of such information relates. You should consult your own
           legal, financial, tax, or other professional advisors regarding any
           such information.
-          <p></p><br />
-          <p></p><br />
+          <p></p>
+          <br />
+          <p></p>
+          <br />
           <div>
             <b>Acceptance of Risks and No Liability</b>
           </div>
@@ -235,8 +251,10 @@ const Legal: NextPage = () => (
           or using the Meta Pool platform you accept all of the listed risks and
           agree that we shall not be in any way liable for any losses or damages
           incurred due to or in connection with such risks.
-          <p></p><br />
-          <p></p><br />
+          <p></p>
+          <br />
+          <p></p>
+          <br />
           <div>
             <b>Limitation of liability</b>
           </div>
@@ -254,10 +272,12 @@ const Legal: NextPage = () => (
           liability, tort, or any other legal theory, regardless of whether we
           have been advised of the possibility of such damages or losses.
         </section>
-        <br /><br />
+        <br />
+        <br />
         <section id="risks">
           <b>Risks Disclosure Statement</b>
-          <p></p><br />
+          <p></p>
+          <br />
           <div>
             <b>Risk of Software Weaknesses</b>
             <div>
@@ -272,7 +292,8 @@ const Legal: NextPage = () => (
               operation of the Meta Pool platform, Meta Pool protocol, or may
               lead to losses and damages for you, other users of Meta Pool
               platform, Meta Pool protocol or third persons.
-              <p></p><br />
+              <p></p>
+              <br />
               <p></p>
               <div>
                 <b>Risk Inherent in the Blockchain</b>
@@ -294,7 +315,8 @@ const Legal: NextPage = () => (
               consensus split, long reorganization of the chain, 51 percent
               attack, or other adverse outcomes each of which may lead to
               complete loss of your digital assets.
-              <p></p><br />
+              <p></p>
+              <br />
               <p></p>
               <div>
                 <b>
@@ -309,7 +331,8 @@ const Legal: NextPage = () => (
               violation of logic which underpins the smart-contracts, which can
               lead to partial or complete loss of digital assets used in the
               transaction.
-              <p></p><br />
+              <p></p>
+              <br />
               <p></p>
               <div>
                 <b>Risk of Confusing User Interface</b>
@@ -318,7 +341,8 @@ const Legal: NextPage = () => (
               confusing or mislead you, which may result in the execution of a
               different action or transaction than intended or desired, or
               connection of a wrong wallet, account or network.
-              <p></p><br />
+              <p></p>
+              <br />
               <p></p>
               <div>
                 <b>Risk of Legal Uncertainty</b>
@@ -338,7 +362,8 @@ const Legal: NextPage = () => (
               costs or capital expenditures, which could affect our ability to
               carry on the business model and develop the Meta Pool platform
               and/or Meta Pool protocol.
-              <p></p><br />
+              <p></p>
+              <br />
               <p></p>
               <div>
                 <b>Risk of Theft</b>
@@ -359,7 +384,9 @@ const Legal: NextPage = () => (
             </div>
           </div>
         </section>
-        <p></p><br /><br />
+        <p></p>
+        <br />
+        <br />
       </Container>
     </Layout>
   </>

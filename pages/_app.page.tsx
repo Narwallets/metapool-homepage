@@ -4,7 +4,6 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import theme from "../styles/theme";
 import Fonts from "./fonts";
-import "@fontsource/space-grotesk/400.css";
 import "@fontsource/inter/400.css";
 
 const queryClient = new QueryClient();

@@ -33,7 +33,13 @@ function App({ metrics, news }: Props) {
   return (
     <>
       <Head>
-        <title>Meta Pool - liquid staking on NEAR blockchain - stNEAR</title>
+        <title>
+          Meta Pool: The Liquid Staking Solution for NEAR Protocol. Get stNEAR
+        </title>
+        <meta
+          name="description"
+          content="Liquid Stake NEAR with Meta Pool. Receive stNEAR to simultaneously accrue NEAR staking rewards and add APY from other DeFi protocols"
+        />
       </Head>
       <Container
         position="relative"
