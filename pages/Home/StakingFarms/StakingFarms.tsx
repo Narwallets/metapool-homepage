@@ -80,8 +80,8 @@ const StakingFarms: NextPage<Props> = ({ st_near_30_day_apy }) => (
               />
               <Item
                 ctaLabel="Go to Meta Yield"
-                title="Meta Yield: Support Ecosystem, Extra Rewards"
-                description="Stake NEAR and use your stNEAR to support crypto-based projects, and earn their tokens."
+                title="Meta Yield: NEAR Projects Crowdfunding Platform"
+                description="Lossless staking rewards-based fundraising: mint new project tokens with your staking rewards, not your NEAR assets."
                 icon="icons/staking-farms-metayield.svg"
                 url="https://metayield.app/"
               />
