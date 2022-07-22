@@ -9,7 +9,6 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import Post from "./Post";
-import useSmoothScrollTo from "../../../hooks/useSmoothScrollTo";
 
 interface Props {
   news: {
@@ -23,8 +22,7 @@ interface Props {
 }
 
 const LatestNews: NextPage<Props> = ({ news }) => (
-  <>
-    <a id="#latest-news" {...useSmoothScrollTo("#latest-news")} />
+  <section id="latest-news">
     <Box bgColor={"#F9FAFB"} px="1rem">
       <Container
         maxW="container.xl"
@@ -82,7 +80,7 @@ const LatestNews: NextPage<Props> = ({ news }) => (
         </Link>
       </Container>
     </Box>
-  </>
+  </section>
 );
 
 export default LatestNews;

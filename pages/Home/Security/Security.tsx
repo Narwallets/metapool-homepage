@@ -8,11 +8,9 @@ import {
   Link,
   Text,
 } from "@chakra-ui/react";
-import useSmoothScrollTo from "../../../hooks/useSmoothScrollTo";
 
 const Security: NextPage = () => (
-  <>
-    <a id="#security" {...useSmoothScrollTo("#security")} />
+  <section id="security">
     <Container maxW="container.xl">
       <Box
         px={{ base: "3rem", sm: "10rem" }}
@@ -86,7 +84,7 @@ const Security: NextPage = () => (
         </Box>
       </Box>
     </Container>
-  </>
+  </section>
 );
 
 export default Security;

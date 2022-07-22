@@ -14,15 +14,13 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import Item from "./Item";
-import useSmoothScrollTo from "../../../hooks/useSmoothScrollTo";
 
 interface Props {
   platforms: any[];
 }
 
 const Ecosystem: NextPage<Props> = ({ platforms }) => (
-  <>
-    <a id="#ecosystem" {...useSmoothScrollTo("#ecosystem")} />
+  <section id="ecosystem">
     <Box bgColor="#F8FAFC" px="1rem">
       <Container maxW="container.xl" py="4rem">
         <Flex
@@ -140,7 +138,7 @@ const Ecosystem: NextPage<Props> = ({ platforms }) => (
         </SimpleGrid>
       </Container>
     </Box>
-  </>
+  </section>
 );
 
 export default Ecosystem;

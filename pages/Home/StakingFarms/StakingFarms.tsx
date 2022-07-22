@@ -9,15 +9,13 @@ import {
   Container,
 } from "@chakra-ui/react";
 import Item from "./Item";
-import useSmoothScrollTo from "../../../hooks/useSmoothScrollTo";
 
 interface Props {
   st_near_30_day_apy: string;
 }
 
 const StakingFarms: NextPage<Props> = ({ st_near_30_day_apy }) => (
-  <>
-    <a id="#staking-farms" {...useSmoothScrollTo("#staking-farms")} />
+  <section id="staking-farms">
     <Flex
       w="100%"
       pt={{ base: "0rem", lg: "0rem" }}
@@ -90,7 +88,7 @@ const StakingFarms: NextPage<Props> = ({ st_near_30_day_apy }) => (
         </Box>
       </Container>
     </Flex>
-  </>
+  </section>
 );
 
 export default StakingFarms;

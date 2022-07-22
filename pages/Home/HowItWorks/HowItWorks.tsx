@@ -12,11 +12,9 @@ import {
   Stack,
   Heading,
 } from "@chakra-ui/react";
-import useSmoothScrollTo from "../../../hooks/useSmoothScrollTo";
 
 const HowItWorks: NextPage = () => (
-  <>
-    <a id="#how-it-works" {...useSmoothScrollTo("#how-it-works")} />
+  <section id="how-it-works">
     <Flex
       fontSize="md"
       position="relative"
@@ -131,7 +129,7 @@ const HowItWorks: NextPage = () => (
         </Stack>
       </Container>
     </Flex>
-  </>
+  </section>
 );
 
 export default HowItWorks;

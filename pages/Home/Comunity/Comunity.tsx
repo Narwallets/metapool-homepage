@@ -11,11 +11,9 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import Platform from "./Platform";
-import useSmoothScrollTo from "../../../hooks/useSmoothScrollTo";
 
 const Comunity: NextPage = () => (
-  <>
-    <a id="#community" {...useSmoothScrollTo("#community")} />
+  <section id="community">
     <Flex
       pt={"8rem"}
       fontSize="md"
@@ -109,7 +107,7 @@ const Comunity: NextPage = () => (
         </SimpleGrid>
       </Container>
     </Flex>
-  </>
+  </section>
 );
 
 export default Comunity;

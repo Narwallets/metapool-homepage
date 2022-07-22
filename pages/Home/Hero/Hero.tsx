@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { Center, Box, Link, Stack, Heading } from "@chakra-ui/react";
 import MetapoolData from "./MetapoolData";
 import NumberFormat from "react-number-format";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 interface Props {
   tvl: string;
@@ -46,12 +47,7 @@ const Hero: NextPage<Props> = ({
         </Box>
       </Center>
       <Center>
-        <Link
-          variant="solid"
-          href="https://metapool.app/dapp/mainnet/meta/"
-          mb="6rem"
-          isExternal
-        >
+        <Link as={AnchorLink} variant="solid" href="#staking-farms" mb="6rem">
           Start staking
         </Link>
       </Center>

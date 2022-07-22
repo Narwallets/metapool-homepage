@@ -1,10 +1,8 @@
 import type { NextPage } from "next";
 import { Text, SimpleGrid, Image, Heading, Center } from "@chakra-ui/react";
-import useSmoothScrollTo from "../../../hooks/useSmoothScrollTo";
 
 const Investors: NextPage = () => (
-  <>
-    <a id="#investors" {...useSmoothScrollTo("#investors")} />
+  <section id="investors">
     <Center flexDirection={"column"} px="2rem" py="9rem">
       <Text
         color="secondary"
@@ -93,7 +91,7 @@ const Investors: NextPage = () => (
         />
       </SimpleGrid>
     </Center>
-  </>
+  </section>
 );
 
 export default Investors;

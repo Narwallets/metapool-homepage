@@ -13,11 +13,9 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import useSmoothScrollTo from "../../../hooks/useSmoothScrollTo";
 
 const Benefits: NextPage = () => (
-  <>
-    <a id="#benefits" {...useSmoothScrollTo("#benefits")} />
+  <section id="benefits">
     <Container maxW="container.xl" px={{ base: "2rem", lg: "10rem" }} py="5rem">
       <Flex
         pt={["50px"]}
@@ -71,8 +69,8 @@ const Benefits: NextPage = () => (
             <br />
             <Text textStyle="h5">Borrowing</Text>
             <Text my={"13px"}>
-              Access liquidity without selling NEAR by borrowing stablecoins and other assets
-              using stNEAR as Collateral.
+              Access liquidity without selling NEAR by borrowing stablecoins and
+              other assets using stNEAR as Collateral.
             </Text>
           </Box>
           <Box textAlign={"left"}>
@@ -113,7 +111,7 @@ const Benefits: NextPage = () => (
         </Link>
       </Stack>
     </Container>
-  </>
+  </section>
 );
 
 export default Benefits;

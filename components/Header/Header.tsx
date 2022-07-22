@@ -9,20 +9,20 @@ import {
   Image,
   Spacer,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import useSmoothScrollTo from "../../hooks/useSmoothScrollTo";
+import { CloseIcon } from "@chakra-ui/icons";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const LINKS = [
-  { title: "TOP", anchor: "#top" },
-  { title: "STAKING AND FARMS", anchor: "#staking-farms" },
-  { title: "STNEAR ECOSYSTEM", anchor: "#ecosystem" },
-  { title: "HOW IT WORKS", anchor: "#how-it-works" },
-  { title: "TECHNOLOGY", anchor: "#technology" },
-  { title: "BENEFITS", anchor: "#benefits" },
-  { title: "SECURITY", anchor: "#security" },
-  { title: "INVESTORS", anchor: "#investors" },
-  { title: "LATEST NEWS", anchor: "#latest-news" },
-  { title: "COMMUNITY", anchor: "#community" },
+  { title: "STAKE NEAR", anchor: "#top", offset: 0 },
+  { title: "STAKING AND FARMS", anchor: "#staking-farms", offset: 0 },
+  { title: "STNEAR ECOSYSTEM", anchor: "#ecosystem", offset: 0 },
+  { title: "HOW IT WORKS", anchor: "#how-it-works", offset: 0 },
+  { title: "TECHNOLOGY", anchor: "#technology", offset: 0 },
+  { title: "BENEFITS", anchor: "#benefits", offset: 0 },
+  { title: "SECURITY", anchor: "#security", offset: 200 },
+  { title: "INVESTORS", anchor: "#investors", offset: 0 },
+  { title: "LATEST NEWS", anchor: "#latest-news", offset: 60 },
+  { title: "COMMUNITY", anchor: "#community", offset: 50 },
 ];
 
 export default function Header() {
@@ -42,8 +42,7 @@ export default function Header() {
   }, []);
 
   return (
-    <>
-      <a id="#top" {...useSmoothScrollTo("#top")} />
+    <section id="top">
       <Box
         bg={scrolled ? "white" : "transparent"}
         boxShadow={scrolled ? "md" : "none"}
@@ -58,7 +57,7 @@ export default function Header() {
           mx={"2rem"}
           my="1rem"
         >
-          <Link m={0} p={0} href="/#top">
+          <Link as={AnchorLink} m={0} p={0} href="#top">
             <Image m={0} p={0} alt="logo" src={"/images/logo.svg"} h={"24px"} />
           </Link>
           <Flex alignItems={"center"}>
@@ -113,10 +112,12 @@ export default function Header() {
             <Stack as={"nav"} spacing={4} textAlign="center">
               {LINKS.map((link) => (
                 <Link
+                  as={AnchorLink}
                   key={link.title}
                   px={2}
                   py={1}
                   rounded={"sm"}
+                  offset={link.offset}
                   _hover={{
                     textDecoration: "none",
                     bg: "gray.200",
@@ -131,6 +132,6 @@ export default function Header() {
           </Box>
         ) : null}
       </Box>
-    </>
+    </section>
   );
 }

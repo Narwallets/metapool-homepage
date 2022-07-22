@@ -8,11 +8,9 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import Item from "./Item";
-import useSmoothScrollTo from "../../../hooks/useSmoothScrollTo";
 
 const Technology: NextPage = () => (
-  <>
-    <a id="#technology" {...useSmoothScrollTo("#technology")} />
+  <section id="technology">
     <Box bgColor="#1E293B" textColor={"white"} px="1rem">
       <Container maxW="container.xl">
         <Flex
@@ -76,7 +74,7 @@ const Technology: NextPage = () => (
         </Box>
       </Container>
     </Box>
-  </>
+  </section>
 );
 
 export default Technology;
