@@ -89,23 +89,23 @@ function App({ metrics, news }: Props) {
 App.getInitialProps = async () => {
   const metrics = await api.getMetrics();
   const parser = new Parser();
-  let feed = await parser.parseURL("https://blog.metapool.app/feed");
-  const news = feed.items
-    .map((item: any) => {
-      return {
-        title: item.title,
-        creator: item.creator,
-        category: item.categories[0],
-        image:
-          cheerio.load(item.content)("img").attr("data-large-file") || null,
-        link: item.link,
-      };
-    })
-    .slice(0, 3);
-  console.info({
-    metrics,
-    news,
-  });
+  let news: any = [];
+  try {
+    let feed = await parser.parseURL("https://blog.metapool.app/feed");
+    news = feed.items
+      .map((item: any) => {
+        return {
+          title: item.title,
+          creator: item.creator,
+          category: item.categories[0],
+          image:
+            cheerio.load(item.content)("img").attr("data-large-file") || null,
+          link: item.link,
+        };
+      })
+      .slice(0, 3);
+  } catch {}
+
   return {
     metrics,
     news,

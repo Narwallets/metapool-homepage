@@ -9,6 +9,7 @@ import {
   Link,
   Image,
   Heading,
+  Stack,
 } from "@chakra-ui/react";
 import NumberFormat from "react-number-format";
 
@@ -19,7 +20,6 @@ interface Props {
   icon: string;
   url: string;
   ctaLabel: string;
-  disclamer?: string;
 }
 
 const Item: NextPage<Props> = ({
@@ -29,41 +29,61 @@ const Item: NextPage<Props> = ({
   icon,
   url,
   ctaLabel,
-  disclamer = false,
 }) => (
   <Box bg="white" rounded="2xl" boxShadow="2xl" p="10">
     <VStack mx="auto" spacing="1rem">
-      <HStack
+      <Stack
+        direction={{ base: "row", lg: "row" }}
         w="100%"
         justifyContent={"space-between"}
         spacing="1rem"
-        minH={{base: "0", lg: "4rem"}}
       >
-        <Image alt="Oct" src={icon} />
+        <Image alt="Oct" src={icon} maxH="60px" />
         {apy && (
-          <Box>
-            <Text textStyle="h3" fontSize="3xl">
+          <Flex
+            direction={{ base: "column", lg: "column" }}
+            alignItems={"flex-start"}
+          >
+            <Text
+              textStyle="h3"
+              fontSize="4xl"
+              fontWeight={"900"}
+              my="0"
+              lineHeight={"1"}
+            >
               <NumberFormat
                 value={apy}
                 displayType={"text"}
                 thousandSeparator={true}
+                prefix={"~"}
                 suffix={"%"}
                 decimalScale={2}
               />
             </Text>
-            <Text>APY</Text>
-          </Box>
+            <Text fontSize="sm" fontWeight={"700"}>
+              APY
+            </Text>
+          </Flex>
         )}
-      </HStack>
+
+        <Link
+          variant="solid"
+          href={url}
+          whiteSpace={"nowrap"}
+          isExternal
+          minW={{ base: "200px", lg: "170px" }}
+          display={{ base: "none", lg: "block" }}
+        >
+          {ctaLabel}
+        </Link>
+      </Stack>
       <Flex
         direction={"column"}
         justifyContent="flex-start"
         alignItems={"flex-start"}
         textAlign={"left"}
-        pt="30px"
-        minH={{base: "0", lg: "11rem"}}
       >
-        <Heading size="sm" fontFamily="Inter">
+        <Heading size="sm" fontFamily="Inter" fontWeight={"900"} my="2">
           {title}
         </Heading>
         <Text fontFamily="Inter">{description}</Text>
@@ -71,17 +91,13 @@ const Item: NextPage<Props> = ({
       <Link
         variant="solid"
         href={url}
-        mb="52px"
         whiteSpace={"nowrap"}
         isExternal
+        minW={{ base: "200px", lg: "170px" }}
+        display={{ base: "block", lg: "none" }}
       >
         {ctaLabel}
       </Link>
-      {disclamer && (
-        <Text fontSize="xs" color="#94A3B8" pt="2rem">
-          * {disclamer}
-        </Text>
-      )}
     </VStack>
   </Box>
 );
