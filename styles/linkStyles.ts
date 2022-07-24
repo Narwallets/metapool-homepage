@@ -8,6 +8,7 @@ export const LinkStyles = {
     borderColor: "primary",
     py: "16px",
     _focus: { boxShadow: "none" },
+    lineHeight: "18px",
   },
   variants: {
     solid: (props: any) => ({

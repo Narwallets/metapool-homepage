@@ -31,6 +31,7 @@ const Layout = ({ children }: Props) => {
         p={0}
         overflow="clip"
         maxWidth="100vw"
+        bgColor="#F8FAFC"
       >
         <main>{children}</main>
       </Container>

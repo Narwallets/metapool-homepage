@@ -112,6 +112,12 @@ function Footer() {
             >
               About us
             </Link>
+            <Link
+              p="0px"
+              href={"/team"}
+            >
+              Our Team
+            </Link>
             <Link p="0px" href={"https://discord.gg/znPg3dsTzM"} isExternal>
               Support
             </Link>

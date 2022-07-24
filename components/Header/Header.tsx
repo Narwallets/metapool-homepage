@@ -44,7 +44,7 @@ export default function Header() {
   return (
     <section id="top">
       <Box
-        bg={scrolled ? "white" : "transparent"}
+        bg={"white"}
         boxShadow={scrolled ? "md" : "none"}
         position="fixed"
         zIndex="101"
@@ -57,7 +57,7 @@ export default function Header() {
           mx={"2rem"}
           my="1rem"
         >
-          <Link as={AnchorLink} m={0} p={0} href="#top">
+          <Link m={0} p={0} href="/">
             <Image m={0} p={0} alt="logo" src={"/images/logo.svg"} h={"24px"} />
           </Link>
           <Flex alignItems={"center"}>
