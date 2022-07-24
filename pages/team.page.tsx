@@ -100,7 +100,7 @@ const Team: NextPage = () => (
         <SimpleGrid
           py={["100px", "150px"]}
           columns={{ base: 2, md: 3, lg: 3, xl: 5 }}
-          mx={{ base: "1rem", md: "3rem", lg: "3rem" }}
+          mx={{ base: "1rem", md: "0rem", lg: "0rem" }}
           alignItems={"center"}
           justifyContent="center"
           spacing={20}
