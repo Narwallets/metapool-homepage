@@ -79,7 +79,7 @@
         "title": "Tonic",
         "description": "Permissionless orderbook based DEX on NEAR",
         "image": "ecosystem/tonic.svg",
-        "tags": ["DEX"],
+        "tags": ["ORDER BOOK", "DEX"],
         "test": false
     }
 ]
