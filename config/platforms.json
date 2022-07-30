@@ -74,5 +74,12 @@
         "image": "ecosystem/bluebit.svg",
         "tags": ["YIELD OPTIMIZER", "FARMING"],
         "test": false
+    },
+    {
+        "title": "Tonic",
+        "description": "Permissionless orderbook based DEX on NEAR",
+        "image": "ecosystem/tonic.svg",
+        "tags": ["DEX"],
+        "test": false
     }
 ]
