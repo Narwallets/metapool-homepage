@@ -87,7 +87,7 @@ const StakingFarms: NextPage<Props> = ({ st_near_30_day_apy }) => (
                 title="Meta Recipes: Additional APY for your Farm"
                 description="Deposit wNEAR directly from Aurora with your Metamask wallet. Receive stNEAR. "
                 icon="icons/staking-farms-metarecipes.svg"
-                url="https://metayield.app/"
+                url="https://metapool.app/dapp/mainnet/meta-recipes/"
               />
             </SimpleGrid>
           </HStack>
